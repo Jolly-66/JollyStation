@@ -1,4 +1,10 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ad" = (
+/obj/machinery/door/airlock/medical/glass{
+	name = "Medbay Clinic"
+	},
+/turf/open/floor/iron/white,
+/area/space)
 "aE" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/west,
@@ -71,6 +77,11 @@
 /obj/structure/window/reinforced/spawner/directional/north,
 /turf/open/floor/plating/airless,
 /area/space)
+"eT" = (
+/turf/open/floor/iron/dark/smooth_corner{
+	dir = 8
+	},
+/area/space)
 "fd" = (
 /obj/structure/table/greyscale,
 /obj/effect/turf_decal/siding/wood{
@@ -106,6 +117,11 @@
 /obj/effect/turf_decal/bot_white,
 /obj/machinery/vending/coffee,
 /turf/open/floor/iron/dark/textured_large,
+/area/space)
+"hb" = (
+/turf/open/floor/iron/dark/smooth_corner{
+	dir = 4
+	},
 /area/space)
 "hw" = (
 /obj/structure/table/greyscale,
@@ -196,6 +212,11 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"nn" = (
+/turf/open/floor/iron/dark/smooth_corner{
+	dir = 1
+	},
+/area/space)
 "nW" = (
 /obj/structure/chair/sofa/bench/right{
 	dir = 4
@@ -207,6 +228,9 @@
 /obj/machinery/biogenerator,
 /turf/open/floor/iron/dark/textured_large,
 /area/space)
+"ob" = (
+/turf/open/floor/iron/dark/smooth_edge,
+/area/space)
 "oR" = (
 /obj/structure/stairs,
 /obj/structure/stairs/stone,
@@ -217,6 +241,11 @@
 	},
 /turf/open/floor/iron/stairs/old{
 	dir = 1
+	},
+/area/space)
+"pb" = (
+/turf/open/floor/iron/dark/smooth_edge{
+	dir = 4
 	},
 /area/space)
 "pu" = (
@@ -363,6 +392,13 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"xB" = (
+/obj/machinery/door/airlock/maintenance_hatch,
+/turf/open/floor/plating,
+/area/space)
+"xE" = (
+/turf/open/floor/iron/white,
+/area/space)
 "xK" = (
 /obj/structure/bookcase/random/reference,
 /turf/open/floor/wood/large,
@@ -405,6 +441,10 @@
 	},
 /turf/open/floor/iron/small,
 /area/space)
+"AD" = (
+/obj/machinery/chem_heater/withbuffer,
+/turf/open/floor/iron/dark/smooth_edge,
+/area/space)
 "AS" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
@@ -444,6 +484,11 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"Df" = (
+/turf/open/floor/iron/dark/smooth_edge{
+	dir = 8
+	},
+/area/space)
 "Do" = (
 /obj/machinery/computer/cargo{
 	dir = 1
@@ -453,6 +498,12 @@
 "Dp" = (
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood/large,
+/area/space)
+"DF" = (
+/obj/structure/railing,
+/turf/open/floor/iron/stairs/right{
+	dir = 8
+	},
 /area/space)
 "DM" = (
 /obj/structure/flora/rock/style_random,
@@ -511,6 +562,22 @@
 /obj/machinery/vending/cigarette,
 /turf/open/floor/iron,
 /area/space)
+"IP" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/stairs/left{
+	dir = 8
+	},
+/area/space)
+"Kg" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/left/directional/north{
+	name = "Pharmacy Desk";
+	req_access = list("pharmacy")
+	},
+/turf/open/floor/iron/white,
+/area/space)
 "Kr" = (
 /obj/effect/turf_decal/stripes/white/end{
 	dir = 4
@@ -527,6 +594,9 @@
 	dir = 6
 	},
 /turf/open/floor/iron/grimy,
+/area/space)
+"KZ" = (
+/turf/open/openspace,
 /area/space)
 "Lm" = (
 /obj/structure/chair/stool/directional/north,
@@ -564,6 +634,12 @@
 /obj/structure/grille,
 /turf/open/floor/plating/airless,
 /area/space)
+"NG" = (
+/obj/machinery/door/airlock/medical/glass{
+	name = "Medbay"
+	},
+/turf/open/floor/iron/white,
+/area/space)
 "NH" = (
 /turf/open/floor/iron/textured_half{
 	dir = 8
@@ -584,15 +660,29 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"Px" = (
+/turf/open/floor/iron/dark/smooth_corner,
+/area/space)
 "Qk" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Commons Area"
 	},
 /turf/open/floor/iron,
 /area/space)
+"RI" = (
+/obj/machinery/chem_master,
+/turf/open/floor/iron/dark/smooth_edge{
+	dir = 4
+	},
+/area/space)
 "Sb" = (
 /obj/machinery/disposal/bin,
 /turf/open/floor/iron,
+/area/space)
+"Si" = (
+/obj/machinery/smartfridge/chemistry/preloaded,
+/obj/structure/window/spawner/directional/east,
+/turf/open/floor/iron/white,
 /area/space)
 "Sx" = (
 /obj/structure/flora/tree/jungle/small/style_4,
@@ -635,6 +725,12 @@
 "VN" = (
 /turf/open/space/openspace,
 /area/space)
+"Wc" = (
+/obj/structure/chair/office/light{
+	dir = 8
+	},
+/turf/open/floor/iron/dark/smooth_edge,
+/area/space)
 "WH" = (
 /obj/structure/table,
 /obj/structure/railing{
@@ -648,14 +744,21 @@
 	},
 /turf/open/floor/iron,
 /area/space)
-"WL" = (
-/turf/open/openspace,
-/area/space)
 "Xd" = (
 /turf/open/floor/iron/textured_half,
 /area/space)
 "Xo" = (
 /turf/closed/wall/mineral/plastitanium,
+/area/space)
+"Xs" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/flora/rock/pile/style_random,
+/obj/structure/flora/tree/jungle/small/style_6{
+	pixel_x = -24
+	},
+/turf/open/floor/grass,
 /area/space)
 "XA" = (
 /obj/effect/spawner/random/vending/colavend,
@@ -666,11 +769,17 @@
 /turf/open/floor/plating,
 /area/space)
 "Yc" = (
-/obj/structure/flora/tree/jungle/small/style_6{
-	pixel_x = -38
+/turf/open/floor/iron/dark/smooth_edge{
+	dir = 1
 	},
-/obj/structure/flora/rock/pile/style_random,
-/turf/open/floor/grass,
+/area/space)
+"YB" = (
+/obj/machinery/chem_dispenser{
+	layer = 2.7
+	},
+/turf/open/floor/iron/dark/smooth_corner{
+	dir = 1
+	},
 /area/space)
 "YF" = (
 /turf/closed/wall,
@@ -96936,14 +97045,14 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+YF
+YF
+YF
+YF
+YF
+YF
+YF
 VN
 VN
 VN
@@ -97192,19 +97301,19 @@ VN
 VN
 VN
 VN
+YF
+YF
+Px
+Df
+Df
+Df
+Df
+hb
+Hx
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+XO
 VN
 VN
 VN
@@ -97449,22 +97558,22 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+Px
+xn
+xn
+xn
+xn
+xn
+nn
+Hx
+xE
+xE
+YF
+XO
+XO
+XO
+XO
 YF
 YF
 YF
@@ -97706,22 +97815,22 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+Yc
+xn
+xn
+xn
+xn
+nn
+Hx
+YF
+NG
+NG
+YF
+XO
+YF
+xB
+YF
 YF
 VN
 VN
@@ -97963,22 +98072,22 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+Yc
+xn
+xn
+xn
+ob
+Hx
+Hx
+xE
+xE
+xE
+YF
+YF
+YF
+xE
+xE
 YF
 VN
 VN
@@ -98220,22 +98329,22 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+Yc
+xn
+xn
+xn
+AD
+Si
+xE
+xE
+xE
+xE
+ad
+xE
+xE
+xE
+xE
 YF
 VN
 VN
@@ -98477,22 +98586,22 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+eT
+xn
+xn
+xn
+Wc
+Kg
+xE
+xE
+xE
+xE
+ad
+xE
+xE
+xE
+xE
 YF
 VN
 VN
@@ -98734,22 +98843,22 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+YF
+eT
+pb
+RI
+YB
+Hx
+xE
+xE
+xE
+xE
+Hx
+xE
+xE
+xE
+xE
 YF
 VN
 VN
@@ -98992,21 +99101,21 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+YF
+YF
+YF
+YF
+YF
+xE
+xE
+xE
+xE
+Hx
+xE
+xE
+xE
+xE
 YF
 VN
 VN
@@ -99254,16 +99363,16 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
 YF
+xE
+xE
+xE
+xE
 YF
-YF
-YF
-YF
+Hx
+IP
+DF
+Hx
 YF
 YF
 VN
@@ -99511,10 +99620,10 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
+YF
+xE
+xE
+xE
 YF
 YF
 ZF
@@ -99768,8 +99877,8 @@ VN
 VN
 VN
 VN
-VN
-VN
+YF
+YF
 YF
 YF
 YF
@@ -102117,9 +102226,9 @@ Xo
 XO
 Xo
 XA
-WL
-WL
-WL
+KZ
+KZ
+KZ
 Mw
 Xo
 XO
@@ -102356,7 +102465,7 @@ LU
 qT
 SQ
 Dp
-qx
+Xs
 qx
 AS
 Fb
@@ -102613,7 +102722,7 @@ YF
 YF
 YF
 Dp
-Yc
+VK
 AS
 Fb
 ZF
