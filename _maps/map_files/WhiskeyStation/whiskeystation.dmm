@@ -648,6 +648,9 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"WL" = (
+/turf/open/openspace,
+/area/space)
 "Xd" = (
 /turf/open/floor/iron/textured_half,
 /area/space)
@@ -102114,9 +102117,9 @@ Xo
 XO
 Xo
 XA
-CW
-CW
-CW
+WL
+WL
+WL
 Mw
 Xo
 XO
