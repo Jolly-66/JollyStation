@@ -50244,7 +50244,7 @@
 /area/station/cargo/miningoffice)
 "sfO" = (
 /obj/structure/rack{
-	icon = 'icons/obj/stationobjs.dmi';
+	icon = 'icons/obj/fluff/general.dmi';
 	icon_state = "minibar";
 	name = "skeletal minibar"
 	},
@@ -60289,7 +60289,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
 "vHl" = (
-/mob/living/simple_animal/pet/penguin/baby{
+/mob/living/basic/pet/penguin/baby/permanent{
 	dir = 8
 	},
 /turf/open/floor/grass,

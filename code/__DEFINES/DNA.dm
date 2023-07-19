@@ -63,8 +63,9 @@
 #define DNA_TAJARAN_TAIL_BLOCK 21 // NON-MODULAR CHANGES: Tajarans
 #define DNA_AVIAN_TAIL_BLOCK 22 // NON-MODULAR CHANGES: Avians
 #define DNA_AVIAN_BEAK_BLOCK 23 // NON-MODULAR CHANGES: Avians
+#define DNA_TAJARAN_EARS_BLOCK 24 // NON-MODULAR CHANGES: Tajarans
 
-#define DNA_FEATURE_BLOCKS 23 // NON-MODULAR CHANGES: Ups feature blocks
+#define DNA_FEATURE_BLOCKS 24 // NON-MODULAR CHANGES: Ups feature blocks
 
 #define DNA_SEQUENCE_LENGTH 4
 #define DNA_MUTATION_BLOCKS 8
@@ -126,9 +127,11 @@
 #define CHROMOSOME_USED 2
 
 //used for mob's genetic gender (mainly just for pronouns, members of sexed species with plural gender refer to their physique for the actual sprites, which is not genetic)
+#define GENDERS 4
 #define G_MALE 1
 #define G_FEMALE 2
 #define G_PLURAL 3
+#define G_NEUTER 4
 
 /// Defines how a mob's organs_slot is ordered
 /// Exists so Life()'s organ process order is consistent

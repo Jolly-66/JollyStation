@@ -168,11 +168,13 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 	//ignores TRAIT_AGENDER so that a "real" gender can be stored in the DNA if later use is needed
 	switch(holder.gender)
 		if(MALE)
-			L[DNA_GENDER_BLOCK] = construct_block(G_MALE, 3)
+			L[DNA_GENDER_BLOCK] = construct_block(G_MALE, GENDERS)
 		if(FEMALE)
-			L[DNA_GENDER_BLOCK] = construct_block(G_FEMALE, 3)
+			L[DNA_GENDER_BLOCK] = construct_block(G_FEMALE, GENDERS)
+		if(NEUTER)
+			L[DNA_GENDER_BLOCK] = construct_block(G_NEUTER, GENDERS)
 		else
-			L[DNA_GENDER_BLOCK] = construct_block(G_PLURAL, 3)
+			L[DNA_GENDER_BLOCK] = construct_block(G_PLURAL, GENDERS)
 	if(ishuman(holder))
 		var/mob/living/carbon/human/H = holder
 		if(!GLOB.hairstyles_list.len)
@@ -228,6 +230,8 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 		L[DNA_HEAD_TENTACLES_BLOCK] = construct_block(GLOB.head_tentacles_list.Find(features["head_tentacles"]), GLOB.head_tentacles_list.len)
 	if(features["tajaran_tail"]) // NON-MODULAR CHANGES: Tajaran tail
 		L[DNA_TAJARAN_TAIL_BLOCK] = construct_block(GLOB.tajaran_tail_list.Find(features["tajaran_tail"]), GLOB.tajaran_tail_list.len)
+	if(features["tajaran_ears"]) // NON-MODULAR CHANGES: Tajaran tail
+		L[DNA_TAJARAN_EARS_BLOCK] = construct_block(GLOB.tajaran_ears_list.Find(features["tajaran_ears"]), GLOB.tajaran_ears_list.len)
 	if(features["tajaran_markings"]) // NON-MODULAR CHANGES: Tajaran markings
 		L[DNA_TAJARAN_MARKINGS_BLOCK] = construct_block(GLOB.tajaran_body_markings_list.Find(features["tajaran_markings"]), GLOB.tajaran_body_markings_list.len)
 	if(features["tajaran_snout"]) // NON-MODULAR CHANGES: Tajaran snout
@@ -324,11 +328,13 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 		if(DNA_GENDER_BLOCK)
 			switch(H.gender)
 				if(MALE)
-					set_uni_identity_block(blocknumber, construct_block(G_MALE, 3))
+					set_uni_identity_block(blocknumber, construct_block(G_MALE, GENDERS))
 				if(FEMALE)
-					set_uni_identity_block(blocknumber, construct_block(G_FEMALE, 3))
+					set_uni_identity_block(blocknumber, construct_block(G_FEMALE, GENDERS))
+				if(NEUTER)
+					set_uni_identity_block(blocknumber, construct_block(G_NEUTER, GENDERS))
 				else
-					set_uni_identity_block(blocknumber, construct_block(G_PLURAL, 3))
+					set_uni_identity_block(blocknumber, construct_block(G_PLURAL, GENDERS))
 		if(DNA_FACIAL_HAIRSTYLE_BLOCK)
 			set_uni_identity_block(blocknumber, construct_block(GLOB.facial_hairstyles_list.Find(H.facial_hairstyle), GLOB.facial_hairstyles_list.len))
 		if(DNA_HAIRSTYLE_BLOCK)
@@ -376,6 +382,8 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 			set_uni_feature_block(blocknumber, construct_block(GLOB.tajaran_body_markings_list.Find(features["tajaran_markings"]), GLOB.tajaran_body_markings_list.len))
 		if(DNA_TAJARAN_TAIL_BLOCK) // NON-MODULAR CHANGES: TAJARAN
 			set_uni_feature_block(blocknumber, construct_block(GLOB.tajaran_tail_list.Find(features["tajaran_tail"]), GLOB.tajaran_tail_list.len))
+		if(DNA_TAJARAN_EARS_BLOCK) // NON-MODULAR CHANGES: TAJARAN
+			set_uni_feature_block(blocknumber, construct_block(GLOB.tajaran_ears_list.Find(features["tajaran_ears"]), GLOB.tajaran_ears_list.len))
 		if(DNA_AVIAN_BEAK_BLOCK) // NON-MODULAR CHANGES: Avian
 			set_uni_feature_block(blocknumber, construct_block(GLOB.avian_beak_list.Find(features["avian_beak"]), GLOB.avian_beak_list.len))
 		if(DNA_AVIAN_TAIL_BLOCK) // NON-MODULAR CHANGES: Avian
@@ -593,11 +601,13 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 		gender = PLURAL
 		return
 
-	switch(deconstruct_block(get_uni_identity_block(dna.unique_identity, DNA_GENDER_BLOCK), 3))
+	switch(deconstruct_block(get_uni_identity_block(dna.unique_identity, DNA_GENDER_BLOCK), GENDERS))
 		if(G_MALE)
 			gender = MALE
 		if(G_FEMALE)
 			gender = FEMALE
+		if(G_NEUTER)
+			gender = NEUTER
 		else
 			gender = PLURAL
 
@@ -657,11 +667,13 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 	if(dna.features["head_tentacles"]) // NON-MODULAR CHANGES: Skrell
 		dna.features["head_tentacles"] = GLOB.head_tentacles_list[deconstruct_block(get_uni_feature_block(features, DNA_HEAD_TENTACLES_BLOCK), GLOB.head_tentacles_list.len)]
 	if(dna.features["tajaran_snout"]) // NON-MODULAR CHANGES: Tajaran
-		dna.features["tajaran_snout"] = GLOB.tajaran_snout_list[deconstruct_block(get_uni_feature_block(features, DNA_TAJARAN_TAIL_BLOCK), GLOB.tajaran_snout_list.len)]
+		dna.features["tajaran_snout"] = GLOB.tajaran_snout_list[deconstruct_block(get_uni_feature_block(features, DNA_TAJARAN_SNOUT_BLOCK), GLOB.tajaran_snout_list.len)]
 	if(dna.features["tajaran_markings"]) // NON-MODULAR CHANGES: Tajaran
 		dna.features["tajaran_markings"] = GLOB.tajaran_body_markings_list[deconstruct_block(get_uni_feature_block(features, DNA_TAJARAN_MARKINGS_BLOCK), GLOB.tajaran_body_markings_list.len)]
 	if(dna.features["tajaran_tail"]) // NON-MODULAR CHANGES: Tajaran
 		dna.features["tajaran_tail"] = GLOB.tajaran_tail_list[deconstruct_block(get_uni_feature_block(features, DNA_TAJARAN_TAIL_BLOCK), GLOB.tajaran_tail_list.len)]
+	if(dna.features["tajaran_ears"]) // NON-MODULAR CHANGES: Tajaran
+		dna.features["tajaran_ears"] = GLOB.tajaran_ears_list[deconstruct_block(get_uni_feature_block(features, DNA_TAJARAN_EARS_BLOCK), GLOB.tajaran_ears_list.len)]
 	if(dna.features["avian_beak"]) // NON-MODULAR CHANGES: Avian
 		dna.features["avian_beak"] = GLOB.avian_beak_list[deconstruct_block(get_uni_feature_block(features, DNA_AVIAN_BEAK_BLOCK), GLOB.avian_beak_list.len)]
 	if(dna.features["avian_tail"]) // NON-MODULAR CHANGES: Avian
