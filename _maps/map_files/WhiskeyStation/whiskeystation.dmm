@@ -76,8 +76,8 @@
 "bg" = (
 /obj/structure/table,
 /obj/item/storage/bag/plants/portaseeder{
-	pixel_y = 9;
-	pixel_x = 4
+	pixel_x = 4;
+	pixel_y = 9
 	},
 /obj/item/storage/bag/plants/portaseeder{
 	pixel_y = 5
@@ -288,8 +288,8 @@
 "dn" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/mechanical{
-	pixel_y = 9;
-	pixel_x = 7
+	pixel_x = 7;
+	pixel_y = 9
 	},
 /turf/open/floor/grass,
 /area/space)
@@ -539,21 +539,21 @@
 "gK" = (
 /obj/machinery/pdapainter/medbay,
 /obj/item/computer_disk/medical{
-	pixel_y = 8;
-	pixel_x = 4
+	pixel_x = 4;
+	pixel_y = 8
 	},
 /obj/item/computer_disk/medical{
-	pixel_y = 10;
-	pixel_x = 4
+	pixel_x = 4;
+	pixel_y = 10
 	},
 /obj/machinery/keycard_auth/directional/north{
 	pixel_x = -8
 	},
 /obj/machinery/button/door/directional/north{
-	pixel_x = 8;
+	id = "cmoprivacy";
 	name = "CMO Privacy Shutters";
-	req_access = list("cmo");
-	id = "cmoprivacy"
+	pixel_x = 8;
+	req_access = list("cmo")
 	},
 /turf/open/floor/wood/tile,
 /area/space)
@@ -576,8 +576,8 @@
 "gX" = (
 /obj/structure/table/glass,
 /obj/item/reagent_containers/cup/beaker{
-	pixel_y = 11;
-	pixel_x = 8
+	pixel_x = 8;
+	pixel_y = 11
 	},
 /obj/item/clothing/glasses/science,
 /obj/structure/reagent_dispensers/wall/virusfood/directional/west,
@@ -726,6 +726,14 @@
 	dir = 1
 	},
 /turf/open/floor/iron/dark/small,
+/area/space)
+"jb" = (
+/obj/structure/chair/pew/left{
+	dir = 4
+	},
+/turf/open/floor/iron/chapel{
+	dir = 8
+	},
 /area/space)
 "je" = (
 /obj/effect/turf_decal/siding/white{
@@ -901,13 +909,13 @@
 "kU" = (
 /obj/structure/table/wood/fancy/cyan,
 /obj/item/clipboard{
-	pixel_y = 8;
-	pixel_x = 7
+	pixel_x = 7;
+	pixel_y = 8
 	},
 /obj/item/folder/blue,
 /obj/item/stamp/head/cmo{
-	pixel_y = 9;
-	pixel_x = 7
+	pixel_x = 7;
+	pixel_y = 9
 	},
 /turf/open/floor/wood/tile,
 /area/space)
@@ -930,8 +938,8 @@
 "lg" = (
 /obj/structure/table,
 /obj/effect/spawner/random/food_or_drink/snack{
-	pixel_y = 7;
-	pixel_x = 8
+	pixel_x = 8;
+	pixel_y = 7
 	},
 /obj/effect/spawner/random/food_or_drink/snack,
 /obj/effect/turf_decal/tile/blue/opposingcorners,
@@ -940,8 +948,8 @@
 "lk" = (
 /obj/structure/table/wood/fancy/cyan,
 /obj/item/folder/white{
-	pixel_y = 7;
-	pixel_x = 7
+	pixel_x = 7;
+	pixel_y = 7
 	},
 /obj/item/folder/white{
 	pixel_y = 3
@@ -1088,16 +1096,16 @@
 "mV" = (
 /obj/structure/table,
 /obj/item/reagent_containers/cup/bottle/nutrient/ez{
-	pixel_y = 16;
-	pixel_x = 9
+	pixel_x = 9;
+	pixel_y = 16
 	},
 /obj/item/reagent_containers/cup/bottle/nutrient/rh{
-	pixel_y = 12;
-	pixel_x = 4
+	pixel_x = 4;
+	pixel_y = 12
 	},
 /obj/item/reagent_containers/spray/pestspray{
-	pixel_y = 6;
-	pixel_x = 9
+	pixel_x = 9;
+	pixel_y = 6
 	},
 /obj/item/reagent_containers/spray/plantbgone{
 	pixel_y = 6
@@ -1179,6 +1187,10 @@
 /obj/effect/turf_decal/bot_white,
 /obj/machinery/biogenerator,
 /turf/open/floor/iron/dark/textured_large,
+/area/space)
+"oj" = (
+/obj/structure/chair/pew/right,
+/turf/open/floor/iron/chapel,
 /area/space)
 "oq" = (
 /obj/structure/table/wood,
@@ -1283,8 +1295,8 @@
 /area/space)
 "pt" = (
 /obj/effect/spawner/random/food_or_drink/seed{
-	pixel_y = -7;
-	pixel_x = -7
+	pixel_x = -7;
+	pixel_y = -7
 	},
 /turf/open/floor/grass,
 /area/space)
@@ -1453,6 +1465,11 @@
 /obj/structure/chair/sofa/bench,
 /obj/effect/turf_decal/tile/blue/opposingcorners,
 /turf/open/floor/iron/white,
+/area/space)
+"rs" = (
+/turf/open/floor/iron/chapel{
+	dir = 1
+	},
 /area/space)
 "rv" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -1718,6 +1735,12 @@
 "uQ" = (
 /obj/structure/flora/bush/jungle/b/style_random,
 /turf/open/floor/grass,
+/area/space)
+"uR" = (
+/obj/structure/chair/pew/left,
+/turf/open/floor/iron/chapel{
+	dir = 8
+	},
 /area/space)
 "uS" = (
 /obj/structure/table/wood,
@@ -2062,6 +2085,14 @@
 	},
 /turf/open/floor/wood/large,
 /area/space)
+"Al" = (
+/obj/structure/chair/pew/left{
+	dir = 1
+	},
+/turf/open/floor/iron/chapel{
+	dir = 1
+	},
+/area/space)
 "An" = (
 /obj/structure/table,
 /obj/item/stack/medical/gauze{
@@ -2151,6 +2182,13 @@
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/iron/dark,
 /area/space)
+"Bj" = (
+/obj/structure/table,
+/obj/item/flashlight/lantern{
+	pixel_y = 7
+	},
+/turf/open/floor/stone,
+/area/space)
 "Bu" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
@@ -2163,6 +2201,9 @@
 	dir = 4
 	},
 /turf/open/floor/iron/white,
+/area/space)
+"BA" = (
+/turf/open/floor/carpet,
 /area/space)
 "BE" = (
 /obj/structure/railing{
@@ -2221,6 +2262,14 @@
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/north,
 /turf/open/floor/plating/airless,
+/area/space)
+"Cr" = (
+/obj/structure/chair/pew/right{
+	dir = 4
+	},
+/turf/open/floor/iron/chapel{
+	dir = 1
+	},
 /area/space)
 "Cx" = (
 /obj/effect/turf_decal/trimline/blue/filled/corner,
@@ -2293,6 +2342,9 @@
 	pixel_y = 4
 	},
 /turf/open/floor/iron/dark,
+/area/space)
+"CT" = (
+/turf/open/floor/iron/chapel,
 /area/space)
 "CW" = (
 /turf/open/space/basic,
@@ -2477,8 +2529,8 @@
 	pixel_y = 6
 	},
 /obj/effect/spawner/random/food_or_drink/condiment{
-	pixel_y = 6;
-	pixel_x = 5
+	pixel_x = 5;
+	pixel_y = 6
 	},
 /turf/open/floor/carpet/cyan,
 /area/space)
@@ -2736,8 +2788,8 @@
 /area/space)
 "IQ" = (
 /obj/effect/spawner/random/food_or_drink/seed{
-	pixel_y = 11;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 11
 	},
 /obj/structure/flora/bush/flowers_yw/style_random,
 /turf/open/floor/grass,
@@ -2749,15 +2801,15 @@
 /obj/structure/railing,
 /obj/structure/rack,
 /obj/item/plant_analyzer{
-	pixel_y = 8;
-	pixel_x = 6
+	pixel_x = 6;
+	pixel_y = 8
 	},
 /obj/item/plant_analyzer{
 	pixel_y = 5
 	},
 /obj/item/hatchet{
-	pixel_y = 3;
-	pixel_x = 5
+	pixel_x = 5;
+	pixel_y = 3
 	},
 /obj/item/hatchet,
 /obj/item/cultivator{
@@ -2847,12 +2899,12 @@
 "Kt" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/random/food_or_drink/refreshing_beverage{
-	pixel_y = 12;
-	pixel_x = 9
+	pixel_x = 9;
+	pixel_y = 12
 	},
 /obj/effect/spawner/random/food_or_drink/refreshing_beverage{
-	pixel_y = 3;
-	pixel_x = 4
+	pixel_x = 4;
+	pixel_y = 3
 	},
 /turf/open/floor/carpet/cyan,
 /area/space)
@@ -3135,6 +3187,18 @@
 	},
 /turf/open/floor/carpet/cyan,
 /area/space)
+"Np" = (
+/obj/structure/altar_of_gods,
+/turf/open/floor/stone,
+/area/space)
+"Nq" = (
+/obj/structure/chair/pew/right{
+	dir = 1
+	},
+/turf/open/floor/iron/chapel{
+	dir = 4
+	},
+/area/space)
 "Nr" = (
 /obj/effect/turf_decal/trimline/blue/corner{
 	dir = 8
@@ -3279,6 +3343,11 @@
 /area/space)
 "OY" = (
 /turf/open/floor/iron/white/small,
+/area/space)
+"OZ" = (
+/turf/open/floor/iron/chapel{
+	dir = 8
+	},
 /area/space)
 "Pc" = (
 /obj/effect/turf_decal/siding/white{
@@ -3622,6 +3691,10 @@
 	},
 /turf/open/floor/wood/tile,
 /area/space)
+"TA" = (
+/obj/structure/table,
+/turf/open/floor/stone,
+/area/space)
 "TB" = (
 /obj/machinery/stasis{
 	dir = 4
@@ -3723,8 +3796,8 @@
 /area/space)
 "Ux" = (
 /obj/effect/spawner/random/food_or_drink/seed{
-	pixel_y = -3;
-	pixel_x = -9
+	pixel_x = -9;
+	pixel_y = -3
 	},
 /obj/structure/flora/bush/flowers_yw/style_random,
 /turf/open/floor/grass,
@@ -3738,6 +3811,11 @@
 	dir = 9
 	},
 /turf/open/floor/plating,
+/area/space)
+"UE" = (
+/turf/open/floor/iron/chapel{
+	dir = 4
+	},
 /area/space)
 "UG" = (
 /obj/machinery/medical_kiosk,
@@ -3979,8 +4057,8 @@
 /area/space)
 "Xt" = (
 /obj/effect/spawner/random/food_or_drink/seed{
-	pixel_y = 10;
-	pixel_x = 6
+	pixel_x = 6;
+	pixel_y = 10
 	},
 /turf/open/floor/grass,
 /area/space)
@@ -109999,13 +110077,13 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+YF
+YF
+BA
+YF
+YF
+YF
 VN
 VN
 VN
@@ -110255,15 +110333,15 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+YF
+Cr
+jb
+BA
+Cr
+jb
+YF
+YF
 VN
 VN
 VN
@@ -110512,15 +110590,15 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+uR
+UE
+CT
+BA
+UE
+CT
+Al
+YF
 VN
 VN
 VN
@@ -110769,15 +110847,15 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+oj
+rs
+TA
+Np
+TA
+OZ
+Nq
+YF
 VN
 VN
 VN
@@ -111026,15 +111104,15 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+BA
+BA
+BA
+TA
+Ru
+TA
+BA
+BA
+BA
 VN
 VN
 VN
@@ -111283,15 +111361,15 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+OZ
+UE
+Bj
+Ru
+Bj
+CT
+rs
+YF
 VN
 VN
 VN
@@ -111540,15 +111618,15 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+YF
+to
+YF
+to
+YF
+YF
+YF
+YF
 VN
 VN
 VN
@@ -111798,13 +111876,13 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+to
+to
+to
+to
+to
+YF
 VN
 VN
 VN
@@ -112055,13 +112133,13 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+to
+to
+to
+to
+to
+YF
 VN
 VN
 VN
@@ -112311,14 +112389,14 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+YF
+to
+to
+to
+to
+to
+YF
 VN
 VN
 VN
@@ -112569,13 +112647,13 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+YF
+YF
+YF
+YF
+YF
+YF
 VN
 VN
 VN
