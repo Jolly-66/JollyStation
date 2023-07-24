@@ -110,10 +110,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/space)
-"bN" = (
-/obj/structure/flora/bush/large/style_random,
-/turf/open/floor/iron,
-/area/space)
 "bU" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -1456,10 +1452,6 @@
 	dir = 9
 	},
 /turf/open/floor/plating,
-/area/space)
-"ro" = (
-/obj/structure/holosign/barrier/engineering,
-/turf/open/floor/grass,
 /area/space)
 "rq" = (
 /obj/structure/chair/sofa/bench,
@@ -3469,10 +3461,6 @@
 "Qr" = (
 /obj/machinery/atmospherics/components/unary/cryo_cell,
 /turf/open/floor/iron/dark,
-/area/space)
-"Qv" = (
-/obj/structure/holosign/barrier/engineering,
-/turf/open/misc/dirt,
 /area/space)
 "QD" = (
 /obj/effect/turf_decal/siding/white{
@@ -43011,7 +42999,7 @@ YF
 uJ
 uJ
 YF
-bN
+ZF
 ZF
 ZF
 YF
@@ -105716,7 +105704,7 @@ Ot
 vJ
 pp
 ZQ
-ro
+VK
 hq
 BS
 NN
@@ -105972,7 +105960,7 @@ xu
 xu
 xu
 KK
-ro
+VK
 eg
 RS
 dn
@@ -106486,7 +106474,7 @@ rT
 il
 Ot
 NF
-Qv
+Ot
 pp
 OM
 CE
@@ -107002,8 +106990,8 @@ Hx
 YF
 YF
 YF
-YF
-YF
+Ru
+Ru
 YF
 VN
 VN
@@ -107258,10 +107246,10 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
+Hx
+Ru
+Ru
+YF
 VN
 YF
 YF
@@ -107515,10 +107503,10 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
+Hx
+Ru
+Ru
+YF
 VN
 YF
 VN
@@ -107772,10 +107760,10 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
+Hx
+Ru
+Ru
+YF
 VN
 YF
 VN
@@ -108025,14 +108013,14 @@ VN
 VN
 VN
 VN
-YF
-YF
-YF
-YF
-YF
-YF
 VN
 VN
+VN
+VN
+YF
+Ru
+Ru
+YF
 VN
 VN
 VN
@@ -108285,11 +108273,11 @@ VN
 VN
 VN
 VN
-YF
 VN
 YF
-VN
-VN
+Ru
+Ru
+YF
 VN
 VN
 VN
@@ -108542,11 +108530,11 @@ VN
 VN
 VN
 VN
-YF
-YF
-YF
 VN
-VN
+YF
+Ru
+Ru
+YF
 VN
 VN
 VN
