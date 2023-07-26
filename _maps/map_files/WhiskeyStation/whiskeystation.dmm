@@ -24,9 +24,8 @@
 /area/space)
 "az" = (
 /obj/structure/railing{
-	dir = 1
+	dir = 4
 	},
-/obj/structure/flora/bush/grassy/style_random,
 /turf/open/misc/dirt,
 /area/space)
 "aA" = (
@@ -146,8 +145,8 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/space)
 "cl" = (
-/obj/structure/railing{
-	dir = 8
+/mob/living/basic/chicken{
+	name = "Cutlets"
 	},
 /obj/structure/flora/bush/grassy/style_random,
 /turf/open/misc/dirt,
@@ -215,12 +214,10 @@
 /turf/open/floor/iron/dark,
 /area/space)
 "cE" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/holosign/barrier/engineering,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
+/obj/structure/chair/sofa/bench/left{
+	dir = 8
 	},
-/turf/open/floor/grass,
+/turf/open/misc/dirt,
 /area/space)
 "cH" = (
 /obj/effect/turf_decal/siding/white,
@@ -288,29 +285,33 @@
 /turf/open/floor/iron/white,
 /area/space)
 "dk" = (
-/obj/structure/table,
+/obj/structure/flora/bush/fullgrass/style_random,
 /obj/effect/turf_decal/weather/dirt{
-	dir = 6
+	dir = 1
 	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
-	},
-/turf/open/floor/plating,
+/turf/open/floor/grass,
 /area/space)
 "dm" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
+/obj/machinery/holopad,
+/obj/effect/turf_decal/box/white{
+	color = "#51E742"
 	},
-/obj/item/stack/cable_coil/five,
-/turf/open/floor/plating,
+/turf/open/floor/iron/white/smooth_large,
 /area/space)
 "dn" = (
 /obj/structure/table,
-/obj/item/storage/toolbox/mechanical{
-	pixel_x = 7;
-	pixel_y = 9
+/obj/item/food/grown/wheat{
+	pixel_y = 8;
+	pixel_x = 9
 	},
-/turf/open/floor/grass,
+/obj/item/food/grown/wheat{
+	pixel_y = 10;
+	pixel_x = -9
+	},
+/obj/item/food/grown/wheat{
+	pixel_y = 6
+	},
+/turf/open/misc/dirt,
 /area/space)
 "du" = (
 /obj/structure/cable/layer1,
@@ -373,11 +374,11 @@
 /turf/open/floor/plating,
 /area/space)
 "eg" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
+/obj/effect/spawner/random/food_or_drink/seed{
+	pixel_x = 3;
+	pixel_y = 11
 	},
-/obj/effect/turf_decal/weather/dirt,
-/turf/open/floor/plating,
+/turf/open/floor/grass,
 /area/space)
 "eh" = (
 /obj/structure/railing/corner,
@@ -632,7 +633,10 @@
 /area/space)
 "hA" = (
 /mob/living/basic/chicken{
-	name = "Cutlets"
+	name = "Leg Quarters"
+	},
+/obj/structure/railing{
+	dir = 8
 	},
 /turf/open/misc/dirt,
 /area/space)
@@ -986,9 +990,6 @@
 /area/space)
 "le" = (
 /obj/effect/turf_decal/weather/dirt{
-	dir = 9
-	},
-/obj/structure/railing/corner{
 	dir = 1
 	},
 /obj/structure/flora/bush/flowers_yw/style_random,
@@ -1229,6 +1230,13 @@
 	},
 /turf/open/floor/iron/white,
 /area/space)
+"nw" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/structure/flora/bush/flowers_br/style_random,
+/turf/open/floor/grass,
+/area/space)
 "nx" = (
 /obj/effect/turf_decal/siding/white/corner{
 	dir = 4
@@ -1314,13 +1322,10 @@
 /turf/open/floor/iron/white,
 /area/space)
 "oJ" = (
-/obj/effect/spawner/random/food_or_drink/seed{
-	pixel_x = -9;
-	pixel_y = -3
-	},
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
+/obj/machinery/hydroponics/constructable,
 /turf/open/floor/grass,
 /area/space)
 "oO" = (
@@ -1578,13 +1583,10 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/space)
 "ri" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
+/obj/structure/railing/corner{
+	dir = 4
 	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
-	},
-/turf/open/floor/plating,
+/turf/open/misc/dirt,
 /area/space)
 "rq" = (
 /obj/structure/chair/sofa/bench,
@@ -1609,10 +1611,12 @@
 /turf/open/floor/iron/grimy,
 /area/space)
 "rT" = (
-/mob/living/basic/chicken{
-	name = "Leg Quarters"
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
 	},
-/turf/open/misc/dirt,
+/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/flowers_pp/style_random,
+/turf/open/floor/grass,
 /area/space)
 "rW" = (
 /obj/structure/chair/comfy/black{
@@ -2008,6 +2012,12 @@
 	pixel_y = 5
 	},
 /turf/open/floor/iron/dark,
+/area/space)
+"wF" = (
+/obj/structure/chair/sofa/bench/right{
+	dir = 8
+	},
+/turf/open/misc/dirt,
 /area/space)
 "wN" = (
 /obj/effect/turf_decal/siding/wood{
@@ -2444,14 +2454,11 @@
 	},
 /area/space)
 "BS" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
+/obj/machinery/holopad,
+/obj/effect/turf_decal/box/white{
+	color = "#27911C"
 	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
-	},
-/obj/structure/holosign/barrier/engineering,
-/turf/open/floor/plating,
+/turf/open/floor/iron/large,
 /area/space)
 "BW" = (
 /obj/machinery/disposal/bin,
@@ -2499,9 +2506,11 @@
 /turf/open/misc/asteroid,
 /area/space)
 "CE" = (
-/obj/structure/table_frame,
-/obj/item/wrench,
-/turf/open/floor/grass,
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/flora/bush/fullgrass/style_random,
+/turf/open/misc/dirt,
 /area/space)
 "CF" = (
 /obj/effect/turf_decal/bot_white,
@@ -2853,7 +2862,6 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
-/obj/structure/flora/bush/large/style_random,
 /turf/open/floor/grass,
 /area/space)
 "Gc" = (
@@ -3022,11 +3030,8 @@
 /turf/open/floor/iron/white,
 /area/space)
 "IQ" = (
-/obj/effect/spawner/random/food_or_drink/seed{
-	pixel_x = 3;
-	pixel_y = 11
-	},
 /obj/structure/flora/bush/flowers_yw/style_random,
+/obj/machinery/hydroponics/constructable,
 /turf/open/floor/grass,
 /area/space)
 "IS" = (
@@ -3134,6 +3139,15 @@
 	},
 /obj/structure/railing{
 	dir = 8
+	},
+/obj/structure/table,
+/obj/item/storage/basket{
+	pixel_y = 19;
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/condiment/milk{
+	pixel_y = 5;
+	pixel_x = -8
 	},
 /turf/open/misc/dirt,
 /area/space)
@@ -3507,13 +3521,8 @@
 /turf/open/floor/iron/grimy,
 /area/space)
 "NV" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
-	},
-/obj/effect/turf_decal/weather/dirt{
-	dir = 4
-	},
-/turf/open/floor/plating,
+/obj/structure/flora/bush/large/style_random,
+/turf/open/floor/grass,
 /area/space)
 "NW" = (
 /obj/machinery/door/airlock/medical{
@@ -3584,13 +3593,10 @@
 /turf/open/floor/iron/dark,
 /area/space)
 "OM" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 6
-	},
-/obj/effect/turf_decal/weather/dirt{
+/obj/structure/railing/corner{
 	dir = 1
 	},
-/turf/open/floor/plating,
+/turf/open/misc/dirt,
 /area/space)
 "OR" = (
 /obj/structure/railing{
@@ -4394,11 +4400,10 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/space)
 "Xt" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
+/obj/structure/chair/sofa/bench{
+	dir = 8
 	},
-/obj/structure/flora/bush/flowers_yw/style_random,
-/turf/open/floor/grass,
+/turf/open/misc/dirt,
 /area/space)
 "Xu" = (
 /obj/machinery/computer/operating{
@@ -4698,9 +4703,9 @@
 /turf/open/misc/dirt,
 /area/space)
 "ZS" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 1
+/obj/effect/spawner/random/food_or_drink/seed{
+	pixel_x = -9;
+	pixel_y = -3
 	},
 /turf/open/floor/grass,
 /area/space)
@@ -28748,7 +28753,7 @@ OV
 bU
 kH
 gC
-gC
+dm
 gC
 bU
 CW
@@ -102740,13 +102745,13 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+Hx
+YF
+Hx
+Hx
+Hx
+YF
+Hx
 VN
 VN
 VN
@@ -102996,15 +103001,15 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+Hx
+Hx
+vJ
+Ot
+Ot
+Ot
+Ot
+Hx
+Hx
 VN
 VN
 YF
@@ -103252,17 +103257,17 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+Hx
+Hx
+dn
+Ot
+wF
+Xt
+cE
+Ot
+vJ
+Hx
+Hx
 VN
 YF
 db
@@ -103509,18 +103514,18 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+Hx
+CE
+az
+CE
+ri
+Ot
+Ot
+Ot
+Ot
+pp
+Hx
+Hx
 YF
 db
 db
@@ -103766,18 +103771,18 @@ VN
 VN
 VN
 VN
-VN
-VN
-YF
 Hx
-Hx
-Hx
-Hx
-Hx
-YF
-YF
-YF
-YF
+mb
+ju
+Ot
+il
+Ot
+Ot
+Ot
+rT
+VK
+sk
+VK
 YF
 db
 db
@@ -104023,18 +104028,18 @@ VN
 VN
 VN
 VN
-VN
-VN
 Hx
-mb
-rT
-il
-vJ
-il
-vJ
 Ot
-ZS
-ri
+mb
+Ot
+il
+Ot
+Ot
+Ot
+dk
+VK
+hq
+VK
 YF
 db
 db
@@ -104280,18 +104285,18 @@ VN
 VN
 VN
 VN
-VN
-VN
 Hx
+ZQ
+ZQ
 hA
-Ot
-az
-ju
 il
 Ot
-eg
+vJ
+zz
+VK
+VK
 RS
-dn
+hq
 YF
 db
 db
@@ -104537,18 +104542,18 @@ VN
 VN
 VN
 VN
-VN
-VN
 Hx
+cl
 Ot
-mb
+vJ
 il
 Ot
-il
-Xt
+Ot
+pp
+RS
 NV
-dm
-dk
+VK
+sk
 YF
 db
 db
@@ -104798,14 +104803,14 @@ YF
 YF
 YF
 Kk
-ZQ
-ZQ
-cl
+OM
+vJ
+Ot
 le
 hq
 VK
-OM
-CE
+VK
+VK
 YF
 YF
 YF
@@ -105056,13 +105061,13 @@ ZF
 jA
 ow
 Ot
-vJ
+Ot
 Ot
 FT
-xB
-cE
+nw
+Wy
 xg
-BS
+xB
 NN
 Yt
 ZF
@@ -106346,7 +106351,7 @@ Ot
 zz
 GU
 hq
-VK
+ZS
 RS
 YF
 YF
@@ -106861,7 +106866,7 @@ sk
 hq
 VK
 Of
-VK
+eg
 YF
 VN
 VN
@@ -107619,10 +107624,10 @@ VN
 VN
 VN
 YF
-YF
-YF
-YF
-YF
+Hx
+Hx
+Hx
+Hx
 YF
 Sb
 ZF
@@ -107875,7 +107880,7 @@ VN
 VN
 VN
 VN
-YF
+Hx
 xS
 Fu
 Of
@@ -108132,7 +108137,7 @@ Xo
 Xo
 Xo
 VN
-YF
+Hx
 aA
 hq
 dI
@@ -108389,7 +108394,7 @@ VN
 VN
 VN
 VN
-YF
+Hx
 VK
 Fu
 RS
@@ -108400,7 +108405,7 @@ Qi
 jP
 jP
 KK
-ZF
+BS
 Hx
 Ru
 Ru
@@ -108646,7 +108651,7 @@ VN
 VN
 VN
 VN
-YF
+Hx
 sk
 hq
 NF
