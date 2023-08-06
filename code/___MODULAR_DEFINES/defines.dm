@@ -83,3 +83,9 @@
 #define ALERT_MIN_PAIN "minimum_pain"
 #define ALERT_MOD_PAIN "moderate_pain"
 #define ALERT_MAX_PAIN "maximum_pain"
+
+// Plantary mining stuff
+#define ZTRAITS_JUNGLE_PLANET list(\
+	ZTRAIT_MINING = TRUE, \
+	ZTRAIT_NOPARALLAX = TRUE, \
+	ZTRAIT_BASETURF = /turf/open/misc/dirt/jungle_planet)
