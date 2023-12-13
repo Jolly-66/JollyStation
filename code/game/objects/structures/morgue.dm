@@ -106,7 +106,7 @@ GLOBAL_LIST_EMPTY(bodycontainers) //Let them act as spawnpoints for revenants an
 	return attack_hand(user)
 
 /obj/structure/bodycontainer/deconstruct(disassembled = TRUE)
-	if (!(flags_1 & NODECONSTRUCT_1))
+	if (!(obj_flags & NO_DECONSTRUCTION))
 		new /obj/item/stack/sheet/iron(loc, 5)
 	toggle_organ_decay(src)
 	qdel(src)
@@ -355,9 +355,12 @@ GLOBAL_LIST_EMPTY(crematoriums)
 	desc = "A human incinerator. Works well during ice cream socials."
 
 /obj/structure/bodycontainer/crematorium/creamatorium/cremate(mob/user)
-	var/list/icecreams = new()
+	var/list/icecreams = list()
 	for(var/mob/living/i_scream as anything in get_all_contents_type(/mob/living))
-		var/obj/item/food/icecream/IC = new(null, list(ICE_CREAM_MOB = list(null, i_scream.name)))
+		var/obj/item/food/icecream/IC = new /obj/item/food/icecream(
+			loc = null,
+			prefill_flavours = list(ICE_CREAM_MOB = list(null, i_scream.name))
+		)
 		icecreams += IC
 	. = ..()
 	for(var/obj/IC in icecreams)

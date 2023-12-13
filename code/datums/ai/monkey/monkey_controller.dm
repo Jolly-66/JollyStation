@@ -30,9 +30,10 @@ have ways of interacting with a specific mob and control it.
 	idle_behavior = /datum/idle_behavior/idle_monkey
 
 /datum/ai_controller/monkey/New(atom/new_pawn)
-	AddElement(/datum/element/ai_control_examine, list(
+	var/static/list/control_examine = list(
 		ORGAN_SLOT_EYES = span_monkey("eyes have a primal look in them."),
-	))
+	)
+	AddElement(/datum/element/ai_control_examine, control_examine)
 	return ..()
 
 /datum/ai_controller/monkey/pun_pun
@@ -52,7 +53,9 @@ have ways of interacting with a specific mob and control it.
 	. = ..()
 	if(. & AI_CONTROLLER_INCOMPATIBLE)
 		return
+	pawn = new_pawn
 	set_blackboard_key(BB_MONKEY_AGGRESSIVE, TRUE) //Angry cunt
+	set_trip_mode(mode = FALSE)
 
 /datum/ai_controller/monkey/TryPossessPawn(atom/new_pawn)
 	if(!isliving(new_pawn))
@@ -94,6 +97,8 @@ have ways of interacting with a specific mob and control it.
 
 /datum/ai_controller/monkey/proc/set_trip_mode(mode = TRUE)
 	var/mob/living/carbon/regressed_monkey = pawn
+	if(QDELETED(regressed_monkey))
+		return
 	var/brain = regressed_monkey.get_organ_slot(ORGAN_SLOT_BRAIN)
 	if(istype(brain, /obj/item/organ/internal/brain/primate)) // In case we are a monkey AI in a human brain by who was previously controlled by a client but it now not by some marvel
 		var/obj/item/organ/internal/brain/primate/monkeybrain = brain

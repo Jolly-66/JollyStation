@@ -88,6 +88,8 @@
 	RegisterSignal(source, COMSIG_ATOM_ABSTRACT_EXITED, PROC_REF(on_atom_exited))
 	attached_turfs_and_movables += source
 	for(var/atom/movable/movable as anything in source)
+		if(!(movable.flags_1 & INITIALIZED_1))
+			continue
 		on_init_or_entered(source, movable)
 
 ///Stops the element from affecting on the turf and its contents. Called on Detach() or when TRAIT_IMMERSE_STOPPED is added.
@@ -137,9 +139,9 @@
  * without otherwise affecting other movables with identical overlays.
  */
 /datum/element/immerse/proc/add_immerse_overlay(atom/movable/movable)
-	var/icon/movable_icon = icon(movable.icon)
-	var/width = movable_icon.Width() || world.icon_size
-	var/height = movable_icon.Height() || world.icon_size
+	var/list/icon_dimensions = get_icon_dimensions(movable.icon)
+	var/width = icon_dimensions["width"] || world.icon_size
+	var/height = icon_dimensions["height"] || world.icon_size
 
 	var/is_below_water = movable.layer < WATER_LEVEL_LAYER ? "underwater-" : ""
 
@@ -206,6 +208,7 @@
 	vis_overlay.overlay_appearance = overlay_appearance
 
 	generated_visual_overlays["[is_below_water][width]x[height]"] = vis_overlay
+	return vis_overlay
 
 ///This proc removes the vis_overlay, the keep together trait and some signals from the movable.
 /datum/element/immerse/proc/remove_immerse_overlay(atom/movable/movable)
@@ -226,7 +229,7 @@
  */
 /datum/element/immerse/proc/try_immerse(atom/movable/movable, atom/movable/buckled)
 	var/atom/movable/to_check = buckled || movable
-	if(!(to_check.movement_type & (FLYING|FLOATING)) && !movable.throwing)
+	if(!(to_check.movement_type & MOVETYPES_NOT_TOUCHING_GROUND) && !movable.throwing)
 		add_immerse_overlay(movable)
 	if(!buckled)
 		RegisterSignal(movable, COMSIG_MOVETYPE_FLAG_ENABLED, PROC_REF(on_move_flag_enabled))
@@ -240,7 +243,7 @@
  */
 /datum/element/immerse/proc/try_unimmerse(atom/movable/movable, atom/movable/buckled)
 	var/atom/movable/to_check = buckled || movable
-	if(!(to_check.movement_type & (FLYING|FLOATING)) && !movable.throwing)
+	if(!(to_check.movement_type & MOVETYPES_NOT_TOUCHING_GROUND) && !movable.throwing)
 		remove_immerse_overlay(movable)
 	if(!buckled)
 		UnregisterSignal(movable, list(COMSIG_MOVETYPE_FLAG_ENABLED, COMSIG_MOVETYPE_FLAG_DISABLED, COMSIG_MOVABLE_POST_THROW, COMSIG_MOVABLE_THROW_LANDED))
@@ -253,7 +256,7 @@
 ///Removes the overlay from mob and bucklees is flying.
 /datum/element/immerse/proc/on_move_flag_enabled(atom/movable/source, flag, old_movement_type)
 	SIGNAL_HANDLER
-	if(!(flag & (FLYING|FLOATING)) || old_movement_type & (FLYING|FLOATING) || source.throwing)
+	if(!(flag & MOVETYPES_NOT_TOUCHING_GROUND) || (old_movement_type & MOVETYPES_NOT_TOUCHING_GROUND) || source.throwing)
 		return
 	remove_immerse_overlay(source)
 	for(var/mob/living/buckled_mob as anything in source.buckled_mobs)
@@ -262,7 +265,7 @@
 ///Works just like on_move_flag_enabled, except it only has to check that movable isn't flying
 /datum/element/immerse/proc/on_throw(atom/movable/source)
 	SIGNAL_HANDLER
-	if(source.movement_type & (FLYING|FLOATING))
+	if(source.movement_type & MOVETYPES_NOT_TOUCHING_GROUND)
 		return
 	remove_immerse_overlay(source)
 	for(var/mob/living/buckled_mob as anything in source.buckled_mobs)
@@ -271,7 +274,7 @@
 ///Readds the overlay to the mob and bucklees if no longer flying.
 /datum/element/immerse/proc/on_move_flag_disabled(atom/movable/source, flag, old_movement_type)
 	SIGNAL_HANDLER
-	if(!(flag & (FLYING|FLOATING)) || source.movement_type & (FLYING|FLOATING) || source.throwing)
+	if(!(flag & MOVETYPES_NOT_TOUCHING_GROUND) || (source.movement_type & MOVETYPES_NOT_TOUCHING_GROUND) || source.throwing)
 		return
 	add_immerse_overlay(source)
 	for(var/mob/living/buckled_mob as anything in source.buckled_mobs)
@@ -280,7 +283,7 @@
 ///Works just like on_move_flag_disabled, except it only has to check that movable isn't flying
 /datum/element/immerse/proc/on_throw_landed(atom/movable/source)
 	SIGNAL_HANDLER
-	if(source.movement_type & (FLYING|FLOATING))
+	if(source.movement_type & MOVETYPES_NOT_TOUCHING_GROUND)
 		return
 	add_immerse_overlay(source)
 	for(var/mob/living/buckled_mob as anything in source.buckled_mobs)

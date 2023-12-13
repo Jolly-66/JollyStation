@@ -105,7 +105,7 @@ There are several things that need to be remembered:
 		if((bodytype & BODYTYPE_MONKEY) && (uniform.supports_variations_flags & CLOTHING_MONKEY_VARIATION))
 			icon_file = MONKEY_UNIFORM_FILE
 		else if((bodytype & BODYTYPE_DIGITIGRADE) && (uniform.supports_variations_flags & CLOTHING_DIGITIGRADE_VARIATION))
-			icon_file = uniform.worn_icon_digitigrade || 'talestation_modules/icons/clothing/digi/worn/under/under.dmi' //NON-MODULAR CHANGES - Enables digi uniform
+			icon_file = uniform.worn_icon_digitigrade // NON-MODULAR CHANGES: Enables rendering of digi clothing on dummies, some how
 		//Female sprites have lower priority than digitigrade sprites
 		else if(dna.species.sexes && (bodytype & BODYTYPE_HUMANOID) && physique == FEMALE && !(uniform.female_sprite_flags & NO_FEMALE_UNIFORM)) //Agggggggghhhhh
 			woman = TRUE
@@ -292,17 +292,7 @@ There are several things that need to be remembered:
 		if(check_obscured_slots(transparent_protection = TRUE) & ITEM_SLOT_FEET)
 			return
 
-		var/icon_file
-		// NON-MODULAR CHANGES - MSO deleted this upstream, but we rely on the handeling down here
-		// I'm not a coder and if this is shit code make it better/modular
-		if((bodytype & BODYTYPE_DIGITIGRADE) && (worn_item.supports_variations_flags & CLOTHING_DIGITIGRADE_VARIATION))
-			var/obj/item/bodypart/leg = src.get_bodypart(BODY_ZONE_L_LEG)
-			if(leg.limb_id == "digitigrade")//Snowflakey and bad. But it makes it look consistent.
-				icon_file = 'talestation_modules/icons/clothing/digi/worn/shoes/shoes.dmi'
-
-		if(!icon_exists(icon_file, RESOLVE_ICON_STATE(worn_item)))
-		// NON-MODULAR CHANGES END
-			icon_file = DEFAULT_SHOES_FILE
+		var/icon_file = DEFAULT_SHOES_FILE
 
 		var/mutable_appearance/shoes_overlay = shoes.build_worn_icon(default_layer = SHOES_LAYER, default_icon_file = icon_file)
 		if(!shoes_overlay)
@@ -401,16 +391,7 @@ There are several things that need to be remembered:
 	if(wear_suit)
 		var/obj/item/worn_item = wear_suit
 		update_hud_wear_suit(worn_item)
-		var/icon_file
-
-		// NON-MODULAR CHANGES - MSO deleted this, ditto from previous comments
-		if(bodytype & BODYTYPE_DIGITIGRADE)
-			if(worn_item.supports_variations_flags & CLOTHING_DIGITIGRADE_VARIATION)
-				icon_file = wear_suit.worn_icon_digitigrade || 'talestation_modules/icons/clothing/digi/worn/suit/suit.dmi'
-
-		if(!icon_exists(icon_file, RESOLVE_ICON_STATE(worn_item)))
-			icon_file = DEFAULT_SUIT_FILE
-		// NON-MODULAR CHANGES END
+		var/icon_file = DEFAULT_SUIT_FILE
 
 		var/mutable_appearance/suit_overlay = wear_suit.build_worn_icon(default_layer = SUIT_LAYER, default_icon_file = icon_file)
 		var/obj/item/bodypart/chest/my_chest = get_bodypart(BODY_ZONE_CHEST)
@@ -500,12 +481,7 @@ There are several things that need to be remembered:
 		apply_overlay(LEGCUFF_LAYER)
 		throw_alert("legcuffed", /atom/movable/screen/alert/restrained/legcuffed, new_master = src.legcuffed)
 
-/mob/living/carbon/human/update_held_items()
-	remove_overlay(HANDS_LAYER)
-	if (handcuffed)
-		drop_all_held_items()
-		return
-
+/mob/living/carbon/human/get_held_overlays()
 	var/list/hands = list()
 	for(var/obj/item/worn_item in held_items)
 		var/held_index = get_held_index_of_item(worn_item)
@@ -534,8 +510,7 @@ There are several things that need to be remembered:
 		held_in_hand?.held_hand_offset?.apply_offset(hand_overlay)
 
 		hands += hand_overlay
-	overlays_standing[HANDS_LAYER] = hands
-	apply_overlay(HANDS_LAYER)
+	return hands
 
 /proc/wear_female_version(t_color, icon, layer, type, greyscale_colors)
 	var/index = "[t_color]-[greyscale_colors]"
@@ -669,6 +644,7 @@ generate/load female uniform sprites matching all previously decided variables
 	female_uniform = NO_FEMALE_UNIFORM,
 	override_state = null,
 	override_file = null,
+	use_height_offset = TRUE,
 )
 
 	//Find a valid icon_state from variables+arguments
@@ -697,7 +673,7 @@ generate/load female uniform sprites matching all previously decided variables
 	//eg: ammo counters, primed grenade flashes, etc.
 	var/list/worn_overlays = worn_overlays(standing, isinhands, file2use)
 	if(worn_overlays?.len)
-		if(!isinhands && default_layer && ishuman(loc))
+		if(!isinhands && default_layer && ishuman(loc) && use_height_offset)
 			var/mob/living/carbon/human/human_loc = loc
 			if(human_loc.get_mob_height() != HUMAN_HEIGHT_MEDIUM)
 				var/string_form_layer = num2text(default_layer)

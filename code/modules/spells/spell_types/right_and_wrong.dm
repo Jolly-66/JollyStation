@@ -42,7 +42,6 @@ GLOBAL_LIST_INIT(summoned_guns, list(
 	/obj/item/gun/energy/e_gun/dragnet,
 	/obj/item/gun/energy/e_gun/turret,
 	/obj/item/gun/energy/pulse/carbine,
-	/obj/item/gun/energy/decloner,
 	/obj/item/gun/energy/mindflayer,
 	/obj/item/gun/energy/recharge/kinetic_accelerator,
 	/obj/item/gun/energy/plasmacutter/adv,
@@ -195,7 +194,7 @@ GLOBAL_LIST_INIT(summoned_magic_objectives, list(
 	if(GLOB.summon_magic)
 		GLOB.summon_magic.survivor_probability = survivor_probability
 	else
-		GLOB.summon_magic = new /datum/summon_things_controller(survivor_probability, GLOBAL_PROC_REF(give_magic))
+		GLOB.summon_magic = new /datum/summon_things_controller/item(survivor_probability, GLOBAL_PROC_REF(give_magic))
 	GLOB.summon_magic.equip_all_affected()
 
 /**
@@ -215,7 +214,7 @@ GLOBAL_LIST_INIT(summoned_magic_objectives, list(
 	if(GLOB.summon_guns)
 		GLOB.summon_guns.survivor_probability = survivor_probability
 	else
-		GLOB.summon_guns = new /datum/summon_things_controller(survivor_probability, GLOBAL_PROC_REF(give_guns))
+		GLOB.summon_guns = new /datum/summon_things_controller/item(survivor_probability, GLOBAL_PROC_REF(give_guns))
 	GLOB.summon_guns.equip_all_affected()
 
 /**

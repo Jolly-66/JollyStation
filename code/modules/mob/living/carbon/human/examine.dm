@@ -203,16 +203,6 @@
 			else
 				msg += "<B>[t_He] [t_has] severe [damage_desc[BURN]]!</B>\n"
 
-		temp = getCloneLoss()
-		if(temp)
-			if(temp < 25)
-				msg += "[t_He] [t_has] minor [damage_desc[CLONE]].\n"
-			else if(temp < 50)
-				msg += "[t_He] [t_has] <b>moderate</b> [damage_desc[CLONE]]!\n"
-			else
-				msg += "<b>[t_He] [t_has] severe [damage_desc[CLONE]]!</b>\n"
-
-
 	if(has_status_effect(/datum/status_effect/fire_handler/fire_stacks))
 		msg += "[t_He] [t_is] covered in something flammable.\n"
 	if(has_status_effect(/datum/status_effect/fire_handler/wet_stacks))
@@ -361,6 +351,14 @@
 	if (!isnull(trait_exam))
 		. += trait_exam
 
+	if(isliving(user))
+		var/mob/living/morbid_weirdo = user
+		if(HAS_MIND_TRAIT(morbid_weirdo, TRAIT_MORBID))
+			if(HAS_TRAIT(src, TRAIT_DISSECTED))
+				msg += "[span_notice("[t_He] appears to have been dissected. Useless for examination... <b><i>for now.</i></b>")]\n"
+			if(HAS_TRAIT(src, TRAIT_SURGICALLY_ANALYZED))
+				msg += "[span_notice("A skilled hand has mapped this one's internal intricacies. It will be far easier to perform future experimentations upon [t_him]. <b><i>Exquisite.</i></b>")]\n"
+
 	var/perpname = get_face_name(get_id_name(""))
 	if(perpname && (HAS_TRAIT(user, TRAIT_SECURITY_HUD) || HAS_TRAIT(user, TRAIT_MEDICAL_HUD)))
 		var/datum/record/crew/target_record = find_record(perpname)
@@ -383,10 +381,10 @@
 			if(target_record)
 				. += "<a href='?src=[REF(src)];hud=m;evaluation=1;examine_time=[world.time]'>\[Medical evaluation\]</a><br>"
 			. += "<a href='?src=[REF(src)];hud=m;quirk=1;examine_time=[world.time]'>\[See quirks\]</a>"
-		//SKYRAT EDIT ADDITION BEGIN - EXAMINE RECORDS
+		// NON-MODULAR CHANGES - Examine Records
 			if(target_record && length(target_record.old_medical_records) > RECORDS_INVISIBLE_THRESHOLD)
 				. += "<a href='?src=[REF(src)];hud=m;medrecords=1;examine_time=[world.time]'>\[View medical records\]</a>"
-			//SKYRAT EDIT END
+			// NON-MODULAR CHANGES END
 
 		if(HAS_TRAIT(user, TRAIT_SECURITY_HUD))
 			if(!user.stat && user != src)
@@ -407,7 +405,7 @@
 					"<a href='?src=[REF(src)];hud=s;add_crime=1;examine_time=[world.time]'>\[Add crime\]</a>",
 					"<a href='?src=[REF(src)];hud=s;add_note=1;examine_time=[world.time]'>\[Add note\]</a>"), "")
 	else if(isobserver(user))
-		. += span_info("<b>Traits:</b> [get_quirk_string(FALSE, CAT_QUIRK_ALL)]")
+		. += span_info("<b>Quirks:</b> [get_quirk_string(FALSE, CAT_QUIRK_ALL)]")
 	. += "</span>"
 
 	// NON-MODULAR CHANGES: Updated flavor text

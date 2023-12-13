@@ -19,6 +19,7 @@
 	AddElement(/datum/element/ridable, /datum/component/riding/creature/cyborg)
 	RegisterSignal(src, COMSIG_PROCESS_BORGCHARGER_OCCUPANT, PROC_REF(charge))
 	RegisterSignal(src, COMSIG_LIGHT_EATER_ACT, PROC_REF(on_light_eater))
+	RegisterSignal(src, COMSIG_HIT_BY_SABOTEUR, PROC_REF(on_saboteur))
 
 	robot_modules_background = new()
 	robot_modules_background.icon_state = "block"
@@ -59,7 +60,9 @@
 
 	//If this body is meant to be a borg controlled by the AI player
 	if(shell)
-		make_shell()
+		var/obj/item/borg/upgrade/ai/board = new(src)
+		make_shell(board)
+		add_to_upgrades(board)
 	else
 		//MMI stuff. Held togheter by magic. ~Miauw
 		if(!mmi?.brainmob)
@@ -376,7 +379,7 @@
 	else
 		explosion(src, devastation_range = -1, light_impact_range = 2)
 	investigate_log("has self-destructed.", INVESTIGATE_DEATHS)
-	gib()
+	gib(DROP_ALL_REMAINS)
 
 /mob/living/silicon/robot/proc/UnlinkSelf()
 	set_connected_ai(null)
@@ -413,10 +416,23 @@
 		state = TRUE
 	if(state)
 		throw_alert(ALERT_HACKED, /atom/movable/screen/alert/locked)
+		if(!ai_lockdown)
+			lockdown_timer = addtimer(CALLBACK(src,PROC_REF(lockdown_override), FALSE), 10 MINUTES, TIMER_UNIQUE | TIMER_OVERRIDE | TIMER_DELETE_ME | TIMER_STOPPABLE)
+			to_chat(src, "<br><br>[span_alert("ALERT - Remote system lockdown engaged. Trying to hack the lockdown subsystem...")]<br>")
 	else
+		deltimer(lockdown_timer)
 		clear_alert(ALERT_HACKED)
 	set_lockcharge(state)
 
+/// Allows the borg to unlock themselves after a lenghty period of time.
+/mob/living/silicon/robot/proc/lockdown_override()
+	if(ai_lockdown)
+		to_chat(src, "<br><br>[span_alert("ALERT - Remote system lockdown override failed.")]<br>")
+		return
+	set_lockcharge(FALSE)
+	to_chat(src, "<br><br>[span_notice("ALERT - Remote system lockdown override successful.")]<br>")
+	if(connected_ai)
+		to_chat(connected_ai, "<br><br>[span_notice("ALERT - Cyborg [name] succesfully overriden the lockdown system")]<br>")
 
 ///Reports the event of the change in value of the lockcharge variable.
 /mob/living/silicon/robot/proc/set_lockcharge(new_lockcharge)
@@ -449,6 +465,13 @@
 		smash_headlamp()
 	return COMPONENT_BLOCK_LIGHT_EATER
 
+/// special handling for getting shot with a light disruptor/saboteur e.g. the fisher
+/mob/living/silicon/robot/proc/on_saboteur(datum/source, disrupt_duration)
+	SIGNAL_HANDLER
+	if(lamp_enabled)
+		toggle_headlamp(TRUE)
+		to_chat(src, span_warning("Your headlamp was forcibly turned off. Restarting it should fix it, though."))
+	return COMSIG_SABOTEUR_SUCCESS
 
 /**
  * Handles headlamp smashing
@@ -641,9 +664,6 @@
 		lighting_color_cutoffs = blend_cutoff_colors(lighting_color_cutoffs, list(25, 8, 5))
 		set_invis_see(min(see_invisible, SEE_INVISIBLE_LIVING))
 
-	if(see_override)
-		set_invis_see(see_override)
-
 	if(SSmapping.level_trait(z, ZTRAIT_NOXRAY))
 		new_sight = null
 
@@ -658,15 +678,12 @@
 			death()
 			toggle_headlamp(1)
 			return
-		if(HAS_TRAIT(src, TRAIT_KNOCKEDOUT) || IsStun() || IsKnockdown() || IsParalyzed())
-			set_stat(UNCONSCIOUS)
-		else
-			set_stat(CONSCIOUS)
 	diag_hud_set_status()
 	diag_hud_set_health()
 	diag_hud_set_aishell()
 	update_health_hud()
 	update_icons() //Updates eye_light overlay
+
 
 /mob/living/silicon/robot/revive(full_heal_flags = NONE, excess_healing = 0, force_grab_ghost = FALSE)
 	. = ..()
@@ -677,8 +694,10 @@
 		builtInCamera.toggle_cam(src, 0)
 	if(full_heal_flags & HEAL_ADMIN)
 		locked = TRUE
+	src.set_stat(CONSCIOUS)
 	notify_ai(AI_NOTIFICATION_NEW_BORG)
 	toggle_headlamp(FALSE, TRUE) //This will reenable borg headlamps if doomsday is currently going on still.
+	update_stat()
 	return TRUE
 
 /mob/living/silicon/robot/fully_replace_character_name(oldname, newname)
@@ -688,7 +707,7 @@
 	notify_ai(AI_NOTIFICATION_CYBORG_RENAMED, oldname, newname)
 	if(!QDELETED(builtInCamera))
 		builtInCamera.c_tag = real_name
-		modularInterface.saved_identification = real_name
+		modularInterface.imprint_id(name = real_name)
 	custom_name = newname
 
 
@@ -764,8 +783,10 @@
 	if(gone == mmi)
 		mmi = null
 
-///Use this to add upgrades to robots. It'll register signals for when the upgrade is moved or deleted, if not single use.
-/mob/living/silicon/robot/proc/add_to_upgrades(obj/item/borg/upgrade/new_upgrade, mob/user)
+///Called when a mob uses an upgrade on an open borg. Checks to make sure the upgrade can be applied
+/mob/living/silicon/robot/proc/apply_upgrade(obj/item/borg/upgrade/new_upgrade, mob/user)
+	if(isnull(user))
+		return FALSE
 	if(new_upgrade in upgrades)
 		return FALSE
 	if(!user.temporarilyRemoveItemFromInventory(new_upgrade)) //calling the upgrade's dropped() proc /before/ we add action buttons
@@ -775,6 +796,10 @@
 		new_upgrade.forceMove(loc) //gets lost otherwise
 		return FALSE
 	to_chat(user, span_notice("You apply the upgrade to [src]."))
+	add_to_upgrades(new_upgrade)
+
+///Moves the upgrade inside the robot and registers relevant signals.
+/mob/living/silicon/robot/proc/add_to_upgrades(obj/item/borg/upgrade/new_upgrade)
 	to_chat(src, "----------------\nNew hardware detected...Identified as \"<b>[new_upgrade]</b>\"...Setup complete.\n----------------")
 	if(new_upgrade.one_use)
 		logevent("Firmware [new_upgrade] run successfully.")
@@ -810,8 +835,10 @@
  * * board - B.O.R.I.S. module board used for transforming the cyborg into AI shell
  */
 /mob/living/silicon/robot/proc/make_shell(obj/item/borg/upgrade/ai/board)
-	if(!board)
-		upgrades |= new /obj/item/borg/upgrade/ai(src)
+	if(isnull(board))
+		stack_trace("make_shell was called without a board argument! This is never supposed to happen!")
+		return FALSE
+
 	shell = TRUE
 	braintype = "AI Shell"
 	name = "Empty AI Shell-[ident]"
@@ -876,15 +903,16 @@
 /datum/action/innate/undeployment/Trigger(trigger_flags)
 	if(!..())
 		return FALSE
-	var/mob/living/silicon/robot/R = owner
+	var/mob/living/silicon/robot/shell_to_disconnect = owner
 
-	R.undeploy()
+	shell_to_disconnect.undeploy()
 	return TRUE
 
 
 /mob/living/silicon/robot/proc/undeploy()
 	if(!deployed || !mind || !mainframe)
 		return
+	mainframe.UnregisterSignal(src, COMSIG_LIVING_DEATH)
 	mainframe.redeploy_action.Grant(mainframe)
 	mainframe.redeploy_action.last_used_shell = src
 	mind.transfer_to(mainframe)
@@ -970,6 +998,9 @@
 	if(.)
 		var/mob/living/silicon/ai/old_ai = .
 		old_ai.connected_robots -= src
+		// if the borg has a malf AI zeroth law and has been unsynced from the malf AI, then remove the law
+		if(isnull(connected_ai) && IS_MALF_AI(old_ai) && !isnull(laws?.zeroth))
+			clear_zeroth_law(FALSE, TRUE)
 	lamp_doom = FALSE
 	if(connected_ai)
 		connected_ai.connected_robots |= src
@@ -1009,3 +1040,13 @@
 /// Draw power from the robot
 /mob/living/silicon/robot/proc/draw_power(power_to_draw)
 	cell?.use(power_to_draw)
+
+
+/mob/living/silicon/robot/set_stat(new_stat)
+	. = ..()
+	update_stat() // This is probably not needed, but hopefully should be a little sanity check for the spaghetti that borgs are built from
+
+/mob/living/silicon/robot/on_knockedout_trait_loss(datum/source)
+	. = ..()
+	set_stat(CONSCIOUS) //This is a horrible hack, but silicon code forced my hand
+	update_stat()

@@ -426,7 +426,7 @@
 /turf/open/floor/iron/white,
 /area/awaymission/cabin)
 "bF" = (
-/obj/machinery/atmospherics/components/unary/cryo_cell,
+/obj/machinery/cryo_cell,
 /turf/open/floor/iron/white,
 /area/awaymission/cabin)
 "bG" = (
@@ -1381,7 +1381,6 @@
 /obj/machinery/space_heater,
 /obj/effect/decal/remains/robot,
 /obj/structure/sign/warning/fire/directional/north,
-/obj/machinery/space_heater,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/awaymission/cabin)
@@ -1580,6 +1579,21 @@
 	},
 /turf/open/floor/plating/snowed,
 /area/awaymission/cabin/caves)
+"ig" = (
+/mob/living/basic/bear/snow{
+	desc = "It's a polar bear, in space, but not actually in space. It's actually on a planet. This is a planet.";
+	melee_damage_lower = 10;
+	melee_damage_upper = 20;
+	name = "fat space polar bear";
+	speed = 3
+	},
+/obj/effect/light_emitter{
+	set_cap = 3;
+	set_luminosity = 6;
+	light_color = "#9bbbff"
+	},
+/turf/open/floor/plating/snowed/snow_cabin,
+/area/awaymission/cabin/snowforest/sovietsurface)
 "ii" = (
 /turf/closed/indestructible/syndicate,
 /area/awaymission/cabin/caves/sovietcave)
@@ -1622,7 +1636,7 @@
 /area/awaymission/cabin/caves/sovietcave)
 "iq" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/hivebot/range{
+/mob/living/basic/hivebot/range{
 	desc = "Looks like he's been left behind.";
 	faction = list("russian");
 	maxHealth = 5;
@@ -1640,7 +1654,7 @@
 	},
 /area/awaymission/cabin/caves/sovietcave)
 "is" = (
-/obj/structure/closet/secure_closet/freezer/kitchen,
+/obj/structure/closet/secure_closet/freezer/fridge/open,
 /obj/item/reagent_containers/condiment/enzyme,
 /turf/open/floor/iron/freezer,
 /area/awaymission/cabin)
@@ -2296,12 +2310,11 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/blood/gibs,
-/mob/living/simple_animal/hostile/skeleton{
+/mob/living/basic/skeleton{
 	desc = "Oh shit!";
 	dir = 1;
 	faction = list("sewer");
-	name = "sewer skeleton";
-	wander = 0
+	name = "sewer skeleton"
 	},
 /turf/open/floor/carpet,
 /area/awaymission/cabin/caves/mountain)
@@ -2594,7 +2607,7 @@
 	},
 /area/awaymission/cabin/caves/sovietcave)
 "nM" = (
-/obj/machinery/door/airlock/glass_large{
+/obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Medical Bay"
 	},
 /obj/structure/cable,
@@ -2657,28 +2670,6 @@
 /obj/item/clothing/suit/armor/vest/russian_coat{
 	pixel_x = 16;
 	pixel_y = 16
-	},
-/obj/effect/light_emitter{
-	set_cap = 3;
-	set_luminosity = 6;
-	light_color = "#9bbbff"
-	},
-/turf/open/floor/plating/snowed/snow_cabin,
-/area/awaymission/cabin/snowforest/sovietsurface)
-"oN" = (
-/obj/structure/chair{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 4
-	},
-/mob/living/simple_animal/hostile/bear/snow{
-	desc = "It's a polar bear, in space, but not actually in space. It's actually on a planet. This is a planet.";
-	melee_damage_lower = 10;
-	melee_damage_upper = 20;
-	name = "fat space polar bear";
-	speed = 3
 	},
 /obj/effect/light_emitter{
 	set_cap = 3;
@@ -2846,21 +2837,6 @@
 	},
 /turf/open/floor/plating/snowed/snow_cabin,
 /area/awaymission/cabin/snowforest/sovietsurface)
-"qn" = (
-/mob/living/simple_animal/hostile/bear/snow{
-	desc = "It's a polar bear, in space, but not actually in space. It's actually on a planet. This is a planet.";
-	melee_damage_lower = 10;
-	melee_damage_upper = 20;
-	name = "fat space polar bear";
-	speed = 3
-	},
-/obj/effect/light_emitter{
-	set_cap = 3;
-	set_luminosity = 6;
-	light_color = "#9bbbff"
-	},
-/turf/open/floor/plating/snowed/snow_cabin,
-/area/awaymission/cabin/snowforest/sovietsurface)
 "qo" = (
 /obj/item/pickaxe{
 	desc = "It's almost broken.";
@@ -2898,6 +2874,24 @@
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
+"qZ" = (
+/mob/living/basic/bear/snow{
+	desc = "It's a polar bear, in space, but not actually in space. It's actually on a planet. This is a planet.";
+	melee_damage_lower = 10;
+	melee_damage_upper = 20;
+	name = "fat space polar bear";
+	speed = 3
+	},
+/obj/effect/light_emitter{
+	set_cap = 3;
+	set_luminosity = 6;
+	light_color = "#9bbbff"
+	},
+/turf/open/misc/asteroid/snow/snow_cabin{
+	name = "packed snow";
+	slowdown = 0
+	},
+/area/awaymission/cabin/snowforest)
 "re" = (
 /obj/effect/light_emitter{
 	set_cap = 3;
@@ -3526,14 +3520,13 @@
 /turf/open/floor/plating/snowed/snow_cabin,
 /area/awaymission/cabin/snowforest/sovietsurface)
 "yj" = (
-/mob/living/simple_animal/hostile/skeleton/ice{
+/mob/living/basic/skeleton/ice{
 	desc = "A reanimated skeleton covered in thick sheet of natural ice. It is obvious to tell that they look really slow.";
 	maxHealth = 20;
 	melee_damage_lower = 5;
 	melee_damage_upper = 5;
 	name = "frozen skeleton";
-	speed = 7;
-	wander = 0
+	speed = 7
 	},
 /turf/open/misc/ice/smooth,
 /area/awaymission/cabin/caves)
@@ -3586,7 +3579,7 @@
 /obj/item/shovel{
 	desc = "A large tool for digging and moving snow.";
 	force = 10;
-	name = "eskimo shovel"
+	name = "settler's shovel"
 	},
 /obj/effect/decal/remains/human{
 	color = "#72e4fa"
@@ -3866,14 +3859,13 @@
 /turf/open/misc/asteroid/snow/snow_cabin,
 /area/awaymission/cabin/snowforest)
 "BR" = (
-/mob/living/simple_animal/hostile/skeleton/ice{
+/mob/living/basic/skeleton/ice{
 	desc = "A reanimated skeleton covered in thick sheet of natural ice. It is obvious to tell that they look really slow.";
 	maxHealth = 20;
 	melee_damage_lower = 5;
 	melee_damage_upper = 5;
 	name = "frozen skeleton";
-	speed = 7;
-	wander = 0
+	speed = 7
 	},
 /turf/open/misc/asteroid/snow/snow_cabin,
 /area/awaymission/cabin/caves)
@@ -4463,8 +4455,8 @@
 /obj/structure/signpost/salvation{
 	density = 0;
 	desc = "An intercomm. Someone seems to be on the other end. I should use it.";
-	icon = 'icons/obj/radio.dmi';
-	icon_state = "intercom";
+	icon = 'icons/obj/machines/wallmounts.dmi';
+	icon_state = "intercom_prison";
 	max_integrity = 99999;
 	name = "\proper Fun Jail intercom";
 	pixel_y = 32;
@@ -4584,21 +4576,6 @@
 	name = "icy wind"
 	},
 /turf/open/misc/asteroid/snow/snow_cabin,
-/area/awaymission/cabin/caves)
-"Ml" = (
-/mob/living/simple_animal/hostile/bear/russian{
-	desc = "He'll hold the line against you!";
-	light_range = 3;
-	melee_damage_upper = 25;
-	name = "Artyom";
-	speak = list("Blyat!","Rawr!","GRR!","Growl!");
-	wander = 0
-	},
-/turf/open/misc/asteroid/snow/snow_cabin{
-	floor_variance = 0;
-	icon_state = "snow_dug";
-	slowdown = 1
-	},
 /area/awaymission/cabin/caves)
 "MA" = (
 /obj/effect/turf_decal/stripes/red/corner{
@@ -4816,6 +4793,28 @@
 	},
 /turf/open/floor/plating/snowed/snow_cabin,
 /area/awaymission/cabin/snowforest/sovietsurface)
+"Qr" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 4
+	},
+/mob/living/basic/bear/snow{
+	desc = "It's a polar bear, in space, but not actually in space. It's actually on a planet. This is a planet.";
+	melee_damage_lower = 10;
+	melee_damage_upper = 20;
+	name = "fat space polar bear";
+	speed = 3
+	},
+/obj/effect/light_emitter{
+	set_cap = 3;
+	set_luminosity = 6;
+	light_color = "#9bbbff"
+	},
+/turf/open/floor/plating/snowed/snow_cabin,
+/area/awaymission/cabin/snowforest/sovietsurface)
 "Qw" = (
 /obj/structure/fence/door,
 /obj/effect/light_emitter{
@@ -4907,19 +4906,7 @@
 	desc = "It looks like fancy glitter to me.";
 	name = "icy wind"
 	},
-/mob/living/basic/statue{
-	desc = "Just a snowman. Just a snowman. Oh god, it's just a snowman.";
-	faction = list("statue","mining");
-	health = 5000;
-	icon_dead = "snowman";
-	icon_living = "snowman";
-	icon_state = "snowman";
-	loot = list(/obj/item/dnainjector/geladikinesis);
-	maxHealth = 5000;
-	melee_damage_lower = 65;
-	melee_damage_upper = 65;
-	name = "Frosty"
-	},
+/mob/living/basic/statue/frosty,
 /turf/open/misc/asteroid/snow/snow_cabin,
 /area/awaymission/cabin/caves)
 "RL" = (
@@ -5468,25 +5455,6 @@
 	},
 /turf/open/floor/plating/snowed/smoothed,
 /area/awaymission/cabin/caves)
-"Yg" = (
-/mob/living/simple_animal/hostile/bear/snow{
-	desc = "It's a polar bear, in space, but not actually in space. It's actually on a planet. This is a planet.";
-	melee_damage_lower = 10;
-	melee_damage_upper = 20;
-	name = "fat space polar bear";
-	speed = 3;
-	wander = 0
-	},
-/obj/effect/light_emitter{
-	set_cap = 3;
-	set_luminosity = 6;
-	light_color = "#9bbbff"
-	},
-/turf/open/misc/asteroid/snow/snow_cabin{
-	name = "packed snow";
-	slowdown = 0
-	},
-/area/awaymission/cabin/snowforest)
 "Yp" = (
 /obj/structure/table/wood,
 /turf/open/floor/wood,
@@ -5540,6 +5508,19 @@
 	light_color = "#9bbbff"
 	},
 /turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/cabin/caves)
+"Za" = (
+/mob/living/basic/bear/russian{
+	desc = "He'll hold the line against you!";
+	light_range = 3;
+	melee_damage_upper = 25;
+	name = "Artyom"
+	},
+/turf/open/misc/asteroid/snow/snow_cabin{
+	floor_variance = 0;
+	icon_state = "snow_dug";
+	slowdown = 1
+	},
 /area/awaymission/cabin/caves)
 "Zb" = (
 /obj/structure/fence{
@@ -39473,7 +39454,7 @@ vh
 vh
 ac
 Jz
-Yg
+qZ
 Jz
 Jz
 Jz
@@ -42309,7 +42290,7 @@ Ae
 Hk
 Ae
 Ae
-qn
+ig
 Ae
 ZB
 Ae
@@ -43856,7 +43837,7 @@ Ae
 Ae
 sc
 SK
-qn
+ig
 yU
 Dr
 XQ
@@ -44361,7 +44342,7 @@ Jz
 Jz
 tq
 UC
-qn
+ig
 SK
 QC
 SK
@@ -45136,7 +45117,7 @@ Xe
 qj
 qj
 qj
-oN
+Qr
 qj
 qj
 qj
@@ -57481,7 +57462,7 @@ ii
 ii
 ii
 JL
-Ml
+Za
 At
 Oe
 Oe

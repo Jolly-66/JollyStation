@@ -10,6 +10,7 @@
 	use_power = NO_POWER_USE
 	layer = BELOW_OBJ_LAYER
 	max_integrity = 300
+	interaction_flags_machine = INTERACT_MACHINE_WIRES_IF_OPEN|INTERACT_MACHINE_ALLOW_SILICON|INTERACT_MACHINE_OPEN_SILICON|INTERACT_MACHINE_SET_MACHINE
 	var/list/product_types = list()
 	var/selected_flavour = ICE_CREAM_VANILLA
 	var/obj/item/reagent_containers/beaker
@@ -17,13 +18,23 @@
 	var/static/list/obj/item/food/icecream/cone_prototypes
 	var/static/list/icecream_vat_reagents = list(
 		/datum/reagent/consumable/milk = 6,
+		/datum/reagent/consumable/korta_milk = 6,
 		/datum/reagent/consumable/flour = 6,
+		/datum/reagent/consumable/korta_flour = 6,
 		/datum/reagent/consumable/sugar = 6,
 		/datum/reagent/consumable/ice = 6,
 		/datum/reagent/consumable/coco = 6,
 		/datum/reagent/consumable/vanilla = 6,
 		/datum/reagent/consumable/berryjuice = 6,
-		/datum/reagent/consumable/ethanol/singulo = 6)
+		/datum/reagent/consumable/ethanol/singulo = 6,
+		/datum/reagent/consumable/lemonjuice = 6,
+		/datum/reagent/consumable/caramel = 6,
+		/datum/reagent/consumable/banana = 6,
+		/datum/reagent/consumable/orangejuice = 6,
+		/datum/reagent/consumable/cream = 6,
+		/datum/reagent/consumable/peachjuice = 6,
+		/datum/reagent/consumable/cherryjelly = 6,
+	)
 
 /obj/machinery/icecream_vat/Initialize(mapload)
 	. = ..()
@@ -100,7 +111,7 @@
 		return
 	for(var/datum/reagent/R in beaker.reagents.reagent_list)
 		if(R.type in icecream_vat_reagents)
-			beaker.reagents.trans_id_to(src, R.type, R.volume)
+			beaker.reagents.trans_to(src, R.volume, target_id = R.type)
 			say("Internalizing reagent.")
 			playsound(src, 'sound/items/drink.ogg', 25, TRUE)
 	return
@@ -179,7 +190,7 @@
 	return
 
 /obj/machinery/icecream_vat/deconstruct(disassembled = TRUE)
-	if(!(flags_1 & NODECONSTRUCT_1))
+	if(!(obj_flags & NO_DECONSTRUCTION))
 		new /obj/item/stack/sheet/iron(loc, 4)
 	qdel(src)
 

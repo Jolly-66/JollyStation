@@ -54,7 +54,7 @@
 	icon_state = "death"
 	inhand_icon_state = null
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS|FEET
-	flags_1 = CONDUCT_1
+	obj_flags = CONDUCTS_ELECTRICITY
 	fire_resist = T0C+5200
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
 
@@ -83,21 +83,6 @@
 	inhand_icon_state = "judge"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	allowed = list(/obj/item/storage/fancy/cigarettes, /obj/item/stack/spacecash)
-
-/obj/item/clothing/suit/apron/overalls
-	name = "coveralls"
-	desc = "A set of denim overalls."
-	icon_state = "overalls"
-	inhand_icon_state = "overalls"
-	body_parts_covered = CHEST|GROIN|LEGS
-	species_exception = list(/datum/species/golem)
-
-/obj/item/clothing/suit/apron/purple_bartender
-	name = "purple bartender apron"
-	desc = "A fancy purple apron for a stylish person."
-	icon_state = "purplebartenderapron"
-	inhand_icon_state = null
-	body_parts_covered = CHEST|GROIN
 
 /obj/item/clothing/suit/syndicatefake
 	name = "black and red space suit replica"
@@ -304,7 +289,7 @@
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_HELM_MAX_TEMP_PROTECT
-	clothing_flags = STOPSPRESSUREDAMAGE|THICKMATERIAL|SNUG_FIT|PLASMAMAN_HELMET_EXEMPT
+	clothing_flags = STOPSPRESSUREDAMAGE|THICKMATERIAL|SNUG_FIT|STACKABLE_HELMET_EXEMPT
 	body_parts_covered = HEAD
 	resistance_flags = NONE
 	flash_protect = FLASH_PROTECTION_WELDER

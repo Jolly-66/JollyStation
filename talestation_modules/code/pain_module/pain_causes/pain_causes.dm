@@ -14,7 +14,7 @@
 	set_timed_pain_mod(PAIN_MOD_RECENT_SHOCK, 0.5, 30 SECONDS)
 
 // Fleshmend of course heals pain.
-/datum/status_effect/fleshmend/tick()
+/datum/status_effect/fleshmend/tick(seconds_between_ticks)
 	. = ..()
 	if(iscarbon(owner) && !owner.on_fire)
 		var/mob/living/carbon/carbon_owner = owner
@@ -73,9 +73,10 @@
 	. = ..()
 	if(iscarbon(exposed_mob) && exposed_mob.stat != DEAD)
 		var/mob/living/carbon/exposed_carbon = exposed_mob
+		var/obj/item/bodypart/chest/chest = exposed_mob.get_bodypart(BODY_ZONE_CHEST)
 		if(reac_volume < 5 || !(ishumanbasic(exposed_carbon) || islizard(exposed_carbon) || ismoth(exposed_carbon)))
 			return
-		if(exposed_carbon.dna.species.wing_types)
+		if(chest.wing_types)
 			exposed_carbon.cause_pain(BODY_ZONE_HEAD, 10)
 			exposed_carbon.cause_pain(BODY_ZONE_CHEST, 45)
 			exposed_carbon.cause_pain(list(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM), 18)
@@ -84,10 +85,10 @@
 			exposed_carbon.cause_pain(BODY_ZONE_CHEST, 75)
 			exposed_carbon.cause_pain(list(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM), 30)
 
-/datum/wound/blunt/moderate/chiropractice(mob/living/carbon/human/user)
+/datum/wound/blunt/bone/moderate/chiropractice(mob/living/carbon/human/user)
 	. = ..()
 	user.cause_pain(limb.body_zone, 25)
 
-/datum/wound/blunt/moderate/malpractice(mob/living/carbon/human/user)
+/datum/wound/blunt/bone/moderate/malpractice(mob/living/carbon/human/user)
 	. = ..()
 	user.cause_pain(limb.body_zone, 40)

@@ -2,7 +2,7 @@
 "aa" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/marker_beacon/teal,
-/turf/open/space/basic,
+/turf/template_noop,
 /area/ruin/space)
 "aA" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
@@ -270,7 +270,7 @@
 /area/ruin/space/has_grav/allamericandiner)
 "nv" = (
 /obj/structure/lattice,
-/turf/open/space/basic,
+/turf/template_noop,
 /area/ruin/space)
 "ny" = (
 /obj/machinery/oven,
@@ -330,14 +330,6 @@
 /obj/effect/turf_decal/bot,
 /obj/structure/urinal/directional/north,
 /turf/open/floor/iron/freezer,
-/area/ruin/space/has_grav/allamericandiner)
-"qp" = (
-/obj/machinery/chem_dispenser/drinks{
-	dir = 8;
-	pixel_x = 17;
-	pixel_y = 0
-	},
-/turf/open/floor/iron/kitchen/small,
 /area/ruin/space/has_grav/allamericandiner)
 "qB" = (
 /obj/structure/closet/crate/trashcart/filled,
@@ -471,6 +463,7 @@
 /obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/storage/box/cups,
 /turf/open/floor/iron/kitchen/small,
 /area/ruin/space/has_grav/allamericandiner)
 "wC" = (
@@ -965,6 +958,9 @@
 "Ot" = (
 /obj/machinery/light/dim/directional/south,
 /obj/structure/window/reinforced/tinted/spawner/directional/east,
+/obj/structure/chair/sofa/left/maroon{
+	dir = 8
+	},
 /turf/open/floor/iron/kitchen,
 /area/ruin/space/has_grav/allamericandiner)
 "OE" = (
@@ -1050,7 +1046,7 @@
 /turf/open/floor/iron/freezer,
 /area/ruin/space/has_grav/allamericandiner)
 "SU" = (
-/turf/open/space/basic,
+/turf/template_noop,
 /area/template_noop)
 "SZ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1156,8 +1152,11 @@
 /area/ruin/space/has_grav/allamericandiner)
 "Vq" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/box/cups,
 /obj/machinery/light/dim/directional/east,
+/obj/machinery/chem_dispenser/drinks/fullupgrade{
+	dir = 1
+	},
+/obj/structure/window/spawner/directional/south,
 /turf/open/floor/iron/kitchen/small,
 /area/ruin/space/has_grav/allamericandiner)
 "Vy" = (
@@ -1221,7 +1220,7 @@
 "Yd" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/marker_beacon/fuchsia,
-/turf/open/space/basic,
+/turf/template_noop,
 /area/ruin/space)
 "Yo" = (
 /obj/structure/table/wood,
@@ -1978,9 +1977,9 @@ EK
 ej
 jZ
 LR
-qp
+jZ
 Vq
-FB
+rd
 rd
 lI
 yQ

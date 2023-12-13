@@ -64,13 +64,15 @@ GLOBAL_LIST_INIT(wire_node_generating_types, typecacheof(list(/obj/structure/gri
 	if(isobserver(user))
 		. += get_power_info()
 
-/obj/structure/cable/proc/on_rat_eat(datum/source, mob/living/simple_animal/hostile/regalrat/king)
+/obj/structure/cable/proc/on_rat_eat(datum/source, mob/living/basic/regal_rat/king)
 	SIGNAL_HANDLER
 
 	if(avail())
 		king.apply_damage(10)
 		playsound(king, 'sound/effects/sparks2.ogg', 100, TRUE)
 	deconstruct()
+
+	return COMPONENT_RAT_INTERACTED
 
 ///Set the linked indicator bitflags
 /obj/structure/cable/proc/Connect_cable(clear_before_updating = FALSE)
@@ -106,7 +108,7 @@ GLOBAL_LIST_INIT(wire_node_generating_types, typecacheof(list(/obj/structure/gri
 					var/obj/machinery/power/smes/S = locate(/obj/machinery/power/smes) in TB
 					if(S && (!S.terminal || S.terminal == search_parent))
 						continue
-		var/inverse = turn(check_dir, 180)
+		var/inverse = REVERSE_DIR(check_dir)
 		for(var/obj/structure/cable/C in TB)
 			if(C.cable_layer & cable_layer)
 				linked_dirs |= check_dir
@@ -122,7 +124,7 @@ GLOBAL_LIST_INIT(wire_node_generating_types, typecacheof(list(/obj/structure/gri
 ///Clear the linked indicator bitflags
 /obj/structure/cable/proc/Disconnect_cable()
 	for(var/check_dir in GLOB.cardinals)
-		var/inverse = turn(check_dir, 180)
+		var/inverse = REVERSE_DIR(check_dir)
 		if(linked_dirs & check_dir)
 			var/TB = get_step(loc, check_dir)
 			for(var/obj/structure/cable/C in TB)
@@ -140,7 +142,7 @@ GLOBAL_LIST_INIT(wire_node_generating_types, typecacheof(list(/obj/structure/gri
 	return ..() // then go ahead and delete the cable
 
 /obj/structure/cable/deconstruct(disassembled = TRUE)
-	if(!(flags_1 & NODECONSTRUCT_1))
+	if(!(obj_flags & NO_DECONSTRUCTION))
 		var/obj/item/stack/cable_coil/cable = new(drop_location(), 1)
 		cable.set_cable_color(cable_color)
 	qdel(src)
@@ -274,7 +276,7 @@ GLOBAL_LIST_INIT(wire_node_generating_types, typecacheof(list(/obj/structure/gri
 // merge with the powernets of power objects in the given direction
 /obj/structure/cable/proc/mergeConnectedNetworks(direction)
 
-	var/inverse_dir = (!direction)? 0 : turn(direction, 180) //flip the direction, to match with the source position on its turf
+	var/inverse_dir = (!direction)? 0 : REVERSE_DIR(direction) //flip the direction, to match with the source position on its turf
 
 	var/turf/TB = get_step(src, direction)
 
@@ -437,7 +439,7 @@ GLOBAL_LIST_INIT(wire_node_generating_types, typecacheof(list(/obj/structure/gri
 	throw_speed = 3
 	throw_range = 5
 	mats_per_unit = list(/datum/material/iron=SMALL_MATERIAL_AMOUNT*0.1, /datum/material/glass=SMALL_MATERIAL_AMOUNT*0.1)
-	flags_1 = CONDUCT_1
+	obj_flags = CONDUCTS_ELECTRICITY
 	slot_flags = ITEM_SLOT_BELT
 	attack_verb_continuous = list("whips", "lashes", "disciplines", "flogs")
 	attack_verb_simple = list("whip", "lash", "discipline", "flog")

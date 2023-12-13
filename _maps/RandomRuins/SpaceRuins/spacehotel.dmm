@@ -862,7 +862,7 @@
 /obj/effect/turf_decal/siding/yellow{
 	dir = 8
 	},
-/mob/living/simple_animal/bot/medbot{
+/mob/living/basic/bot/medbot{
 	name = "Accidents Happen"
 	},
 /obj/structure/cable,
@@ -2201,11 +2201,6 @@
 	},
 /obj/machinery/light/directional/south,
 /turf/open/floor/carpet/blue,
-/area/ruin/space/has_grav/hotel)
-"wT" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/cable,
-/turf/open/space/basic,
 /area/ruin/space/has_grav/hotel)
 "wW" = (
 /obj/structure/chair/plastic,
@@ -4023,7 +4018,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
-/turf/open/space/basic,
+/turf/open/floor/plating,
 /area/ruin/space/has_grav/hotel/power)
 "UD" = (
 /obj/effect/turf_decal/stripes/end,
@@ -8175,11 +8170,11 @@ Qy
 ak
 ak
 ak
-wT
 ak
-wT
 ak
-wT
+ak
+ak
+ak
 ak
 yV
 ak

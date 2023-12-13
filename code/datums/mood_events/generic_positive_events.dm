@@ -369,3 +369,12 @@
 	description = "Slam dunk! Boom, shakalaka!"
 	mood_change = 2
 	timeout = 5 MINUTES
+
+///Wizard cheesy grand finale - what the wizard gets
+/datum/mood_event/madness_elation
+	description = "Madness truly is the greatest of blessings..."
+	mood_change = 200
+
+/datum/mood_event/prophat
+	description = "This hat fills me with whimsical joy!"
+	mood_change = 2
