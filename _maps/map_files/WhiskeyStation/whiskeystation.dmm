@@ -770,12 +770,6 @@
 /area/space)
 "hQ" = (
 /obj/structure/table,
-/obj/item/roller{
-	pixel_y = 12
-	},
-/obj/item/roller{
-	pixel_y = 6
-	},
 /obj/item/storage/box/bodybags{
 	pixel_x = 5;
 	pixel_y = 9
@@ -2031,9 +2025,6 @@
 /area/space)
 "tD" = (
 /obj/structure/table/optable,
-/obj/item/storage/backpack/duffelbag/med/surgery{
-	pixel_y = 6
-	},
 /obj/machinery/digital_clock/directional/north,
 /turf/open/floor/iron/white,
 /area/space)
@@ -2084,6 +2075,11 @@
 	},
 /obj/effect/turf_decal/tile/blue/opposingcorners,
 /turf/open/floor/iron/white,
+/area/space)
+"ug" = (
+/obj/structure/table,
+/obj/item/surgery_tray/full,
+/turf/open/floor/iron/dark,
 /area/space)
 "un" = (
 /obj/machinery/smartfridge/food,
@@ -3163,13 +3159,9 @@
 /turf/open/floor/iron/terracotta/herringbone,
 /area/space)
 "DY" = (
-/obj/structure/table/glass,
-/obj/item/roller{
-	pixel_y = 7
-	},
-/obj/item/roller{
-	pixel_y = 12
-	},
+/obj/structure/table/optable,
+/obj/item/clothing/gloves/latex,
+/obj/machinery/digital_clock/directional/south,
 /turf/open/floor/iron/dark,
 /area/space)
 "Eb" = (
@@ -3467,7 +3459,7 @@
 "HD" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/bed/dogbed/runtime,
-/mob/living/simple_animal/pet/cat/runtime,
+/mob/living/basic/pet/cat/runtime,
 /turf/open/floor/wood/tile,
 /area/space)
 "Ia" = (
@@ -4374,7 +4366,7 @@
 /turf/open/floor/plating,
 /area/space)
 "Qr" = (
-/obj/machinery/atmospherics/components/unary/cryo_cell,
+/obj/machinery/cryo_cell,
 /turf/open/floor/iron/dark,
 /area/space)
 "Qs" = (
@@ -5290,6 +5282,23 @@
 /area/space)
 "YF" = (
 /turf/closed/wall,
+/area/space)
+"YM" = (
+/obj/structure/table,
+/obj/item/emergency_bed{
+	pixel_y = 6
+	},
+/obj/item/emergency_bed{
+	pixel_y = 12
+	},
+/obj/item/storage/box/bodybags{
+	pixel_x = 5;
+	pixel_y = 9
+	},
+/obj/item/storage/box/gloves{
+	pixel_y = 5
+	},
+/turf/open/floor/iron/white,
 /area/space)
 "YQ" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -95824,7 +95833,7 @@ kf
 xn
 Ia
 tO
-DY
+fj
 Pc
 fH
 fH
@@ -97372,7 +97381,7 @@ fH
 YF
 Rt
 OG
-cC
+ug
 YF
 QR
 QR
@@ -97629,7 +97638,7 @@ fH
 Up
 Sf
 xn
-dg
+DY
 YF
 QR
 QR
@@ -98142,7 +98151,7 @@ fH
 fH
 YF
 tj
-Qf
+pP
 YF
 YF
 QR
@@ -101106,7 +101115,7 @@ kf
 xn
 Ia
 tO
-DY
+fj
 Pc
 fH
 fH
@@ -102386,7 +102395,7 @@ CW
 CW
 CW
 YF
-Qr
+xn
 AR
 AR
 Pc
@@ -102900,7 +102909,7 @@ CW
 CW
 CW
 YF
-Qr
+xn
 AR
 AR
 Pc
@@ -103533,7 +103542,7 @@ JX
 fY
 sc
 Bu
-hQ
+YM
 YF
 JN
 JN
