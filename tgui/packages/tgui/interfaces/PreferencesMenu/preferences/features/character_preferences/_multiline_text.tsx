@@ -1,5 +1,5 @@
-import { Feature, FeatureValueProps } from '../base';
 import { Stack, TextArea } from '../../../../../components';
+import { Feature, FeatureValueProps } from '../base';
 
 export const MultilineText = (props: FeatureValueProps<string, string>) => {
   const { handleSetValue, value } = props;
@@ -10,7 +10,7 @@ export const MultilineText = (props: FeatureValueProps<string, string>) => {
           width="80%"
           height="52px"
           value={value}
-          onInput={(e, value) => {
+          onChange={(e, value) => {
             handleSetValue(value);
           }}
         />

@@ -1,6 +1,7 @@
+import { BooleanLike } from 'common/react';
+
 import { useBackend } from '../backend';
 import { Button, Dimmer, Section, Stack } from '../components';
-import { BooleanLike } from 'common/react';
 
 type typePath = string;
 
@@ -56,7 +57,7 @@ export const LanguageStack = (props: {
 
 const WarningDimmer = (props) => {
   return (
-    <Dimmer vertical align="center">
+    <Dimmer align="center">
       <Stack.Item fontSize="18px">{props.message}</Stack.Item>
     </Dimmer>
   );
