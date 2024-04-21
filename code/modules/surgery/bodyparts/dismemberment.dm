@@ -26,7 +26,7 @@
 	if (wounding_type)
 		LAZYSET(limb_owner.body_zone_dismembered_by, body_zone, wounding_type)
 
-	drop_limb(special = FALSE, dismembered = TRUE) // NON-MODULAR CHANGES: adds special arg
+	drop_limb(special = FALSE, dismembered = TRUE)
 
 	limb_owner.update_equipment_speed_mods() // Update in case speed affecting item unequipped by dismemberment
 	var/turf/owner_location = limb_owner.loc
@@ -86,8 +86,8 @@
 		return
 	var/atom/drop_loc = owner.drop_location()
 
-	SEND_SIGNAL(owner, COMSIG_CARBON_REMOVE_LIMB, src, dismembered, special) // NON-MODULAR CHANGES: Moves special param
-	SEND_SIGNAL(src, COMSIG_BODYPART_REMOVED, owner, dismembered, special) // NON-MODULAR CHANGES: Moves special param
+	SEND_SIGNAL(owner, COMSIG_CARBON_REMOVE_LIMB, src, dismembered, special)
+	SEND_SIGNAL(src, COMSIG_BODYPART_REMOVED, owner, dismembered, special)
 	update_limb(dropping_limb = TRUE)
 	bodypart_flags &= ~BODYPART_IMPLANTED //limb is out and about, it can't really be considered an implant
 	owner.remove_bodypart(src, special)
@@ -211,8 +211,8 @@
 		associated_hand?.update_appearance()
 	if(arm_owner.gloves)
 		arm_owner.dropItemToGround(arm_owner.gloves, TRUE)
+	. = ..()
 	arm_owner.update_worn_gloves() //to remove the bloody hands overlay
-	return ..()
 
 /obj/item/bodypart/leg/drop_limb(special, dismembered, move_to_floor = TRUE)
 	if(owner && !special)
@@ -362,6 +362,14 @@
 	new_head_owner.updatehealth()
 	new_head_owner.update_body()
 	new_head_owner.update_damage_overlays()
+
+/obj/item/bodypart/arm/try_attach_limb(mob/living/carbon/new_arm_owner, special = FALSE)
+	. = ..()
+
+	if(!.)
+		return
+
+	new_arm_owner.update_worn_gloves() // To apply bloody hands overlay
 
 /mob/living/carbon/proc/regenerate_limbs(list/excluded_zones = list())
 	SEND_SIGNAL(src, COMSIG_CARBON_REGENERATE_LIMBS, excluded_zones)

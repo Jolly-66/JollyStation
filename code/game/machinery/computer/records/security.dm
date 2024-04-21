@@ -27,6 +27,7 @@
 	icon_screen = "seclaptop"
 	icon_keyboard = "laptop_key"
 	pass_flags = PASSTABLE
+	connectable = FALSE
 
 /obj/machinery/computer/records/security/laptop/syndie
 	desc = "A cheap, jailbroken security laptop. It functions as a security records console. It's bolted to the table."
@@ -129,7 +130,6 @@
 			rank = target.rank,
 			species = target.species,
 			wanted_status = target.wanted_status,
-			// NON-MODULAR CHANGES: Adds sec flavor text to records
 			old_security_records = usr.client?.prefs.read_preference(/datum/preference/multiline_text/flavor_datum/security),
 		))
 

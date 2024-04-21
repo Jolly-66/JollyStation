@@ -234,7 +234,6 @@
 		/datum/job/station_engineer = /obj/item/organ/internal/cyberimp/arm/toolset,
 		/datum/job/virologist = /obj/item/organ/internal/lungs/cybernetic/tier2,
 		/datum/job/warden = /obj/item/organ/internal/cyberimp/eyes/hud/security,
-		// NON-MODULAR CHANGES: Adds our jobs
 		/datum/job/asset_protection = /obj/item/organ/internal/cyberimp/brain/anti_stun,
 		/datum/job/bridge_officer = /obj/item/organ/internal/cyberimp/arm/gun/taser,
 		/datum/job/scientist/xenobiologist = /obj/item/organ/internal/cyberimp/arm/muscle,
@@ -343,16 +342,6 @@
 	assignment = "Repair Technician"
 	trim_state = "trim_stationengineer"
 	department_color = COLOR_ASSISTANT_GRAY
-
-/// Spawns assistants with some gear, either gimmicky or functional. Maybe, one day, it will inspire an assistant to do something productive or fun
-/datum/station_trait/assistant_gimmicks
-	name = "Geared Assistants Pilot"
-	report_message = "The Nanotrassen Assistant Affairs division is performing a pilot to see if different assistant equipments help improve productivity!"
-	trait_type = STATION_TRAIT_POSITIVE
-	weight = 3
-	trait_to_give = STATION_TRAIT_ASSISTANT_GIMMICKS
-	show_in_report = TRUE
-	blacklist = list(/datum/station_trait/colored_assistants)
 
 #undef PARTY_COOLDOWN_LENGTH_MIN
 #undef PARTY_COOLDOWN_LENGTH_MAX

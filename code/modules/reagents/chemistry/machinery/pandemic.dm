@@ -10,6 +10,7 @@
 	base_icon_state = "pandemic"
 	resistance_flags = ACID_PROOF
 	circuit = /obj/item/circuitboard/computer/pandemic
+	connectable = FALSE
 
 	/// Whether the pandemic is ready to make another culture/vaccine
 	var/wait
@@ -108,7 +109,7 @@
 	update_appearance()
 	SStgui.update_uis(src)
 
-/obj/machinery/computer/pandemic/on_deconstruction()
+/obj/machinery/computer/pandemic/on_deconstruction(disassembled)
 	eject_beaker()
 	. = ..()
 

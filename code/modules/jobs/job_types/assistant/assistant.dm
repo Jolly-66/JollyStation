@@ -37,17 +37,6 @@ Assistant
 	rpg_title = "Lout"
 	config_tag = "ASSISTANT"
 
-/datum/job/assistant/get_outfit()
-	if(!HAS_TRAIT(SSstation, STATION_TRAIT_ASSISTANT_GIMMICKS))
-		return ..()
-
-	var/static/list/gimmicks = list()
-	if(!length(gimmicks))
-		for(var/datum/outfit/job/assistant/gimmick/gimmick_outfit as anything in subtypesof(/datum/outfit/job/assistant/gimmick))
-			gimmicks[gimmick_outfit] = gimmick_outfit::outfit_weight
-
-	return pick_weight(gimmicks)
-
 /datum/outfit/job/assistant
 	name = JOB_ASSISTANT
 	jobtype = /datum/job/assistant
@@ -62,7 +51,7 @@ Assistant
 		if(prob(HOLIDAY_HAT_CHANCE) && !isnull(special_hat) && isnull(head))
 			head = special_hat
 
-//	give_jumpsuit(target) NON-MODULAR CHANGES: Disables this since it conflicts with loadouts
+//	give_jumpsuit(target) NON-MODULAR TO-DO: Look into this more
 
 /datum/outfit/job/assistant/proc/give_jumpsuit(mob/living/carbon/human/target)
 	var/static/jumpsuit_number = 0

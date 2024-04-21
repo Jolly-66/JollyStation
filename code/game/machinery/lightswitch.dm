@@ -73,6 +73,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light_switch, 26)
 /obj/machinery/light_switch/interact(mob/user)
 	. = ..()
 	set_lights(!area.lightswitch)
+	playsound(src, 'talestation_modules/sound/machines/lights/lightswitch.ogg', 100, 1)
 
 /obj/machinery/light_switch/attackby_secondary(obj/item/weapon, mob/user, params)
 	if(weapon.tool_behaviour == TOOL_SCREWDRIVER)
@@ -107,10 +108,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light_switch, 26)
 	if(!(machine_stat & (BROKEN|NOPOWER)))
 		power_change()
 
-/obj/machinery/light_switch/deconstruct(disassembled = TRUE)
-	if(!(obj_flags & NO_DECONSTRUCTION))
-		new /obj/item/wallframe/light_switch(loc)
-	qdel(src)
+/obj/machinery/light_switch/on_deconstruction(disassembled)
+	new /obj/item/wallframe/light_switch(loc)
 
 /obj/item/wallframe/light_switch
 	name = "light switch"

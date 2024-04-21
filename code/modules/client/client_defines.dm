@@ -64,7 +64,6 @@
 	var/externalreplyamount = 0
 	///Tracks say() usage for ic/dchat while slowmode is enabled
 	COOLDOWN_DECLARE(say_slowmode)
-	// NON-MODULAR CHANGES: Cryopods
 	///When was the last time we warned them about not cryoing without an ahelp, set to -5 minutes so that rounstart cryo still warns
 	COOLDOWN_DECLARE(cryo_warned)
 	/// The last urgent ahelp that this player sent
@@ -243,6 +242,9 @@
 	var/list/keys_held = list()
 	/// A buffer for combinations such of modifiers + keys (ex: CtrlD, AltE, ShiftT). Format: `"key"` -> `"combo"` (ex: `"D"` -> `"CtrlD"`)
 	var/list/key_combos_held = list()
+	/// The direction we WANT to move, based off our keybinds
+	/// Will be udpated to be the actual direction later on
+	var/intended_direction = NONE
 	/*
 	** These next two vars are to apply movement for keypresses and releases made while move delayed.
 	** Because discarding that input makes the game less responsive.

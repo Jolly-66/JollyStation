@@ -18,6 +18,7 @@
 	icon_screen = "medlaptop"
 	icon_keyboard = "laptop_key"
 	pass_flags = PASSTABLE
+	connectable = FALSE
 
 /obj/machinery/computer/records/medical/attacked_by(obj/item/attacking_item, mob/living/user)
 	. = ..()
@@ -65,7 +66,6 @@
 			quirk_notes = target.quirk_notes,
 			rank = target.rank,
 			species = target.species,
-			// NON-MODULAR CHANGES: Adds flavor records
 			old_general_records = usr.client?.prefs.read_preference(/datum/preference/multiline_text/flavor_datum/general),
 			old_medical_records = usr.client?.prefs.read_preference(/datum/preference/multiline_text/flavor_datum/medical),
 		))

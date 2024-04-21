@@ -200,12 +200,10 @@
 					to_chat(human_user,  "<span class='notice ml-1'>Detected physiological traits:</span>\n<span class='notice ml-2'>[quirkstring]</span>")
 				else
 					to_chat(human_user,  "<span class='notice ml-1'>No physiological traits found.</span>")
-			// NON-MODULAR CHANGES - Examine Recordss
 			if(href_list["medrecords"])
 				to_chat(usr, "<b>Medical Record:</b> [target_record.old_medical_records]")
 			if(href_list["genrecords"])
 				to_chat(usr, "<b>General Record:</b> [target_record.old_general_records]")
-			// NON-MODULAR CHANGES END
 			return //Medical HUD ends here.
 
 		if(href_list["hud"] == "s")
@@ -414,10 +412,6 @@
 	//Check for dresscode violations
 	if(istype(head, /obj/item/clothing/head/wizard))
 		threatcount += 2
-
-	//Check for nonhuman scum
-	if(dna && dna.species.id && dna.species.id != SPECIES_HUMAN)
-		threatcount += 1
 
 	//mindshield implants imply trustworthyness
 	if(HAS_TRAIT(src, TRAIT_MINDSHIELD))
@@ -814,26 +808,6 @@
 			admin_ticket_log("[key_name_admin(usr)] has modified the bodyparts of [src] to [result]")
 			set_species(newtype)
 
-	if(href_list[VV_HK_PURRBATION])
-		if(!check_rights(R_SPAWN))
-			return
-		if(!ishuman(src))
-			to_chat(usr, "This can only be done to human species at the moment.")
-			return
-		var/success = purrbation_toggle(src)
-		if(success)
-			to_chat(usr, "Put [src] on purrbation.")
-			log_admin("[key_name(usr)] has put [key_name(src)] on purrbation.")
-			var/msg = span_notice("[key_name_admin(usr)] has put [key_name(src)] on purrbation.")
-			message_admins(msg)
-			admin_ticket_log(src, msg)
-		else
-			to_chat(usr, "Removed [src] from purrbation.")
-			log_admin("[key_name(usr)] has removed [key_name(src)] from purrbation.")
-			var/msg = span_notice("[key_name_admin(usr)] has removed [key_name(src)] from purrbation.")
-			message_admins(msg)
-			admin_ticket_log(src, msg)
-
 	if(href_list[VV_HK_APPLY_DNA_INFUSION])
 		if(!check_rights(R_SPAWN))
 			return
@@ -1032,9 +1006,6 @@
 
 /mob/living/carbon/human/species/dullahan
 	race = /datum/species/dullahan
-
-/mob/living/carbon/human/species/felinid
-	race = /datum/species/human/felinid
 
 /mob/living/carbon/human/species/fly
 	race = /datum/species/fly

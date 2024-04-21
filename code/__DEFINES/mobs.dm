@@ -107,7 +107,6 @@
 #define SPECIES_DULLAHAN "dullahan"
 #define SPECIES_ETHEREAL "ethereal"
 #define SPECIES_ETHEREAL_LUSTROUS "lustrous"
-#define SPECIES_FELINE "felinid"
 #define SPECIES_FLYPERSON "fly"
 #define SPECIES_HUMAN "human"
 #define SPECIES_JELLYPERSON "jelly"
@@ -448,8 +447,8 @@
 #define OFFSET_HELD "held"
 
 //MINOR TWEAKS/MISC
-#define AGE_MIN 18 //youngest a character can be, - NON-MODULAR CHANGES: Ups min age
-#define AGE_MAX 100 //oldest a character can be, NON-MODULAR CHANGES: Ups max age
+#define AGE_MIN 18 //youngest a character can be
+#define AGE_MAX 100 //oldest a character can be
 #define AGE_MINOR 20  //legal age of space drinking and smoking
 #define WIZARD_AGE_MIN 30 //youngest a wizard can be
 #define APPRENTICE_AGE_MIN 29 //youngest an apprentice can be
@@ -485,9 +484,6 @@
 
 #define ROBOTIC_BRUTE_EXAMINE_TEXT "denting"
 #define ROBOTIC_BURN_EXAMINE_TEXT "charring"
-
-// If a mob has a higher threshold than this, the icon shown will be increased to the big fire icon.
-#define MOB_BIG_FIRE_STACK_THRESHOLD 3
 
 #define GRAB_PIXEL_SHIFT_PASSIVE 6
 #define GRAB_PIXEL_SHIFT_AGGRESSIVE 12
@@ -756,8 +752,8 @@ GLOBAL_LIST_INIT(human_heights_to_offsets, list(
 #define WOUND_LAYER 3
 /// Blood cult ascended halo layer, because there's currently no better solution for adding/removing
 #define HALO_LAYER 2
-/// Fire layer when you're on fire
-#define FIRE_LAYER 1
+/// The highest most layer for mob overlays. Unused
+#define HIGHEST_LAYER 1
 
 #define UPPER_BODY "upper body"
 #define LOWER_BODY "lower body"
@@ -798,7 +794,7 @@ GLOBAL_LIST_INIT(layers_to_offset, list(
 	// BODY_BEHIND_LAYER (external organs like wings)
 	// BODY_FRONT_LAYER (external organs like wings)
 	// DAMAGE_LAYER (full body)
-	// FIRE_LAYER (full body)
+	// HIGHEST_LAYER (full body)
 	// UNIFORM_LAYER (full body)
 	// WOUND_LAYER (full body)
 ))
