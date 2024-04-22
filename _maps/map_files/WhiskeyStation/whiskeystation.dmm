@@ -293,7 +293,10 @@
 /turf/open/floor/grass,
 /area/space)
 "db" = (
-/turf/open/floor/iron/kitchen,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/floor/grass,
 /area/space)
 "de" = (
 /obj/machinery/door/firedoor/border_only{
@@ -2586,6 +2589,13 @@
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
+/area/space)
+"zG" = (
+/obj/effect/spawner/random/food_or_drink/seed{
+	pixel_x = 6;
+	pixel_y = 10
+	},
+/turf/open/floor/grass,
 /area/space)
 "zJ" = (
 /obj/structure/table/reinforced,
@@ -101470,8 +101480,8 @@ VN
 VN
 VN
 VN
-VN
-VN
+xf
+xf
 YF
 yI
 bj
@@ -101727,7 +101737,7 @@ VN
 VN
 VN
 VN
-VN
+xf
 XB
 XB
 bU
@@ -101984,7 +101994,7 @@ VN
 VN
 VN
 VN
-VN
+xf
 XB
 wb
 QR
@@ -102241,7 +102251,7 @@ VN
 VN
 VN
 VN
-VN
+xf
 XB
 tD
 QR
@@ -102498,7 +102508,7 @@ VN
 VN
 VN
 VN
-VN
+xf
 XB
 XB
 CN
@@ -102755,8 +102765,8 @@ VN
 VN
 VN
 VN
-VN
-VN
+xf
+xf
 XB
 XB
 XB
@@ -103012,10 +103022,10 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
+xf
+xf
+xf
+xf
 xf
 xf
 jF
@@ -103267,12 +103277,12 @@ VN
 VN
 VN
 VN
-YF
-YF
-YF
 VN
 VN
-YF
+VN
+VN
+VN
+VN
 xf
 YF
 VN
@@ -103524,12 +103534,12 @@ Hx
 VN
 VN
 VN
-YF
-db
-db
 VN
 VN
-YF
+VN
+VN
+VN
+VN
 xf
 YF
 VN
@@ -103781,12 +103791,12 @@ Hx
 Hx
 VN
 VN
-YF
-db
-db
 VN
 VN
-YF
+VN
+VN
+VN
+VN
 xf
 YF
 YF
@@ -104038,9 +104048,9 @@ vJ
 Hx
 Hx
 VN
-YF
-db
-db
+VN
+VN
+VN
 VN
 VN
 VN
@@ -104296,8 +104306,8 @@ pp
 Hx
 Hx
 YF
-db
-db
+VN
+VN
 VN
 VN
 VN
@@ -104553,8 +104563,8 @@ VK
 sk
 VK
 YF
-db
-db
+VN
+VN
 VN
 VN
 VN
@@ -104810,8 +104820,8 @@ VK
 hq
 VK
 YF
-db
-db
+VN
+VN
 VN
 VN
 VN
@@ -105067,8 +105077,8 @@ VK
 RS
 hq
 YF
-db
-db
+VN
+VN
 VN
 VN
 VN
@@ -105324,8 +105334,8 @@ NV
 VK
 sk
 YF
-db
-db
+VN
+VN
 VN
 VN
 VN
@@ -105583,11 +105593,11 @@ VK
 YF
 YF
 YF
-VN
-VN
-VN
-VN
-VN
+YF
+YF
+YF
+YF
+YF
 YF
 YF
 cv
@@ -106861,9 +106871,9 @@ Ot
 bg
 tz
 vJ
-GY
-kO
-oJ
+zz
+db
+db
 qM
 Je
 Aw
@@ -107117,7 +107127,7 @@ XE
 Ot
 mV
 Ot
-zz
+GY
 GU
 hq
 ZS
@@ -107375,9 +107385,9 @@ Ot
 vJ
 zz
 Qe
-wc
+zG
 TP
-IQ
+RS
 VK
 YF
 VN
