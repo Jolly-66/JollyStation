@@ -293,10 +293,10 @@
 /turf/open/floor/grass,
 /area/space)
 "db" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
+/obj/structure/railing{
+	dir = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/iron,
 /area/space)
 "de" = (
 /obj/machinery/door/firedoor/border_only{
@@ -629,6 +629,10 @@
 	},
 /turf/open/floor/iron/white,
 /area/space)
+"gF" = (
+/obj/structure/railing,
+/turf/open/floor/grass,
+/area/space)
 "gG" = (
 /obj/structure/railing{
 	dir = 1
@@ -848,6 +852,10 @@
 	},
 /turf/open/floor/iron/dark/small,
 /area/space)
+"iU" = (
+/obj/structure/ladder,
+/turf/open/floor/catwalk_floor,
+/area/space)
 "jb" = (
 /obj/structure/chair/pew/left{
 	dir = 4
@@ -908,6 +916,12 @@
 /obj/structure/window/spawner/directional/west,
 /obj/effect/turf_decal/tile/blue/opposingcorners,
 /turf/open/floor/iron/white,
+/area/space)
+"jz" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/floor/grass,
 /area/space)
 "jA" = (
 /obj/effect/turf_decal/siding/white,
@@ -1882,6 +1896,13 @@
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /turf/open/floor/iron/white,
 /area/space)
+"si" = (
+/obj/structure/ladder,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/catwalk_floor,
+/area/space)
 "sk" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
@@ -2589,13 +2610,6 @@
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
-/area/space)
-"zG" = (
-/obj/effect/spawner/random/food_or_drink/seed{
-	pixel_x = 6;
-	pixel_y = 10
-	},
-/turf/open/floor/grass,
 /area/space)
 "zJ" = (
 /obj/structure/table/reinforced,
@@ -3884,9 +3898,19 @@
 /obj/item/wrench/medical,
 /turf/open/floor/iron/dark,
 /area/space)
+"LP" = (
+/obj/structure/railing,
+/turf/open/floor/catwalk_floor,
+/area/space)
 "LU" = (
 /obj/effect/spawner/structure/window/reinforced/tinted,
 /turf/open/floor/plating,
+/area/space)
+"LX" = (
+/obj/structure/railing/corner/end/flip{
+	dir = 1
+	},
+/turf/open/floor/iron,
 /area/space)
 "Md" = (
 /obj/item/kirbyplants/organic/plant21,
@@ -4189,6 +4213,12 @@
 	},
 /turf/open/floor/iron/white/smooth_large,
 /area/space)
+"OF" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/space)
 "OG" = (
 /obj/machinery/iv_drip,
 /turf/open/floor/iron/dark,
@@ -4452,6 +4482,13 @@
 	},
 /turf/open/floor/wood/tile,
 /area/space)
+"Ri" = (
+/obj/effect/spawner/random/food_or_drink/seed{
+	pixel_x = 6;
+	pixel_y = 10
+	},
+/turf/open/floor/grass,
+/area/space)
 "Ro" = (
 /obj/structure/railing{
 	dir = 1
@@ -4626,6 +4663,12 @@
 	},
 /turf/open/floor/iron/dark,
 /area/space)
+"SL" = (
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/floor/catwalk_floor,
+/area/space)
 "SM" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/plating,
@@ -4732,6 +4775,10 @@
 	dir = 4
 	},
 /turf/open/floor/iron/white,
+/area/space)
+"TO" = (
+/obj/structure/railing,
+/turf/open/floor/iron,
 /area/space)
 "TP" = (
 /obj/machinery/hydroponics/constructable,
@@ -4963,6 +5010,12 @@
 	dir = 1
 	},
 /turf/open/floor/iron/white,
+/area/space)
+"Wc" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 1
+	},
+/turf/open/floor/iron,
 /area/space)
 "We" = (
 /obj/structure/table/glass,
@@ -39549,7 +39602,7 @@ IO
 xn
 CS
 XB
-xf
+iU
 xf
 YF
 YF
@@ -100451,9 +100504,9 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
+YF
+YF
+YF
 YF
 XH
 sP
@@ -100707,9 +100760,9 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
+YF
+YF
+xf
 xf
 YF
 uU
@@ -100964,9 +101017,9 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
+YF
+xf
+xf
 xf
 xf
 jM
@@ -101221,9 +101274,9 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
+YF
+xf
+xf
 xf
 YF
 uU
@@ -101478,8 +101531,8 @@ VN
 VN
 VN
 VN
-VN
-VN
+YF
+xf
 xf
 xf
 YF
@@ -101735,8 +101788,8 @@ VN
 VN
 VN
 VN
-VN
-VN
+YF
+xf
 xf
 XB
 XB
@@ -101992,8 +102045,8 @@ VN
 VN
 VN
 VN
-VN
-VN
+YF
+xf
 xf
 XB
 wb
@@ -102249,8 +102302,8 @@ VN
 VN
 VN
 VN
-VN
-VN
+YF
+xf
 xf
 XB
 tD
@@ -102506,8 +102559,8 @@ VN
 VN
 VN
 VN
-VN
-VN
+YF
+YF
 xf
 XB
 XB
@@ -102764,7 +102817,7 @@ VN
 VN
 VN
 VN
-VN
+YF
 xf
 xf
 XB
@@ -103021,7 +103074,7 @@ VN
 VN
 VN
 VN
-VN
+YF
 xf
 xf
 xf
@@ -103278,11 +103331,11 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
+YF
+xf
+xf
+xf
+xf
 xf
 YF
 VN
@@ -103535,11 +103588,11 @@ VN
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
+YF
+xf
+xf
+xf
+xf
 xf
 YF
 VN
@@ -103792,11 +103845,11 @@ Hx
 VN
 VN
 VN
-VN
-VN
-VN
-VN
-VN
+YF
+xf
+xf
+xf
+xf
 xf
 YF
 YF
@@ -104049,12 +104102,12 @@ Hx
 Hx
 VN
 VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+xf
+xf
+xf
+xf
+xf
 VN
 YF
 JZ
@@ -104306,13 +104359,13 @@ pp
 Hx
 Hx
 YF
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+xf
+xf
+xf
+xf
+xf
+xf
 YF
 cm
 wR
@@ -104563,13 +104616,13 @@ VK
 sk
 VK
 YF
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+xf
+xf
+xf
+xf
+xf
+xf
+xf
 YF
 YF
 YF
@@ -104820,14 +104873,14 @@ VK
 hq
 VK
 YF
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+xf
+xf
+xf
+xf
+xf
+xf
+xf
+LP
 VN
 YF
 dP
@@ -105077,15 +105130,15 @@ VK
 RS
 hq
 YF
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+xf
+xf
+xf
+xf
+xf
+xf
+xf
+SL
+si
 YF
 ed
 ZF
@@ -105334,14 +105387,14 @@ NV
 VK
 sk
 YF
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+xf
+xf
+xf
+xf
+xf
+xf
+xf
+xf
 YF
 YF
 gi
@@ -105850,12 +105903,12 @@ xB
 NN
 Yt
 ZF
+TO
 VN
 VN
-VN
-VN
-VN
-YF
+ie
+ZF
+Hx
 wk
 ZF
 ZF
@@ -106107,10 +106160,10 @@ pH
 gc
 MW
 ZF
+TO
 VN
 VN
-VN
-VN
+db
 ZF
 cp
 ZF
@@ -106364,10 +106417,10 @@ Ru
 Ru
 vd
 ZF
+TO
 VN
 VN
-VN
-VN
+db
 ZF
 cp
 ZF
@@ -106621,12 +106674,12 @@ QD
 je
 Lc
 ZF
+TO
 VN
 VN
-VN
-VN
+db
 ZF
-YF
+Hx
 wk
 ZF
 ZF
@@ -106872,18 +106925,18 @@ bg
 tz
 vJ
 zz
-db
-db
+jz
+jz
 qM
 Je
 Aw
 ZF
+TO
 VN
 VN
-VN
-VN
+NE
 ZF
-YF
+Hx
 wk
 ZF
 ZF
@@ -107132,13 +107185,13 @@ GU
 hq
 ZS
 RS
-YF
-YF
-YF
-VN
-VN
-VN
-VN
+gF
+Wc
+ZF
+wi
+OF
+OF
+LX
 ZF
 cp
 ZF
@@ -107385,17 +107438,17 @@ Ot
 vJ
 zz
 Qe
-zG
+Ri
 TP
 RS
 VK
-YF
-VN
-VN
-VN
-VN
-VN
-VN
+gF
+Wc
+ZF
+ZF
+ZF
+ZF
+ZF
 ZF
 cp
 ZF
@@ -107646,15 +107699,15 @@ hq
 VK
 Of
 eg
-YF
-VN
-VN
-VN
+gF
 VN
 VN
 VN
 VN
 YF
+ZF
+ZF
+Hx
 wk
 ZF
 ZF
@@ -107903,14 +107956,14 @@ pt
 sk
 xB
 mM
+gF
+VN
+VN
+VN
+VN
 YF
-VN
-VN
-VN
-VN
-VN
-VN
-VN
+YF
+YF
 YF
 YF
 cQ
