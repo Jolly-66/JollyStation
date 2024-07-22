@@ -1,8 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"aj" = (
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
-	dir = 8
-	},
+"ar" = (
+/obj/machinery/shower/directional/north,
 /turf/open/floor/iron/white,
 /area/space)
 "aH" = (
@@ -11,9 +9,25 @@
 	},
 /turf/open/floor/iron/white,
 /area/space)
+"ba" = (
+/turf/closed/wall/ice,
+/area/space)
+"bb" = (
+/obj/structure/chair/sofa/bench/right{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
+/area/space)
 "bl" = (
 /obj/structure/chair/office/light,
 /turf/open/floor/wood/large,
+/area/space)
+"bo" = (
+/obj/machinery/door/airlock/medical{
+	name = "Psychologist Office"
+	},
+/obj/structure/sign/departments/psychology/directional/west,
+/turf/open/floor/iron/white,
 /area/space)
 "bR" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
@@ -23,10 +37,50 @@
 	},
 /turf/open/floor/iron/dark,
 /area/space)
-"cX" = (
-/obj/effect/turf_decal/siding/dark/corner{
+"ck" = (
+/obj/machinery/door/airlock/medical/glass{
+	name = "Cyrogenics"
+	},
+/turf/open/floor/iron/white,
+/area/space)
+"cT" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/iron/stairs/right{
 	dir = 1
 	},
+/area/space)
+"dc" = (
+/obj/structure/chair/sofa/bench/left{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
+/area/space)
+"dg" = (
+/obj/effect/turf_decal/siding/white/corner,
+/turf/open/floor/iron/white,
+/area/space)
+"dK" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/table,
+/obj/item/paper_bin{
+	pixel_x = -5;
+	pixel_y = 10
+	},
+/obj/item/pen{
+	pixel_x = -3;
+	pixel_y = 2
+	},
+/turf/open/floor/wood/tile,
+/area/space)
+"en" = (
+/obj/effect/turf_decal/weather/snow/corner,
+/obj/machinery/door/airlock/science{
+	name = "Chemical Storage"
+	},
+/obj/structure/barricade/wooden,
+/obj/machinery/door/firedoor,
 /turf/open/floor/iron/dark,
 /area/space)
 "ep" = (
@@ -35,28 +89,17 @@
 	},
 /turf/open/floor/iron/dark,
 /area/space)
-"es" = (
-/turf/closed/wall/ice,
+"eL" = (
+/obj/structure/railing/corner/end/flip{
+	dir = 1
+	},
+/turf/open/floor/iron,
 /area/space)
-"et" = (
-/obj/structure/table,
-/obj/machinery/reagentgrinder{
-	pixel_x = 4;
-	pixel_y = 17
+"fp" = (
+/obj/structure/chair/sofa/corp/right{
+	dir = 4
 	},
-/obj/item/stack/sheet/mineral/plasma{
-	pixel_y = 1;
-	pixel_x = -1
-	},
-/turf/open/floor/iron/dark,
-/area/space)
-"fN" = (
-/obj/effect/turf_decal/siding/dark,
-/obj/item/plunger{
-	pixel_x = 8;
-	pixel_y = 17
-	},
-/turf/open/floor/iron/dark,
+/turf/open/floor/wood/large,
 /area/space)
 "fP" = (
 /obj/effect/turf_decal/siding/dark{
@@ -67,122 +110,124 @@
 	},
 /turf/open/floor/iron/dark,
 /area/space)
+"gA" = (
+/obj/structure/rack,
+/obj/item/reagent_containers/cup/bottle/epinephrine{
+	pixel_x = -5;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/cup/bottle/fluorine{
+	pixel_x = 7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/cup/bottle/iodine{
+	pixel_x = 1
+	},
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/effect/mapping_helpers/apc/no_charge,
+/turf/open/floor/iron/dark,
+/area/space)
+"hn" = (
+/obj/structure/dresser,
+/turf/open/floor/carpet/cyan,
+/area/space)
+"hr" = (
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/space)
+"hB" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted,
+/turf/open/floor/iron/white,
+/area/space)
+"hH" = (
+/obj/structure/table,
+/turf/open/floor/iron/white,
+/area/space)
+"ib" = (
+/obj/machinery/disposal/bin,
+/turf/open/floor/wood/tile,
+/area/space)
 "ij" = (
 /obj/structure/chair/office/light{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
 /area/space)
+"iw" = (
+/obj/structure/rack,
+/obj/item/reagent_containers/cup/bottle/basic_buffer{
+	pixel_x = -5;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/cup/bottle/acidic_buffer{
+	pixel_x = 7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/cup/bottle/formaldehyde{
+	pixel_x = 1
+	},
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/iron/dark,
+/area/space)
+"iE" = (
+/obj/effect/turf_decal/siding/wood/corner,
+/turf/open/floor/carpet/cyan,
+/area/space)
+"iG" = (
+/obj/machinery/disposal/bin,
+/turf/open/floor/iron/white,
+/area/space)
+"iU" = (
+/obj/structure/table/wood,
+/obj/item/folder/yellow{
+	pixel_x = -3;
+	pixel_y = 5
+	},
+/obj/item/clipboard{
+	pixel_x = 1;
+	pixel_y = 0
+	},
+/obj/effect/spawner/random/bureaucracy/pen{
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/turf/open/floor/iron/white,
+/area/space)
 "jd" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/space)
-"jY" = (
-/obj/effect/turf_decal/siding/dark/corner{
-	dir = 4
+"ji" = (
+/obj/structure/railing{
+	dir = 8
 	},
-/turf/open/floor/iron/dark,
-/area/space)
-"kC" = (
-/obj/structure/railing,
-/turf/open/misc/asteroid/snow/icemoon,
-/area/space)
-"kK" = (
-/obj/effect/turf_decal/weather/snow/corner,
-/obj/machinery/door/airlock/science{
-	name = "Chemical Storage"
-	},
-/obj/structure/barricade/wooden,
-/obj/machinery/door/firedoor,
-/turf/open/floor/iron/dark,
-/area/space)
-"lv" = (
-/obj/structure/rack,
-/obj/item/reagent_containers/cup/bottle/iron{
-	pixel_x = -5;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/cup/bottle/lithium{
-	pixel_x = 7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/cup/bottle/multiver{
-	pixel_x = 1
-	},
-/obj/effect/mapping_helpers/broken_floor,
-/turf/open/floor/plating,
-/area/space)
-"lB" = (
-/obj/effect/turf_decal/weather/snow/corner,
-/turf/open/space/basic,
-/area/space)
-"lL" = (
-/obj/structure/rack,
-/obj/item/reagent_containers/cup/bottle/ethanol{
-	pixel_x = -5;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/cup/bottle/carbon{
-	pixel_x = 7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/cup/bottle/chlorine{
-	pixel_x = 1
-	},
-/obj/machinery/airalarm/directional/north,
-/obj/effect/mapping_helpers/broken_floor,
-/turf/open/floor/iron/dark,
-/area/space)
-"mG" = (
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
-	dir = 4
-	},
-/turf/open/floor/iron/white,
-/area/space)
-"nl" = (
-/turf/open/floor/iron/white,
-/area/space)
-"nO" = (
-/obj/effect/turf_decal/siding/wood{
+/turf/open/floor/iron/stairs/left{
 	dir = 1
+	},
+/area/space)
+"jl" = (
+/obj/structure/table/wood,
+/obj/item/flashlight/lamp{
+	pixel_x = -7;
+	pixel_y = 12
+	},
+/turf/open/floor/carpet/cyan,
+/area/space)
+"jO" = (
+/obj/structure/railing/corner/end{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/space)
+"jV" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
 	},
 /turf/open/floor/wood/large,
 /area/space)
-"nT" = (
-/obj/structure/table,
-/obj/item/construction/plumbing{
-	pixel_y = 12;
-	pixel_x = 5
-	},
-/turf/open/floor/iron/dark,
-/area/space)
-"oJ" = (
-/obj/machinery/door/airlock/external/glass{
-	name = "Pharmacy Access"
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 4
-	},
-/obj/structure/fans/tiny/invisible,
-/turf/open/floor/plating,
-/area/space)
-"pI" = (
-/obj/effect/turf_decal/siding/dark{
-	dir = 6
-	},
-/turf/open/floor/iron/white,
-/area/space)
-"qb" = (
-/obj/effect/turf_decal/siding/dark{
-	dir = 4
-	},
-/turf/open/floor/iron/dark,
-/area/space)
-"rd" = (
-/obj/machinery/computer/records/medical,
-/turf/open/floor/iron/white/smooth_large,
-/area/space)
-"rm" = (
+"kv" = (
 /obj/structure/rack,
 /obj/item/reagent_containers/cup/bottle/mercury{
 	pixel_x = -5;
@@ -198,8 +243,151 @@
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron/dark,
 /area/space)
+"kC" = (
+/obj/structure/railing,
+/turf/open/misc/asteroid/snow/icemoon,
+/area/space)
+"kE" = (
+/obj/machinery/door/airlock/command{
+	name = "Medical Directors Quarters"
+	},
+/turf/open/floor/wood/tile,
+/area/space)
+"kQ" = (
+/obj/effect/turf_decal/siding/white/corner{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/space)
+"lh" = (
+/obj/machinery/door/airlock/maintenance_hatch,
+/turf/open/floor/plating,
+/area/space)
+"lB" = (
+/obj/effect/turf_decal/weather/snow/corner,
+/turf/open/space/basic,
+/area/space)
+"lG" = (
+/obj/machinery/cryo_cell{
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/space)
+"nl" = (
+/turf/open/floor/iron/white,
+/area/space)
+"nv" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/obj/structure/chair/comfy/black{
+	dir = 8
+	},
+/turf/open/floor/wood/large,
+/area/space)
+"nO" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/large,
+/area/space)
+"oJ" = (
+/obj/machinery/door/airlock/external/glass{
+	name = "Pharmacy Access"
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 4
+	},
+/obj/structure/fans/tiny/invisible,
+/turf/open/floor/plating,
+/area/space)
+"oT" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/space)
+"pd" = (
+/obj/effect/spawner/structure/window/ice,
+/turf/open/floor/plating,
+/area/space)
+"pI" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 6
+	},
+/turf/open/floor/iron/white,
+/area/space)
+"pO" = (
+/obj/machinery/shower/directional/south,
+/turf/open/floor/iron/white,
+/area/space)
+"pQ" = (
+/obj/structure/railing/corner/end{
+	dir = 2
+	},
+/turf/open/floor/iron/white,
+/area/space)
+"pV" = (
+/obj/item/kirbyplants/organic/plant22,
+/turf/open/floor/iron/white,
+/area/space)
+"qb" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
+/area/space)
+"qh" = (
+/obj/machinery/chem_heater/withbuffer,
+/turf/open/floor/iron/dark,
+/area/space)
+"qN" = (
+/obj/machinery/computer/security/telescreen/cmo{
+	pixel_y = 32
+	},
+/turf/open/floor/wood/tile,
+/area/space)
+"rd" = (
+/obj/machinery/computer/records/medical,
+/turf/open/floor/iron/white/smooth_large,
+/area/space)
+"rg" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/space)
+"rq" = (
+/obj/structure/bed{
+	dir = 1
+	},
+/obj/item/bedsheet/cmo{
+	dir = 1
+	},
+/turf/open/floor/carpet/cyan,
+/area/space)
 "rB" = (
 /turf/open/misc/ice/smooth,
+/area/space)
+"rF" = (
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/turf/open/floor/iron/white,
+/area/space)
+"rG" = (
+/obj/structure/table,
+/obj/machinery/reagentgrinder{
+	pixel_x = 4;
+	pixel_y = 17
+	},
+/obj/item/stack/sheet/mineral/plasma{
+	pixel_y = 1;
+	pixel_x = -1
+	},
+/turf/open/floor/iron/dark,
+/area/space)
+"rV" = (
+/obj/effect/turf_decal/siding/wood/corner,
+/turf/open/floor/wood/large,
 /area/space)
 "rW" = (
 /obj/machinery/medical_kiosk,
@@ -212,10 +400,13 @@
 /obj/machinery/chem_mass_spec,
 /turf/open/floor/iron/white,
 /area/space)
-"ts" = (
-/obj/structure/railing,
-/obj/item/stack/rods,
-/turf/open/misc/asteroid/snow/icemoon,
+"sv" = (
+/obj/machinery/stasis,
+/turf/open/floor/iron/white,
+/area/space)
+"sY" = (
+/obj/machinery/iv_drip,
+/turf/open/floor/iron/white,
 /area/space)
 "tK" = (
 /obj/machinery/door/airlock/external/glass{
@@ -223,15 +414,33 @@
 	},
 /turf/open/floor/iron/dark,
 /area/space)
+"ug" = (
+/obj/structure/railing/corner/end/flip{
+	dir = 8
+	},
+/turf/open/misc/asteroid/snow/icemoon,
+/area/space)
+"um" = (
+/obj/effect/turf_decal/tile/yellow/half/contrasted{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
+/area/space)
 "uL" = (
 /obj/machinery/vending/wardrobe/chem_wardrobe,
 /turf/open/floor/iron/dark,
 /area/space)
-"vr" = (
-/obj/structure/railing/corner/end{
-	dir = 4
+"vQ" = (
+/obj/effect/turf_decal/trimline/blue,
+/turf/open/floor/iron/white,
+/area/space)
+"we" = (
+/obj/structure/bed/dogbed/runtime{
+	desc = "A comfy-looking cat bed. You can even strap your pet in, in case the gravity turns off. It has an inscription: Requiescat in Pace, Camdola."
 	},
-/turf/open/floor/plating/snowed/smoothed/icemoon,
+/mob/living/basic/pet/cat/runtime,
+/obj/item/toy/cattoy,
+/turf/open/floor/iron/white,
 /area/space)
 "wh" = (
 /obj/structure/chair/office/light,
@@ -241,15 +450,43 @@
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
 /area/space)
+"ww" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/carpet/cyan,
+/area/space)
+"wR" = (
+/obj/structure/chair/sofa/bench{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
+/area/space)
 "wV" = (
 /obj/structure/railing{
 	dir = 1
 	},
 /turf/open/misc/asteroid/snow/icemoon,
 /area/space)
+"xs" = (
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/wood/tile,
+/area/space)
 "xT" = (
 /obj/machinery/chem_master,
 /turf/open/floor/iron/dark,
+/area/space)
+"ya" = (
+/obj/structure/railing/corner/end{
+	dir = 4
+	},
+/turf/open/floor/plating/snowed/smoothed/icemoon,
+/area/space)
+"yt" = (
+/obj/machinery/door/airlock/medical/glass{
+	name = "Exam Room"
+	},
+/turf/open/floor/iron/white,
 /area/space)
 "yR" = (
 /turf/open/floor/iron/dark,
@@ -262,8 +499,36 @@
 /obj/machinery/chem_dispenser,
 /turf/open/floor/iron/dark,
 /area/space)
+"Aa" = (
+/obj/structure/rack,
+/obj/item/reagent_containers/cup/bottle/iron{
+	pixel_x = -5;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/cup/bottle/lithium{
+	pixel_x = 7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/cup/bottle/multiver{
+	pixel_x = 1
+	},
+/obj/effect/mapping_helpers/broken_floor,
+/turf/open/floor/plating,
+/area/space)
+"Ag" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/turf/open/floor/wood/large,
+/area/space)
 "Aj" = (
 /obj/machinery/disposal/bin,
+/turf/open/floor/iron/dark,
+/area/space)
+"Az" = (
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 8
+	},
 /turf/open/floor/iron/dark,
 /area/space)
 "Ba" = (
@@ -286,22 +551,57 @@
 	},
 /turf/open/floor/iron/dark,
 /area/space)
-"Cb" = (
-/obj/machinery/chem_mass_spec,
-/turf/open/floor/iron/dark,
-/area/space)
-"Cr" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+"Bv" = (
+/obj/structure/railing/corner/end/flip,
 /turf/open/floor/iron/white,
 /area/space)
-"Cs" = (
-/obj/effect/mapping_helpers/broken_floor,
-/turf/open/floor/iron/dark,
+"Cj" = (
+/turf/open/floor/wood/tile,
 /area/space)
-"DQ" = (
+"Dk" = (
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 1
 	},
+/turf/open/floor/iron/white,
+/area/space)
+"DB" = (
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 4
+	},
+/turf/open/floor/wood/large,
+/area/space)
+"DN" = (
+/obj/structure/chair/sofa/bench/right{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/space)
+"DZ" = (
+/obj/item/stack/rods,
+/turf/open/misc/asteroid/snow/icemoon,
+/area/space)
+"Ez" = (
+/obj/structure/table,
+/obj/item/stack/sheet/iron/fifty{
+	pixel_x = 9;
+	pixel_y = 11
+	},
+/obj/item/stack/sheet/iron/fifty{
+	pixel_x = 9;
+	pixel_y = 13
+	},
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = -8;
+	pixel_y = 13
+	},
+/obj/item/clothing/head/utility/welding{
+	pixel_x = -7;
+	pixel_y = 5
+	},
+/turf/open/floor/iron/dark,
+/area/space)
+"EC" = (
+/obj/structure/sign/departments/exam_room/directional/west,
 /turf/open/floor/iron/white,
 /area/space)
 "Fo" = (
@@ -314,32 +614,68 @@
 	},
 /turf/open/floor/iron/white,
 /area/space)
-"GL" = (
-/obj/structure/rack,
-/obj/item/reagent_containers/cup/bottle/epinephrine{
-	pixel_x = -5;
-	pixel_y = 3
+"GI" = (
+/obj/machinery/suit_storage_unit/cmo,
+/obj/effect/turf_decal/siding/white{
+	dir = 4
 	},
-/obj/item/reagent_containers/cup/bottle/fluorine{
-	pixel_x = 7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/cup/bottle/iodine{
-	pixel_x = 1
-	},
-/obj/machinery/power/apc/auto_name/directional/north,
-/obj/effect/mapping_helpers/apc/no_charge,
+/turf/open/floor/iron/large,
+/area/space)
+"GQ" = (
+/obj/machinery/chem_mass_spec,
 /turf/open/floor/iron/dark,
+/area/space)
+"He" = (
+/obj/machinery/door/airlock/medical{
+	name = "Psychologist Office"
+	},
+/obj/structure/sign/departments/psychology/directional/east,
+/turf/open/floor/iron/white,
 /area/space)
 "HP" = (
-/obj/effect/turf_decal/siding/dark/corner{
+/obj/machinery/modular_computer/preset/id{
 	dir = 8
+	},
+/turf/open/floor/wood/tile,
+/area/space)
+"II" = (
+/obj/effect/mapping_helpers/broken_floor,
+/turf/open/floor/iron/dark,
+/area/space)
+"Ja" = (
+/obj/structure/table/wood,
+/obj/machinery/computer/records/medical/laptop{
+	dir = 1;
+	pixel_y = 4
+	},
+/turf/open/floor/iron/white,
+/area/space)
+"Ji" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/table,
+/obj/item/folder/white{
+	pixel_x = 5;
+	pixel_y = 6
+	},
+/obj/item/folder/yellow{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/turf/open/floor/wood/tile,
+/area/space)
+"JI" = (
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/space)
-"IP" = (
-/obj/effect/turf_decal/trimline/blue,
-/turf/open/floor/iron/white,
+"Kc" = (
+/obj/structure/table,
+/obj/item/construction/plumbing{
+	pixel_y = 12;
+	pixel_x = 5
+	},
+/turf/open/floor/iron/dark,
 /area/space)
 "Kk" = (
 /obj/effect/turf_decal/siding/dark,
@@ -358,8 +694,30 @@
 	},
 /turf/open/floor/wood/large,
 /area/space)
-"Kz" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+"KB" = (
+/obj/structure/rack,
+/obj/item/reagent_containers/cup/bottle/phosphorus{
+	pixel_x = -5;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/cup/bottle/potassium{
+	pixel_x = 7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/cup/bottle/sodium{
+	pixel_x = 1
+	},
+/turf/open/floor/iron/dark,
+/area/space)
+"KH" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/turf/open/floor/carpet/cyan,
+/area/space)
+"KT" = (
+/obj/structure/table,
+/obj/structure/window/spawner/directional/north,
 /turf/open/floor/iron/white,
 /area/space)
 "Lk" = (
@@ -382,6 +740,14 @@
 	dir = 4
 	},
 /turf/open/floor/iron/white,
+/area/space)
+"LS" = (
+/obj/effect/turf_decal/siding/dark,
+/obj/item/plunger{
+	pixel_x = 8;
+	pixel_y = 17
+	},
+/turf/open/floor/iron/dark,
 /area/space)
 "LV" = (
 /obj/structure/table/glass,
@@ -407,6 +773,27 @@
 	},
 /turf/open/floor/iron/dark,
 /area/space)
+"Mi" = (
+/obj/structure/filingcabinet/chestdrawer,
+/obj/machinery/requests_console/auto_name/directional/north{
+	department = "Medical Director's Desk"
+	},
+/obj/effect/mapping_helpers/requests_console/assistance,
+/obj/effect/mapping_helpers/requests_console/announcement,
+/obj/effect/mapping_helpers/requests_console/information,
+/turf/open/floor/wood/tile,
+/area/space)
+"MN" = (
+/obj/structure/railing,
+/obj/item/stack/rods,
+/turf/open/misc/asteroid/snow/icemoon,
+/area/space)
+"Nm" = (
+/obj/structure/chair/sofa/corp/left{
+	dir = 4
+	},
+/turf/open/floor/wood/large,
+/area/space)
 "Oc" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 10
@@ -420,6 +807,15 @@
 	},
 /obj/structure/filingcabinet/chestdrawer,
 /turf/open/floor/wood/large,
+/area/space)
+"OA" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/table,
+/obj/item/stamp/head/cmo{
+	pixel_x = 8;
+	pixel_y = 11
+	},
+/turf/open/floor/wood/tile,
 /area/space)
 "Pb" = (
 /obj/machinery/computer/crew,
@@ -451,10 +847,6 @@
 /obj/item/clothing/glasses/science,
 /turf/open/floor/iron/dark,
 /area/space)
-"Px" = (
-/obj/item/stack/rods,
-/turf/open/misc/asteroid/snow/icemoon,
-/area/space)
 "Qj" = (
 /obj/structure/closet/wardrobe/chemistry_white{
 	name = "Winter Clothes Closet"
@@ -464,20 +856,27 @@
 /obj/item/clothing/suit/hooded/wintercoat/medical/chemistry,
 /turf/open/floor/iron/dark,
 /area/space)
-"Qv" = (
-/obj/structure/rack,
-/obj/item/reagent_containers/cup/bottle/phosphorus{
+"Qt" = (
+/obj/machinery/pdapainter/medbay,
+/obj/item/computer_disk/medical{
 	pixel_x = -5;
-	pixel_y = 3
+	pixel_y = 10
 	},
-/obj/item/reagent_containers/cup/bottle/potassium{
-	pixel_x = 7;
-	pixel_y = 3
+/obj/item/computer_disk/medical{
+	pixel_x = 5;
+	pixel_y = 7
 	},
-/obj/item/reagent_containers/cup/bottle/sodium{
-	pixel_x = 1
+/turf/open/floor/wood/tile,
+/area/space)
+"QD" = (
+/obj/structure/chair/office/light{
+	dir = 1
 	},
-/turf/open/floor/iron/dark,
+/turf/open/floor/iron/white,
+/area/space)
+"Rg" = (
+/obj/structure/chair/office/light,
+/turf/open/floor/wood/tile,
 /area/space)
 "Rj" = (
 /turf/open/misc/asteroid/snow/icemoon,
@@ -487,6 +886,11 @@
 /area/space)
 "RO" = (
 /turf/closed/wall/r_wall,
+/area/space)
+"RX" = (
+/obj/structure/table/wood,
+/obj/machinery/fax_machine,
+/turf/open/floor/carpet,
 /area/space)
 "Sa" = (
 /obj/effect/turf_decal/siding/dark{
@@ -518,34 +922,60 @@
 	},
 /turf/open/floor/wood/large,
 /area/space)
-"TM" = (
-/obj/structure/table,
-/obj/item/stack/sheet/iron/fifty{
-	pixel_x = 9;
-	pixel_y = 11
+"TD" = (
+/obj/machinery/button/door/directional/east{
+	id = "psych-priv";
+	name = "Privacy Shutters Control";
+	pixel_y = -8
 	},
-/obj/item/stack/sheet/iron/fifty{
-	pixel_x = 9;
-	pixel_y = 13
+/obj/structure/chair/office,
+/turf/open/floor/iron/white,
+/area/space)
+"TK" = (
+/obj/effect/spawner/structure/window,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "psych-priv";
+	name = "Privacy Shutters"
 	},
-/obj/item/storage/toolbox/mechanical{
-	pixel_x = -8;
-	pixel_y = 13
-	},
-/obj/item/clothing/head/utility/welding{
-	pixel_x = -7;
-	pixel_y = 5
-	},
-/turf/open/floor/iron/dark,
+/turf/open/floor/plating,
 /area/space)
 "TP" = (
 /turf/closed/wall,
 /area/space)
-"UW" = (
-/obj/structure/railing/corner/end/flip{
-	dir = 8
+"Uk" = (
+/obj/machinery/door/airlock/command/glass{
+	name = "Medical Directors Office"
 	},
-/turf/open/misc/asteroid/snow/icemoon,
+/turf/open/floor/iron/white,
+/area/space)
+"Uu" = (
+/obj/machinery/door/airlock/medical/glass{
+	name = "Surgery"
+	},
+/turf/open/floor/iron/white,
+/area/space)
+"Ux" = (
+/turf/open/floor/iron,
+/area/space)
+"UH" = (
+/obj/structure/rack,
+/obj/item/reagent_containers/cup/bottle/ethanol{
+	pixel_x = -5;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/cup/bottle/carbon{
+	pixel_x = 7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/cup/bottle/chlorine{
+	pixel_x = 1
+	},
+/obj/machinery/airalarm/directional/north,
+/obj/effect/mapping_helpers/broken_floor,
+/turf/open/floor/iron/dark,
+/area/space)
+"UT" = (
+/turf/open/floor/carpet/cyan,
 /area/space)
 "UZ" = (
 /obj/machinery/door/airlock/external/glass{
@@ -557,14 +987,19 @@
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/plating,
 /area/space)
+"Vh" = (
+/turf/open/floor/plating,
+/area/space)
 "Vt" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
 /area/space)
-"Wb" = (
-/turf/open/floor/plating,
+"Wg" = (
+/turf/open/floor/iron/stairs/medium{
+	dir = 1
+	},
 /area/space)
 "Wi" = (
 /obj/effect/turf_decal/siding/dark,
@@ -591,15 +1026,13 @@
 	},
 /turf/open/misc/asteroid/snow/icemoon,
 /area/space)
-"XG" = (
-/obj/machinery/door/airlock/maintenance_hatch,
-/turf/open/floor/plating,
+"Xi" = (
+/obj/effect/turf_decal/tile/yellow/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
 /area/space)
-"XK" = (
-/obj/machinery/chem_heater/withbuffer,
-/turf/open/floor/iron/dark,
-/area/space)
-"Yh" = (
+"Xl" = (
 /obj/structure/rack,
 /obj/item/stack/ducts/fifty,
 /obj/item/stack/ducts/fifty,
@@ -610,6 +1043,28 @@
 /obj/item/stack/ducts/fifty,
 /obj/item/stack/ducts/fifty,
 /turf/open/floor/iron/dark,
+/area/space)
+"Xz" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/obj/structure/table/wood,
+/obj/item/flashlight/lamp/green{
+	pixel_x = 5;
+	pixel_y = 14
+	},
+/turf/open/floor/wood/large,
+/area/space)
+"Yx" = (
+/obj/structure/closet/secure_closet/chief_medical,
+/obj/effect/turf_decal/siding/white{
+	dir = 4
+	},
+/turf/open/floor/iron/large,
+/area/space)
+"YA" = (
+/obj/structure/closet/secure_closet/psychology,
+/turf/open/floor/carpet,
 /area/space)
 "YB" = (
 /turf/open/floor/wood/large,
@@ -620,29 +1075,36 @@
 	},
 /turf/open/misc/asteroid/snow/icemoon,
 /area/space)
-"Zg" = (
-/obj/structure/rack,
-/obj/item/reagent_containers/cup/bottle/basic_buffer{
-	pixel_x = -5;
-	pixel_y = 3
+"YF" = (
+/obj/structure/table,
+/obj/machinery/fax_machine/command{
+	pixel_y = 6
 	},
-/obj/item/reagent_containers/cup/bottle/acidic_buffer{
-	pixel_x = 7;
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/cup/bottle/formaldehyde{
-	pixel_x = 1
-	},
-/obj/machinery/firealarm/directional/south,
-/turf/open/floor/iron/dark,
+/turf/open/floor/wood/tile,
 /area/space)
-"Zn" = (
-/obj/effect/spawner/structure/window/ice,
-/turf/open/floor/plating,
+"Zb" = (
+/obj/machinery/computer/records/medical{
+	dir = 8
+	},
+/turf/open/floor/wood/tile,
+/area/space)
+"Zm" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/machinery/computer/crew{
+	dir = 8
+	},
+/obj/structure/window/spawner/directional/south,
+/turf/open/floor/wood/tile,
 /area/space)
 "Zu" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 5
+	},
+/turf/open/floor/iron/white,
+/area/space)
+"ZS" = (
+/obj/structure/chair/sofa/bench/left{
+	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/space)
@@ -28804,9 +29266,9 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -29059,13 +29521,13 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -29316,14 +29778,14 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -29573,15 +30035,15 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -29816,6 +30278,11 @@ Lq
 Lq
 Lq
 Lq
+TP
+TP
+TP
+TP
+TP
 Lq
 Lq
 Lq
@@ -29824,21 +30291,16 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -30069,6 +30531,15 @@ Lq
 Lq
 Lq
 Lq
+TP
+TP
+TP
+TP
+TP
+nl
+nl
+nl
+TP
 Lq
 Lq
 Lq
@@ -30077,26 +30548,17 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -30325,6 +30787,16 @@ Lq
 Lq
 Lq
 Lq
+TP
+TP
+Lq
+Lq
+Lq
+TP
+nl
+nl
+nl
+TP
 Lq
 Lq
 Lq
@@ -30332,28 +30804,18 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -30582,6 +31044,16 @@ Lq
 Lq
 Lq
 Lq
+wj
+Lq
+Lq
+Lq
+Lq
+TP
+nl
+nl
+TP
+TP
 Lq
 Lq
 Lq
@@ -30589,29 +31061,19 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -30839,6 +31301,15 @@ Lq
 Lq
 Lq
 Lq
+wj
+Lq
+Lq
+lG
+Lq
+TP
+nl
+Uu
+TP
 Lq
 Lq
 Lq
@@ -30847,28 +31318,19 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -31096,6 +31558,15 @@ Lq
 Lq
 Lq
 Lq
+wj
+Lq
+Lq
+Lq
+Lq
+Lq
+nl
+nl
+wj
 Lq
 Lq
 Lq
@@ -31103,29 +31574,20 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -31353,6 +31815,15 @@ Lq
 Lq
 Lq
 Lq
+wj
+Lq
+Lq
+Lq
+Lq
+Lq
+nl
+nl
+wj
 Lq
 Lq
 Lq
@@ -31360,29 +31831,20 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -31608,6 +32070,17 @@ Lq
 Lq
 Lq
 Lq
+TP
+TP
+TP
+TP
+Lq
+Lq
+Lq
+TP
+ck
+ck
+TP
 Lq
 Lq
 Lq
@@ -31615,30 +32088,19 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -31865,37 +32327,37 @@ Lq
 Lq
 Lq
 Lq
+TP
+hH
+hH
+TP
+TP
+TP
+TP
+TP
+nl
+nl
+TP
+TP
 Lq
 Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -32122,37 +32584,37 @@ Lq
 Lq
 Lq
 Lq
+TP
+nl
+nl
+nl
+nl
+hH
+wj
+hH
+nl
+nl
+hH
+wj
 Lq
 Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -32379,37 +32841,37 @@ Lq
 Lq
 Lq
 Lq
+TP
+nl
+nl
+nl
+nl
+KT
+wj
+hH
+nl
+nl
+hH
+wj
 Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -32636,36 +33098,36 @@ Lq
 Lq
 Lq
 Lq
+TP
+nl
+nl
+nl
+nl
+hH
+wj
+hH
+nl
+nl
+hH
+wj
 Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -32893,36 +33355,36 @@ Lq
 Lq
 Lq
 Lq
+TP
+nl
+nl
+nl
+nl
+wj
+wj
+pO
+nl
+nl
+ar
+wj
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -33150,36 +33612,36 @@ Lq
 Lq
 Lq
 Lq
+TP
+nl
+nl
+nl
+nl
+wj
+nl
+nl
+nl
+nl
+nl
+TP
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -33407,35 +33869,35 @@ Lq
 Lq
 Lq
 Lq
+TP
+nl
+nl
+nl
+nl
+wj
+nl
+nl
+nl
+nl
+nl
+TP
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -33664,34 +34126,34 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+nl
+nl
+nl
+nl
+wj
+nl
+sY
+nl
+sY
+nl
+TP
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -33921,30 +34383,30 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+TP
+nl
+nl
+nl
+wj
+sv
+hH
+nl
+hH
+sv
+TP
+Rj
+Rj
+wj
+wj
+wj
+wj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 Lq
 Lq
 Lq
@@ -34179,29 +34641,29 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+TP
+TP
+TP
+TP
+wj
+wj
+yt
+wj
+wj
+TP
+TP
+wj
+wj
+Nm
+fp
+wj
+wj
+TP
+wj
+wj
+wj
+TP
 Lq
 Lq
 Lq
@@ -34437,28 +34899,28 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+nl
+nl
+EC
+nl
+nl
+nl
+nl
+nl
+EC
+TK
+iG
+jV
+DB
+rV
+Ag
+nl
+bo
+nl
+nl
+pV
+TP
 Lq
 Lq
 Lq
@@ -34694,29 +35156,29 @@ Lq
 Lq
 Lq
 Lq
+TP
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+TK
+nl
+nl
+Xz
+nv
+nl
+nl
+TK
+nl
+nl
+ZS
+TP
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-lB
-Rj
-rB
 Lq
 Lq
 Lq
@@ -34949,31 +35411,31 @@ Lq
 Lq
 Lq
 Lq
+RO
+RO
+RO
+RO
+jd
+jd
+jd
+jd
+Uk
+RO
+nl
+nl
+TK
+nl
+nl
+nl
+nl
+nl
+iU
+TK
+nl
+nl
+DN
+TP
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-ZU
-Ro
 Lq
 Lq
 Lq
@@ -35205,31 +35667,31 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+RO
+RO
+Yx
+GI
+TP
+Qt
+YF
+dK
+we
+nl
+jd
+nl
+nl
+He
+dg
+oT
+oT
+kQ
+TD
+Ja
+TP
+rg
+rg
+TP
+TP
 Lq
 Lq
 Lq
@@ -35462,30 +35924,30 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+RO
+rq
+UT
+UT
+TP
+qN
+Rg
+OA
+QD
+nl
+jd
+nl
+nl
+TP
+TP
+YA
+RX
 TP
 TP
 TP
 TP
-Lq
-Lq
-Lq
+Ux
+Ux
+TP
 Lq
 Lq
 Lq
@@ -35719,30 +36181,30 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+RO
+jl
+UT
+UT
+TP
+Mi
+Cj
+Ji
+QD
+nl
+jd
+nl
+nl
+pV
+TP
+TP
+TP
 TP
 rW
-nl
+pV
 TP
-Lq
-Lq
-Lq
+Ux
+Ux
+TP
 Lq
 Lq
 Lq
@@ -35976,17 +36438,17 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+RO
+hn
+iE
+ww
 TP
+ib
+Cj
+xs
+nl
+nl
+jd
 nl
 nl
 nl
@@ -35997,8 +36459,8 @@ Fs
 nl
 nl
 wj
-Lq
-Lq
+Ux
+Ux
 Lq
 Lq
 Lq
@@ -36233,17 +36695,17 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-TP
+RO
+iE
+KH
+Cj
+kE
+Cj
+Cj
+xs
+nl
+nl
+jd
 nl
 nl
 nl
@@ -36254,8 +36716,8 @@ Fs
 nl
 nl
 wj
-Lq
-Lq
+Ux
+Ux
 Lq
 Lq
 Lq
@@ -36490,29 +36952,29 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+RO
+RO
+Cj
+Cj
 TP
+HP
+Zb
+Zm
+pV
+nl
+jd
 nl
 nl
-nl
+pV
 TP
 wj
 TB
 TP
 nl
-nl
-nl
-Lq
-Lq
+pQ
+ji
+eL
+Ux
 Lq
 Lq
 Lq
@@ -36748,16 +37210,16 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-TP
-TP
-TP
+RO
+RO
+RO
+RO
+jd
+jd
+jd
+jd
+Uk
+RO
 nl
 nl
 TP
@@ -36767,9 +37229,9 @@ YB
 wj
 nl
 nl
-nl
-Lq
-Lq
+Wg
+Ux
+Ux
 Lq
 Lq
 Lq
@@ -37007,12 +37469,12 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
 TP
+nl
+nl
+nl
+nl
+nl
 nl
 nl
 nl
@@ -37024,9 +37486,9 @@ YB
 wj
 nl
 nl
-nl
-Lq
-Lq
+Wg
+Ux
+Ux
 Lq
 Lq
 Lq
@@ -37264,12 +37726,12 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
 TP
+nl
+nl
+nl
+nl
+nl
 nl
 nl
 nl
@@ -37280,10 +37742,10 @@ nO
 bl
 Kv
 nl
-nl
-nl
-Lq
-Lq
+Bv
+cT
+jO
+Ux
 Lq
 Lq
 Lq
@@ -37521,10 +37983,10 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
+TP
+TP
+TP
+TP
 TP
 TP
 Sa
@@ -37539,8 +38001,8 @@ wj
 nl
 nl
 wj
-Lq
-Lq
+Ux
+Ux
 Lq
 Lq
 Lq
@@ -37796,8 +38258,8 @@ nl
 nl
 nl
 wj
-Lq
-Lq
+Ux
+Ux
 Lq
 Lq
 Lq
@@ -38048,13 +38510,13 @@ Oc
 yR
 So
 nl
-nl
-nl
-nl
-nl
+pV
+bb
+wR
+dc
 wj
-Lq
-Lq
+Ux
+Ux
 Lq
 Lq
 Lq
@@ -40616,7 +41078,7 @@ Fo
 Fo
 wV
 Rj
-Px
+DZ
 Ro
 Ro
 Ro
@@ -41115,10 +41577,10 @@ Lq
 Lq
 Lq
 Lq
-es
-es
-Zn
-Zn
+ba
+ba
+pd
+pd
 TP
 Rj
 Rj
@@ -41373,20 +41835,20 @@ Lq
 Lq
 Lq
 TP
-Qv
-rm
-Zg
-es
+KB
+kv
+iw
+ba
 Rj
 Fo
-Px
+DZ
 Rj
 Rj
 kC
 Fo
 Fo
 YC
-Px
+DZ
 Rj
 Rj
 Ro
@@ -41630,16 +42092,16 @@ Lq
 Lq
 Lq
 TP
-lL
-Wb
-Cs
-kK
+UH
+Vh
+II
+en
 Fo
 Rj
 Rj
 Rj
 Fo
-ts
+MN
 Fo
 Fo
 WU
@@ -41651,7 +42113,7 @@ Ro
 Ro
 Ro
 Ro
-Rj
+Ro
 Rj
 Rj
 Rj
@@ -41887,16 +42349,16 @@ Lq
 Lq
 Lq
 TP
-es
-GL
-lv
+ba
+gA
+Aa
 TP
 Rj
 Fo
 Fo
 Rj
 Rj
-UW
+ug
 Fo
 Fo
 wV
@@ -41904,11 +42366,11 @@ Rj
 Rj
 Rj
 Rj
-Rj
-Rj
-Rj
-Rj
-Rj
+Ro
+Ro
+Ro
+Ro
+Ro
 Rj
 Rj
 Rj
@@ -42144,16 +42606,16 @@ Lq
 Lq
 Lq
 Lq
-es
-Zn
-Zn
-es
+ba
+pd
+pd
+ba
 Rj
 Rj
 Rj
 Fo
 Rj
-vr
+ya
 Fo
 Fo
 wV
@@ -42161,11 +42623,11 @@ Rj
 Rj
 Rj
 Rj
-Rj
-Rj
-Rj
-Rj
-Rj
+Ro
+Ro
+Ro
+Ro
+Ro
 Rj
 Rj
 Rj
@@ -42409,7 +42871,7 @@ Rj
 Rj
 Rj
 Rj
-Px
+DZ
 kC
 Fo
 Fo
@@ -42418,10 +42880,10 @@ Rj
 Rj
 Rj
 Rj
-Rj
-Rj
-Rj
-Rj
+Ro
+Ro
+Ro
+Ro
 Rj
 Rj
 Rj
@@ -42675,10 +43137,10 @@ Rj
 Rj
 Rj
 Rj
-Rj
-Rj
-Rj
-Rj
+Ro
+Ro
+Ro
+Ro
 Rj
 Rj
 Rj
@@ -42931,10 +43393,10 @@ wV
 Rj
 Rj
 Rj
-Rj
-Rj
-Rj
-Rj
+Ro
+Ro
+Ro
+Ro
 Rj
 Rj
 Rj
@@ -43188,9 +43650,9 @@ wV
 Rj
 Rj
 Rj
-Rj
-Rj
-Rj
+Ro
+Ro
+Ro
 Rj
 Rj
 Rj
@@ -43706,11 +44168,11 @@ Rj
 Rj
 Rj
 wj
-Wb
-Wb
-Wb
-Wb
-Wb
+Vh
+Vh
+Vh
+Vh
+Vh
 TP
 TP
 TP
@@ -43963,13 +44425,13 @@ Rj
 Rj
 Rj
 wj
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
 TP
 Lq
 Lq
@@ -44224,9 +44686,9 @@ RO
 RO
 RO
 RO
-Wb
-Wb
-Wb
+Vh
+Vh
+Vh
 TP
 Lq
 Lq
@@ -44479,19 +44941,19 @@ qb
 qb
 qb
 qb
-jY
+JI
 RO
-Wb
-Wb
-Wb
+Vh
+Vh
+Vh
 TP
 Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
+lB
+Rj
+rB
 Lq
 Lq
 Lq
@@ -44738,17 +45200,17 @@ nl
 nl
 Vt
 RO
-Wb
-Wb
-Wb
+Vh
+Vh
+Vh
 TP
 Lq
 Lq
 Lq
 Lq
 Lq
-Lq
-Lq
+ZU
+Ro
 Lq
 Lq
 Lq
@@ -44981,7 +45443,7 @@ Rj
 Rj
 RO
 RO
-Cb
+GQ
 yR
 Kk
 nl
@@ -44995,9 +45457,9 @@ nl
 nl
 Vt
 RO
-Wb
-Wb
-Wb
+Vh
+Vh
+Vh
 TP
 Lq
 Lq
@@ -45244,17 +45706,17 @@ Kk
 nl
 nl
 nl
-mG
-mG
-mG
-mG
+Xi
+Xi
+Xi
+Xi
 nl
 nl
 Vt
 RO
-Wb
-Wb
-Wb
+Vh
+Vh
+Vh
 TP
 Lq
 Lq
@@ -45496,21 +45958,21 @@ Rj
 RO
 xT
 yR
-nT
-fN
+Kc
+LS
 nl
 nl
 nl
-Kz
-Cr
-Cr
-Cr
-DQ
+hB
+rF
+rF
+rF
+Dk
 nl
 Vt
 RO
-Wb
-Wb
+Vh
+Vh
 TP
 TP
 Lq
@@ -45751,23 +46213,23 @@ Lq
 Rj
 Rj
 RO
-XK
+qh
 yR
-et
+rG
 Kk
-IP
+vQ
 nl
-IP
-Kz
-Cr
-Cr
-Cr
-DQ
+vQ
+hB
+rF
+rF
+rF
+Dk
 nl
 Vt
 RO
-Wb
-Wb
+Vh
+Vh
 TP
 Lq
 Lq
@@ -46010,21 +46472,21 @@ Rj
 RO
 RO
 RO
-TM
+Ez
 Kk
 nl
-IP
+vQ
 nl
-Kz
-Cr
-Cr
-Cr
-DQ
+hB
+rF
+rF
+rF
+Dk
 nl
 Vt
 RO
-Wb
-Wb
+Vh
+Vh
 TP
 Lq
 Lq
@@ -46265,23 +46727,23 @@ Lq
 Lq
 TP
 TP
-Wb
+Vh
 RO
-Yh
+Xl
 Kk
 nl
 nl
 nl
-Kz
-Cr
-Cr
-Cr
-DQ
+hB
+rF
+rF
+rF
+Dk
 nl
 Vt
 RO
-Wb
-Wb
+Vh
+Vh
 TP
 Lq
 Lq
@@ -46521,24 +46983,24 @@ Lq
 Lq
 Lq
 TP
-Wb
-Wb
+Vh
+Vh
 RO
 yR
 Kk
 nl
 nl
 nl
-aj
-aj
-aj
-aj
+um
+um
+um
+um
 nl
 nl
 Vt
 RO
-Wb
-Wb
+Vh
+Vh
 TP
 Lq
 Lq
@@ -46778,8 +47240,8 @@ Lq
 Lq
 Lq
 TP
-Wb
-Wb
+Vh
+Vh
 RO
 yR
 Kk
@@ -46794,8 +47256,8 @@ nl
 nl
 Vt
 RO
-Wb
-Wb
+Vh
+Vh
 TP
 Lq
 Lq
@@ -47035,8 +47497,8 @@ Lq
 Lq
 Lq
 TP
-Wb
-Wb
+Vh
+Vh
 RO
 yR
 Kk
@@ -47051,8 +47513,8 @@ nl
 nl
 Vt
 RO
-Wb
-Wb
+Vh
+Vh
 TP
 Lq
 Lq
@@ -47292,11 +47754,11 @@ Lq
 Lq
 Lq
 TP
-Wb
-Wb
-XG
+Vh
+Vh
+lh
 yR
-HP
+Az
 ep
 ep
 ep
@@ -47306,10 +47768,10 @@ ep
 ep
 ep
 ep
-cX
+hr
 RO
-Wb
-Wb
+Vh
+Vh
 TP
 Lq
 Lq
@@ -47549,8 +48011,8 @@ Lq
 Lq
 Lq
 TP
-Wb
-Wb
+Vh
+Vh
 RO
 RO
 RO
@@ -47565,7 +48027,7 @@ RO
 RO
 RO
 RO
-Wb
+Vh
 TP
 TP
 Lq
@@ -47806,23 +48268,23 @@ Lq
 Lq
 Lq
 TP
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
 TP
 Lq
 Lq
@@ -48064,22 +48526,22 @@ Lq
 Lq
 TP
 TP
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
 TP
 Lq
 Lq
@@ -48325,17 +48787,17 @@ TP
 TP
 TP
 TP
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
-Wb
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
+Vh
 TP
 TP
 Lq
