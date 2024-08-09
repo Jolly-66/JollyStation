@@ -39,6 +39,24 @@
 /obj/structure/closet/secure_closet/freezer/fridge,
 /turf/open/floor/iron/freezer,
 /area/space)
+"bZ" = (
+/obj/structure/window/spawner/directional/south,
+/obj/structure/table,
+/turf/open/floor/iron/dark,
+/area/space)
+"cg" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 4;
+	pixel_x = -12;
+	pixel_y = 0
+	},
+/turf/open/floor/iron/dark/side{
+	dir = 4
+	},
+/area/space)
 "ck" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/chair/stool/bar/directional/north,
@@ -73,6 +91,12 @@
 /obj/machinery/disposal/bin,
 /turf/open/floor/iron/kitchen/small,
 /area/space)
+"ee" = (
+/obj/machinery/computer/department_orders/service{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/space)
 "en" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -89,12 +113,62 @@
 	},
 /turf/open/floor/iron/stairs,
 /area/space)
+"fg" = (
+/obj/machinery/rnd/production/techfab/department/service,
+/turf/open/floor/iron/dark,
+/area/space)
 "fp" = (
 /turf/open/misc/asteroid/snow/standard_air,
+/area/space)
+"fJ" = (
+/obj/machinery/door/airlock{
+	name = "Theater Stage"
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/iron,
 /area/space)
 "fP" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
 /turf/open/misc/asteroid/snow/standard_air,
+/area/space)
+"fQ" = (
+/obj/structure/noticeboard/directional/north,
+/turf/open/floor/iron/dark,
+/area/space)
+"gb" = (
+/obj/structure/closet/cabinet{
+	name = "Renovation Supplies"
+	},
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/turf/open/floor/wood,
+/area/space)
+"gc" = (
+/obj/effect/turf_decal/siding/white/corner{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/space)
+"gs" = (
+/obj/structure/chair/plastic{
+	dir = 8
+	},
+/obj/item/fishing_rod{
+	pixel_x = -3;
+	pixel_y = 14
+	},
+/obj/item/fishing_hook{
+	pixel_x = -15;
+	pixel_y = -6
+	},
+/obj/item/fishing_line{
+	pixel_x = 15;
+	pixel_y = -5
+	},
+/turf/open/misc/asteroid/snow/icemoon,
 /area/space)
 "gA" = (
 /obj/structure/chair/sofa/bench/left,
@@ -117,6 +191,13 @@
 /obj/machinery/chem_dispenser/drinks,
 /turf/open/floor/iron/dark,
 /area/space)
+"ii" = (
+/obj/machinery/chem_master/condimaster{
+	desc = "Used to separate out liquids - useful for purifying botanical extracts. Also dispenses condiments.";
+	name = "JuciMaster 2447"
+	},
+/turf/open/floor/iron/dark,
+/area/space)
 "ij" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/random/entertainment/musical_instrument,
@@ -136,6 +217,13 @@
 	},
 /obj/item/kitchen/rollingpin,
 /turf/open/floor/iron/kitchen/small,
+/area/space)
+"iS" = (
+/obj/structure/window/spawner/directional/west,
+/obj/machinery/door/window/left/directional/south{
+	name = list("hydroponics")
+	},
+/turf/open/misc/grass,
 /area/space)
 "iU" = (
 /obj/structure/table/wood,
@@ -168,16 +256,59 @@
 /turf/open/floor/iron/dark,
 /area/space)
 "kE" = (
-/obj/machinery/food_cart,
-/turf/open/misc/asteroid/snow/standard_air,
+/obj/effect/turf_decal/siding/white,
+/turf/open/floor/iron,
+/area/space)
+"kL" = (
+/obj/machinery/disposal/bin,
+/turf/open/floor/wood,
 /area/space)
 "lB" = (
 /obj/effect/turf_decal/weather/snow/corner,
 /turf/open/space/basic,
 /area/space)
+"lE" = (
+/obj/structure/window/spawner/directional/west,
+/turf/open/misc/grass,
+/area/space)
+"lU" = (
+/obj/effect/turf_decal/siding/white/corner{
+	dir = 8
+	},
+/obj/machinery/seed_extractor,
+/obj/effect/turf_decal/siding/dark{
+	dir = 8;
+	pixel_x = 15;
+	pixel_y = 0
+	},
+/turf/open/floor/iron/dark/side{
+	dir = 4
+	},
+/area/space)
 "nl" = (
 /obj/structure/table/wood,
 /turf/open/floor/iron/terracotta/herringbone,
+/area/space)
+"oa" = (
+/obj/structure/table/wood,
+/obj/item/storage/cans/sixbeer{
+	pixel_x = 1;
+	pixel_y = 2
+	},
+/turf/open/floor/wood,
+/area/space)
+"os" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 8;
+	pixel_x = 15;
+	pixel_y = 0
+	},
+/turf/open/floor/iron/dark/side{
+	dir = 4
+	},
 /area/space)
 "oJ" = (
 /obj/machinery/chem_master/condimaster{
@@ -185,6 +316,12 @@
 	name = "HoochMaster Deluxe"
 	},
 /turf/open/floor/iron/dark,
+/area/space)
+"ph" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 1
+	},
+/turf/open/floor/iron,
 /area/space)
 "pQ" = (
 /obj/effect/turf_decal/siding/wood{
@@ -200,9 +337,25 @@
 /obj/structure/chair/stool/bar/directional/south,
 /turf/open/floor/wood/tile,
 /area/space)
+"pZ" = (
+/obj/structure/rack,
+/obj/item/reagent_containers/cup/watering_can{
+	pixel_x = 7;
+	pixel_y = 9
+	},
+/obj/item/reagent_containers/cup/watering_can{
+	pixel_x = -3;
+	pixel_y = 2
+	},
+/turf/open/floor/iron/dark,
+/area/space)
 "qb" = (
 /obj/machinery/deepfryer,
 /turf/open/floor/iron/kitchen/small,
+/area/space)
+"qd" = (
+/obj/structure/window/spawner/directional/east,
+/turf/open/misc/grass,
 /area/space)
 "rd" = (
 /obj/machinery/disposal/bin,
@@ -218,6 +371,10 @@
 	},
 /turf/open/floor/iron/dark,
 /area/space)
+"rs" = (
+/obj/machinery/disposal/bin,
+/turf/open/floor/iron/dark,
+/area/space)
 "rB" = (
 /turf/open/misc/ice/smooth,
 /area/space)
@@ -226,6 +383,20 @@
 	dir = 9
 	},
 /turf/open/floor/wood/tile,
+/area/space)
+"rW" = (
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/wood,
+/area/space)
+"ta" = (
+/obj/effect/turf_decal/siding/white/corner{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/space)
+"tt" = (
+/obj/machinery/vending/wardrobe/bar_wardrobe,
+/turf/open/floor/wood,
 /area/space)
 "tK" = (
 /obj/effect/turf_decal/siding/wood{
@@ -253,12 +424,29 @@
 /obj/structure/chair/stool/bar/directional/north,
 /turf/open/floor/wood/tile,
 /area/space)
+"uq" = (
+/obj/machinery/hydroponics/constructable,
+/turf/open/misc/grass,
+/area/space)
+"us" = (
+/obj/machinery/vending/hydroseeds{
+	slogan_delay = 700
+	},
+/turf/open/floor/iron/dark,
+/area/space)
 "uL" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
 /obj/structure/chair/stool/bar/directional/south,
 /turf/open/floor/wood/tile,
+/area/space)
+"uZ" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 4
+	},
+/obj/structure/chair/stool/bar/directional/west,
+/turf/open/floor/iron,
 /area/space)
 "we" = (
 /obj/effect/turf_decal/weather/snow/corner,
@@ -275,6 +463,17 @@
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
 /area/space)
+"ww" = (
+/obj/machinery/food_cart,
+/turf/open/floor/iron/dark,
+/area/space)
+"wB" = (
+/obj/structure/window/spawner/directional/east,
+/obj/machinery/door/window/right/directional/north{
+	name = list("hydroponics")
+	},
+/turf/open/misc/grass,
+/area/space)
 "wR" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Lounge"
@@ -290,13 +489,40 @@
 /obj/structure/railing/corner/end/flip,
 /turf/open/floor/iron/dark,
 /area/space)
+"yf" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/table/wood,
+/obj/item/lighter/bright{
+	pixel_x = 4;
+	pixel_y = -2
+	},
+/obj/effect/spawner/random/entertainment/cigar{
+	pixel_x = -5;
+	pixel_y = 10
+	},
+/turf/open/floor/wood,
+/area/space)
+"yn" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 5
+	},
+/turf/open/floor/iron,
+/area/space)
 "yR" = (
 /turf/open/floor/iron/dark,
+/area/space)
+"zl" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 10
+	},
+/turf/open/floor/iron,
 /area/space)
 "zP" = (
 /obj/effect/turf_decal/weather/snow,
 /obj/machinery/chem_master/condimaster{
-	name = "CondiMaster Neo"
+	name = "CondiMaster Alpha"
 	},
 /turf/open/floor/iron/freezer,
 /area/space)
@@ -331,12 +557,37 @@
 /obj/machinery/vending/wardrobe/chef_wardrobe,
 /turf/open/floor/iron/freezer,
 /area/space)
+"BV" = (
+/obj/machinery/smartfridge/food,
+/turf/open/floor/iron,
+/area/space)
 "Cj" = (
 /turf/open/floor/wood/tile,
 /area/space)
+"CK" = (
+/obj/effect/turf_decal/siding/white/corner{
+	dir = 4
+	},
+/obj/structure/closet/crate/hydroponics{
+	name = "Hydroponics Supplies"
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 4;
+	pixel_x = -16;
+	pixel_y = 0
+	},
+/turf/open/floor/iron/dark/side{
+	dir = 8
+	},
+/area/space)
+"Da" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 9
+	},
+/turf/open/floor/iron,
+/area/space)
 "DB" = (
-/obj/machinery/icecream_vat,
-/turf/open/misc/asteroid/snow/standard_air,
+/turf/open/floor/iron,
 /area/space)
 "DZ" = (
 /obj/effect/turf_decal/siding/wood{
@@ -353,13 +604,45 @@
 	},
 /turf/open/floor/wood/tile,
 /area/space)
+"Es" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 6
+	},
+/turf/open/floor/iron,
+/area/space)
 "EC" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/iron/kitchen/small,
 /area/space)
+"Fi" = (
+/obj/effect/turf_decal/siding/white/corner,
+/turf/open/floor/iron,
+/area/space)
+"Fm" = (
+/obj/machinery/door/airlock{
+	name = "Bar Backroom"
+	},
+/turf/open/floor/iron/dark,
+/area/space)
 "Fo" = (
 /obj/machinery/vending/dinnerware,
 /turf/open/floor/iron/dark,
+/area/space)
+"FM" = (
+/obj/structure/table,
+/obj/machinery/door/window/right/directional/south{
+	req_access = list("hydroponics");
+	name = "Hydroponics Desk"
+	},
+/obj/structure/desk_bell{
+	pixel_y = 1;
+	pixel_x = 7
+	},
+/turf/open/floor/iron,
+/area/space)
+"Gy" = (
+/obj/effect/spawner/structure/window/reinforced/tinted,
+/turf/open/floor/plating,
 /area/space)
 "GI" = (
 /obj/structure/railing{
@@ -371,6 +654,9 @@
 /obj/effect/turf_decal/weather/snow,
 /obj/structure/closet/secure_closet/freezer/meat,
 /turf/open/floor/iron/freezer,
+/area/space)
+"Hq" = (
+/turf/open/misc/grass,
 /area/space)
 "HP" = (
 /turf/open/floor/iron/kitchen/small,
@@ -390,6 +676,11 @@
 	},
 /turf/open/floor/wood/tile,
 /area/space)
+"JV" = (
+/obj/structure/window/spawner/directional/north,
+/obj/structure/beebox,
+/turf/open/misc/grass,
+/area/space)
 "Kc" = (
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 5
@@ -407,6 +698,16 @@
 	},
 /turf/open/floor/iron/kitchen/small,
 /area/space)
+"Le" = (
+/obj/machinery/icecream_vat,
+/turf/open/floor/iron/dark,
+/area/space)
+"Ll" = (
+/obj/machinery/door/airlock/hydroponics/glass{
+	name = "Hydroponics"
+	},
+/turf/open/floor/iron,
+/area/space)
 "Lq" = (
 /turf/open/space/basic,
 /area/space)
@@ -416,6 +717,10 @@
 	},
 /obj/structure/chair/stool/bar/directional/north,
 /turf/open/floor/wood/tile,
+/area/space)
+"NO" = (
+/obj/structure/chair/stool/bar/directional/east,
+/turf/open/floor/wood,
 /area/space)
 "Oc" = (
 /obj/structure/table/wood,
@@ -445,6 +750,10 @@
 	},
 /turf/open/floor/wood/tile,
 /area/space)
+"PD" = (
+/obj/effect/turf_decal/siding/wood/corner,
+/turf/open/floor/wood,
+/area/space)
 "Qt" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/random/food_or_drink/dinner{
@@ -453,11 +762,63 @@
 	},
 /turf/open/floor/wood/tile,
 /area/space)
+"QQ" = (
+/obj/structure/window/spawner/directional/west,
+/obj/machinery/door/window/left/directional/north{
+	name = "Greenhouse";
+	req_access = list("hydroponics")
+	},
+/turf/open/misc/grass,
+/area/space)
+"QS" = (
+/obj/effect/turf_decal/siding/white/corner,
+/obj/machinery/vending/wardrobe/hydro_wardrobe,
+/obj/effect/turf_decal/siding/dark{
+	dir = 4;
+	pixel_x = -16;
+	pixel_y = 0
+	},
+/turf/open/floor/iron/dark/side{
+	dir = 8
+	},
+/area/space)
 "Rj" = (
 /turf/open/misc/asteroid/snow/icemoon,
 /area/space)
 "Ro" = (
 /turf/open/misc/ice/icemoon,
+/area/space)
+"RJ" = (
+/obj/structure/window/spawner/directional/east,
+/obj/machinery/door/window/right/directional/south{
+	name = list("hydroponics")
+	},
+/turf/open/misc/grass,
+/area/space)
+"RN" = (
+/obj/machinery/modular_computer/preset/cargochat/service{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/space)
+"RP" = (
+/obj/effect/turf_decal/siding/white/corner{
+	dir = 1
+	},
+/obj/structure/table,
+/obj/machinery/reagentgrinder{
+	desc = "Used to grind things up into raw materials and liquids.";
+	pixel_x = 5;
+	pixel_y = 17
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 8;
+	pixel_x = 15;
+	pixel_y = 0
+	},
+/turf/open/floor/iron/dark/side{
+	dir = 4
+	},
 /area/space)
 "Sa" = (
 /obj/structure/chair/sofa/bench,
@@ -504,6 +865,10 @@
 "TP" = (
 /turf/closed/wall,
 /area/space)
+"Uf" = (
+/obj/machinery/vending/hydronutrients,
+/turf/open/floor/iron/dark,
+/area/space)
 "Uu" = (
 /obj/machinery/griddle,
 /turf/open/floor/iron/kitchen/small,
@@ -514,10 +879,57 @@
 	},
 /turf/open/floor/wood,
 /area/space)
+"Vz" = (
+/obj/structure/table/wood,
+/obj/structure/reagent_dispensers/beerkeg{
+	pixel_x = 3;
+	pixel_y = 7
+	},
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = -3;
+	pixel_y = 1
+	},
+/turf/open/floor/wood,
+/area/space)
+"VW" = (
+/obj/machinery/biogenerator{
+	pixel_x = 2
+	},
+/turf/open/floor/iron/dark,
+/area/space)
+"VY" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 4;
+	pixel_x = -16;
+	pixel_y = 0
+	},
+/turf/open/floor/iron/dark/side{
+	dir = 8
+	},
+/area/space)
+"Wd" = (
+/obj/structure/window/spawner/directional/south,
+/turf/open/misc/grass,
+/area/space)
+"Wo" = (
+/obj/effect/turf_decal/siding/white/corner{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/space)
 "WU" = (
 /obj/effect/turf_decal/weather/snow,
 /obj/machinery/gibber,
 /turf/open/floor/iron/freezer,
+/area/space)
+"Xf" = (
+/obj/structure/closet/secure_closet/bar,
+/obj/item/storage/box/beanbag,
+/obj/item/gun/ballistic/shotgun/doublebarrel,
+/turf/open/floor/wood,
 /area/space)
 "Xi" = (
 /obj/structure/table,
@@ -535,6 +947,22 @@
 	pixel_y = 5
 	},
 /turf/open/floor/iron/kitchen/small,
+/area/space)
+"Xy" = (
+/obj/structure/table,
+/obj/machinery/door/window/left/directional/south{
+	req_access = list("hydroponics");
+	name = "Hydroponics Desk"
+	},
+/turf/open/floor/iron,
+/area/space)
+"XH" = (
+/obj/structure/closet/secure_closet/hydroponics,
+/turf/open/floor/iron/dark,
+/area/space)
+"YR" = (
+/obj/structure/reagent_dispensers/watertank/high,
+/turf/open/floor/iron/dark,
 /area/space)
 "Zu" = (
 /turf/open/floor/iron/terracotta/herringbone,
@@ -25821,17 +26249,17 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
 Lq
 Lq
 Lq
@@ -26078,17 +26506,17 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+wj
+Uf
+yR
+yR
+XH
+TP
+Xf
+ZS
+ZS
+gb
+TP
 Lq
 Lq
 Lq
@@ -26103,13 +26531,13 @@ DZ
 ug
 hn
 TP
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+TP
+TP
+TP
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -26335,16 +26763,16 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+wj
+us
+yR
+yR
+XH
+TP
+tt
+ZS
+ZS
+NO
 TP
 TP
 TP
@@ -26360,13 +26788,13 @@ dc
 ck
 yR
 wR
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+DB
+DB
+DB
+DB
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -26592,19 +27020,19 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+wj
+QS
+VY
+VY
+CK
 TP
-yR
-yR
+kL
+ZS
+PD
+yf
+TP
+RN
+ee
 TP
 hH
 Kk
@@ -26617,13 +27045,13 @@ Cj
 xs
 yR
 wR
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+DB
+DB
+DB
+DB
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -26845,23 +27273,23 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+DB
+DB
 TP
+TP
+TP
+kE
+Hq
+Hq
+ph
+TP
+TP
+Vz
+rW
 yR
-yR
+TP
+uZ
+uZ
 TP
 oJ
 Kk
@@ -26875,12 +27303,12 @@ xs
 yR
 TP
 TP
+fJ
 TP
+DB
+DB
+DB
 TP
-TP
-Lq
-Lq
-Lq
 Lq
 Lq
 Lq
@@ -27102,21 +27530,21 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+DB
+DB
+DB
+Xy
+Fi
+Es
+Hq
+Hq
+yn
+Wo
 TP
+oa
+rW
+yR
+Fm
 yR
 yR
 TP
@@ -27129,15 +27557,15 @@ LS
 Cj
 Cj
 xs
-yR
 ya
 eL
 iw
 ZS
 TP
 TP
-Lq
-Lq
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -27359,22 +27787,22 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+DB
+DB
+DB
+FM
+kE
+uq
+uq
+uq
+uq
+ph
 TP
+Gy
+Gy
+Gy
 TP
-TP
-TP
-TP
-yR
+fQ
 yR
 TP
 TP
@@ -27386,15 +27814,15 @@ Pn
 dg
 Qt
 ck
-yR
 Ag
 UZ
 ar
 ZS
 ZS
+wj
+DB
+DB
 TP
-Lq
-Lq
 Lq
 Lq
 Lq
@@ -27616,24 +28044,24 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-TP
+DB
+DB
+DB
+wj
+kE
+QQ
+lE
+lE
+iS
+ph
+BV
 yR
 yR
+fg
+bZ
 yR
 yR
-yR
-yR
-yR
+rs
 TP
 TP
 TP
@@ -27643,15 +28071,15 @@ en
 uL
 Ji
 pQ
-yR
 Sa
 Oj
 ZS
 ZS
 iU
+wj
+DB
+DB
 TP
-Lq
-Lq
 Lq
 Lq
 Lq
@@ -27873,17 +28301,17 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-TP
+DB
+DB
+DB
+wj
+kE
+JV
+Hq
+uq
+Wd
+ph
+wj
 yR
 yR
 yR
@@ -27900,15 +28328,15 @@ yR
 yR
 yR
 yR
-yR
 Sa
 Oj
 hB
 ZS
 ij
+wj
+DB
+DB
 TP
-Lq
-Lq
 Lq
 Lq
 Lq
@@ -28130,17 +28558,17 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-TP
+DB
+DB
+DB
+BV
+kE
+wB
+qd
+qd
+RJ
+ph
+Ll
 yR
 yR
 yR
@@ -28157,15 +28585,15 @@ rF
 pV
 tK
 ug
-yR
 Sa
 Oj
 ZS
 ZS
 Oc
+wj
+DB
+DB
 TP
-Lq
-Lq
 Lq
 Lq
 Lq
@@ -28387,16 +28815,16 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+DB
+DB
+DB
+TP
+kE
+uq
+uq
+uq
+uq
+ph
 TP
 TP
 TP
@@ -28414,15 +28842,15 @@ Pn
 dg
 jV
 ck
-yR
 gA
 GI
 iw
 ZS
 ZS
+wj
+DB
+DB
 TP
-Lq
-Lq
 Lq
 Lq
 Lq
@@ -28644,16 +29072,16 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+DB
+DB
+DB
+Ll
+ta
+zl
+Hq
+Hq
+Da
+gc
 TP
 bo
 fP
@@ -28671,15 +29099,15 @@ LS
 Cj
 Cj
 xs
-yR
 kv
 wh
 ar
 ZS
 TP
 TP
-Lq
-Lq
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -28900,16 +29328,16 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+TP
+TP
+TP
+kE
+Hq
+Hq
+ph
 TP
 TP
 hr
@@ -28933,10 +29361,10 @@ TP
 TP
 TP
 TP
+DB
+DB
+DB
 TP
-Lq
-Lq
-Lq
 Lq
 Lq
 Lq
@@ -29157,24 +29585,24 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+wj
+Rj
+wj
+lU
+os
+cg
+RP
 TP
 cT
 fp
 ji
-kE
+fp
 TP
-yR
-yR
+Le
+ww
 TP
 dK
 HP
@@ -29187,13 +29615,13 @@ Cj
 xs
 yR
 wR
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+DB
+DB
+DB
+DB
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -29414,16 +29842,16 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+wj
+Rj
+wj
+ii
+yR
+yR
+YR
 TP
 WU
 fp
@@ -29444,13 +29872,13 @@ TK
 ck
 yR
 wR
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+DB
+DB
+DB
+DB
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -29671,25 +30099,25 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+wj
+Rj
+wj
+VW
+yR
+yR
+pZ
 TP
 we
-DB
+fp
 TB
 zP
 TP
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
 TP
 TP
 TP
@@ -29701,13 +30129,13 @@ aH
 pQ
 hn
 TP
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+TP
+TP
+TP
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -29928,29 +30356,29 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+TP
+Rj
+TP
+wj
+wj
+wj
+wj
 TP
 TP
 TP
 TP
 TP
 TP
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
 TP
 TP
 wj
@@ -29958,13 +30386,13 @@ wj
 wj
 TP
 TP
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+TP
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -30185,43 +30613,43 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+TP
 Rj
 Rj
 Rj
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+TP
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -30442,43 +30870,43 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+TP
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+wj
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -30699,43 +31127,43 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+TP
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+wj
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -30956,43 +31384,43 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+TP
+TP
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Ro
+Ro
+Ro
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+wj
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -31213,43 +31641,43 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+DB
+TP
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Ro
+Ro
+Ro
+Ro
+Ro
+Rj
+Rj
+Rj
+Rj
+Rj
+wj
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -31470,43 +31898,43 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+DB
+TP
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Ro
+Ro
+Ro
+Ro
+Ro
+Ro
+Rj
+Rj
+Rj
+Rj
+Rj
+wj
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -31727,43 +32155,43 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+DB
+wj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Ro
+Ro
+Ro
+Ro
+Ro
+Ro
+Ro
+Rj
+Rj
+Rj
+Rj
+Rj
+wj
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -31984,43 +32412,43 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+TP
+DB
+DB
+wj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Ro
+Ro
+Ro
+Ro
+Ro
+Ro
+Ro
+Ro
+Rj
+Rj
+Rj
+Rj
+Rj
+TP
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -32242,42 +32670,42 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+wj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Ro
+Ro
+Ro
+Ro
+Ro
+Ro
+Ro
+Ro
+Ro
+Rj
+Rj
+Rj
+Rj
+Rj
+TP
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -32499,42 +32927,42 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+wj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Ro
+Ro
+Ro
+Rj
+Ro
+Ro
+Ro
+Ro
+Rj
+Rj
+Rj
+Rj
+Rj
+TP
+TP
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -32756,42 +33184,42 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+wj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Ro
+Ro
+Rj
+Rj
+gs
+Ro
+Ro
+Ro
+Rj
+Rj
+Rj
+Rj
+Rj
+TP
+DB
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -33013,42 +33441,42 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+TP
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Ro
+Ro
+Rj
+Ro
+Ro
+Ro
+Ro
+Rj
+Rj
+Rj
+Rj
+Rj
+TP
+DB
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -33270,42 +33698,42 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+TP
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Ro
+Ro
+Ro
+Ro
+Ro
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+TP
+DB
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -33527,42 +33955,42 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+TP
+TP
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Ro
+Ro
+Ro
+Rj
+Rj
+Rj
+Rj
+Rj
+TP
+TP
+DB
+DB
+TP
+TP
 Lq
 Lq
 Lq
@@ -33784,41 +34212,41 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+DB
+TP
+TP
+TP
+TP
+TP
+TP
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+TP
+DB
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -34041,41 +34469,41 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+TP
+TP
+TP
+TP
+TP
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+TP
+DB
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -34298,41 +34726,41 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+TP
+TP
+TP
+TP
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+TP
+DB
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -34555,41 +34983,41 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+TP
+TP
+TP
+TP
+TP
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+TP
+TP
+TP
+wj
+wj
+wj
+wj
+wj
+wj
+wj
+wj
+wj
+TP
+TP
+TP
+DB
+DB
+TP
+TP
 Lq
 Lq
 Lq
@@ -34817,35 +35245,35 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+TP
+TP
+TP
+TP
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -35078,31 +35506,31 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+TP
+TP
+TP
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+DB
+TP
 Lq
 Lq
 Lq
@@ -35338,28 +35766,28 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
 Lq
 Lq
 Lq
