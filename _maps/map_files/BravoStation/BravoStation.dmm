@@ -232,14 +232,19 @@
 /turf/open/floor/wood/tile,
 /area/space)
 "dA" = (
-/obj/structure/mop_bucket/janitorialcart{
-	dir = 4
-	},
-/turf/open/floor/plating,
+/obj/item/restraints/legcuffs/beartrap,
+/turf/open/floor/iron,
 /area/space)
 "dK" = (
 /obj/machinery/disposal/bin,
 /turf/open/floor/iron/kitchen/small,
+/area/space)
+"dN" = (
+/obj/item/reagent_containers/cup/bucket{
+	pixel_x = -9;
+	pixel_y = -5
+	},
+/turf/open/floor/plating,
 /area/space)
 "dQ" = (
 /obj/structure/table/wood,
@@ -431,12 +436,10 @@
 	},
 /area/space)
 "hv" = (
-/obj/structure/chair/stool/bar/directional/south,
-/obj/effect/turf_decal/tile/red/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
 	},
-/turf/open/floor/iron,
+/turf/open/floor/wood,
 /area/space)
 "hB" = (
 /obj/effect/spawner/xmastree,
@@ -554,10 +557,7 @@
 /turf/open/floor/iron/freezer,
 /area/space)
 "jE" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/obj/structure/closet/crate/wooden/toy,
+/obj/structure/dresser,
 /turf/open/floor/wood,
 /area/space)
 "jO" = (
@@ -577,6 +577,13 @@
 "kj" = (
 /obj/machinery/vending/clothing,
 /turf/open/floor/iron/dark,
+/area/space)
+"kp" = (
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red/opposingcorners,
+/turf/open/floor/iron,
 /area/space)
 "kv" = (
 /obj/structure/railing/corner/end,
@@ -774,6 +781,10 @@
 /obj/item/kirbyplants/organic/plant12,
 /turf/open/floor/wood,
 /area/space)
+"oi" = (
+/obj/structure/sink/directional/south,
+/turf/open/floor/plating,
+/area/space)
 "oo" = (
 /obj/effect/turf_decal/siding/white/corner{
 	dir = 1
@@ -810,14 +821,30 @@
 /turf/open/floor/iron/dark,
 /area/space)
 "oN" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "custodial"
+/obj/structure/table,
+/obj/structure/mirror/directional/west,
+/obj/item/toy/crayon/spraycan/mimecan{
+	charges = 5;
+	pixel_x = -8;
+	pixel_y = 19
 	},
-/obj/machinery/button/door/directional/north{
-	id = "custodial";
-	name = "Shutters Control"
+/obj/item/food/baguette{
+	pixel_x = -1;
+	pixel_y = 5
 	},
-/turf/open/floor/iron,
+/obj/item/lipstick/random{
+	pixel_x = 8;
+	pixel_y = 5
+	},
+/obj/item/lipstick/random{
+	pixel_x = 1;
+	pixel_y = 0
+	},
+/obj/item/lipstick/random{
+	pixel_x = 5;
+	pixel_y = 3
+	},
+/turf/open/floor/iron/cafeteria,
 /area/space)
 "oR" = (
 /obj/structure/table,
@@ -897,32 +924,8 @@
 /turf/open/floor/iron/kitchen/small,
 /area/space)
 "qy" = (
-/obj/structure/table,
-/obj/item/grenade/chem_grenade/cleaner{
-	pixel_x = -10;
-	pixel_y = 15
-	},
-/obj/item/grenade/chem_grenade/cleaner{
-	pixel_x = -3;
-	pixel_y = 12
-	},
-/obj/item/grenade/chem_grenade/cleaner{
-	pixel_x = -8;
-	pixel_y = 9
-	},
-/obj/item/storage/box/lights/mixed{
-	pixel_x = 10;
-	pixel_y = 16
-	},
-/obj/item/storage/box/mousetraps{
-	pixel_x = 6;
-	pixel_y = 11
-	},
-/obj/item/reagent_containers/spray/cleaner{
-	pixel_x = -3;
-	pixel_y = 5
-	},
-/turf/open/floor/iron,
+/obj/structure/chair/stool/bar/directional/west,
+/turf/open/floor/iron/cafeteria,
 /area/space)
 "qA" = (
 /obj/machinery/door/airlock{
@@ -933,39 +936,8 @@
 /turf/open/floor/iron/freezer,
 /area/space)
 "qE" = (
-/obj/structure/table,
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral,
-/obj/item/toy/crayon/spraycan/mimecan{
-	charges = 5;
-	pixel_x = 9;
-	pixel_y = 17
-	},
-/obj/item/toy/crayon/spraycan/lubecan{
-	charges = 5;
-	pixel_x = -8;
-	pixel_y = 17
-	},
-/obj/item/lipstick/random{
-	pixel_x = 6;
-	pixel_y = 7
-	},
-/obj/item/lipstick/random{
-	pixel_x = 3;
-	pixel_y = 4
-	},
-/obj/item/lipstick/random{
-	pixel_x = 10;
-	pixel_y = 2
-	},
-/turf/open/floor/iron,
+/obj/item/restraints/legcuffs/beartrap,
+/turf/open/floor/plating,
 /area/space)
 "qL" = (
 /obj/structure/table/wood,
@@ -1124,12 +1096,15 @@
 /turf/open/floor/wood/tile,
 /area/space)
 "ts" = (
-/obj/structure/table,
-/obj/item/key/janitor{
-	pixel_x = 7;
-	pixel_y = 7
+/obj/machinery/door/poddoor/shutters{
+	id = "custodial"
 	},
-/turf/open/floor/plating,
+/obj/machinery/button/door/directional/west{
+	id = "custodial";
+	name = "Shutters Control";
+	req_access = list("janitor")
+	},
+/turf/open/floor/iron,
 /area/space)
 "tK" = (
 /obj/effect/turf_decal/siding/wood{
@@ -1185,24 +1160,12 @@
 /turf/open/floor/wood/tile,
 /area/space)
 "uH" = (
-/obj/machinery/vending/autodrobe,
-/obj/effect/turf_decal/siding/wood/corner,
+/obj/structure/closet/crate/wooden/toy,
 /turf/open/floor/wood,
 /area/space)
 "uI" = (
-/obj/structure/table,
-/obj/effect/turf_decal/tile/red{
+/obj/structure/mop_bucket/janitorialcart{
 	dir = 1
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral,
-/obj/item/storage/crayons{
-	pixel_x = 4;
-	pixel_y = 10
 	},
 /turf/open/floor/iron,
 /area/space)
@@ -1358,17 +1321,8 @@
 	},
 /area/space)
 "xB" = (
-/obj/structure/table,
-/obj/structure/mirror/directional/south,
-/obj/effect/turf_decal/tile/red/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
-	dir = 1
-	},
-/obj/item/flashlight/lamp/bananalamp{
-	pixel_y = 7;
-	pixel_x = 13
-	},
-/turf/open/floor/iron,
+/obj/machinery/vending/autodrobe,
+/turf/open/floor/wood,
 /area/space)
 "xH" = (
 /turf/open/floor/iron/freezer,
@@ -1818,11 +1772,7 @@
 	},
 /area/space)
 "Eq" = (
-/obj/item/reagent_containers/cup/bucket{
-	pixel_x = -9;
-	pixel_y = -5
-	},
-/turf/open/floor/iron,
+/turf/open/floor/iron/cafeteria,
 /area/space)
 "Ev" = (
 /obj/machinery/door/airlock{
@@ -1898,11 +1848,20 @@
 /turf/open/floor/iron/dark,
 /area/space)
 "FV" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
+/obj/structure/table,
+/obj/item/storage/bag/trash{
+	pixel_x = 8;
+	pixel_y = 14
 	},
-/obj/structure/dresser,
-/turf/open/floor/wood,
+/obj/item/storage/bag/trash{
+	pixel_x = 5;
+	pixel_y = 6
+	},
+/obj/item/key/janitor{
+	pixel_x = 0;
+	pixel_y = 3
+	},
+/turf/open/floor/plating,
 /area/space)
 "Gf" = (
 /obj/structure/table/wood,
@@ -2043,7 +2002,7 @@
 /area/space)
 "IC" = (
 /mob/living/basic/lizard/wags_his_tail,
-/turf/open/floor/iron,
+/turf/open/floor/plating,
 /area/space)
 "II" = (
 /obj/effect/spawner/random/vending/colavend,
@@ -2256,7 +2215,11 @@
 /turf/open/floor/wood/tile,
 /area/space)
 "LK" = (
-/obj/machinery/vending/wardrobe/jani_wardrobe,
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red/opposingcorners,
+/obj/structure/chair/stool/bar/directional/south,
 /turf/open/floor/iron,
 /area/space)
 "LQ" = (
@@ -2298,8 +2261,30 @@
 /turf/open/floor/iron/large,
 /area/space)
 "ME" = (
-/obj/structure/chair/stool/bar/directional/south,
-/turf/open/floor/iron/cafeteria,
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red/opposingcorners,
+/obj/structure/table,
+/obj/structure/mirror/directional/south,
+/obj/item/flashlight/lamp/bananalamp{
+	pixel_y = 17;
+	pixel_x = 7
+	},
+/obj/item/toy/crayon/spraycan/lubecan{
+	charges = 5;
+	pixel_x = -9;
+	pixel_y = 9
+	},
+/obj/item/food/grown/banana{
+	pixel_x = 2;
+	pixel_y = 4
+	},
+/obj/item/food/grown/banana{
+	pixel_x = 6;
+	pixel_y = 1
+	},
+/turf/open/floor/iron,
 /area/space)
 "MN" = (
 /obj/effect/turf_decal/tile/blue/opposingcorners{
@@ -2494,21 +2479,29 @@
 /area/space)
 "PJ" = (
 /obj/structure/table,
-/obj/item/storage/bag/trash{
-	pixel_x = 7;
-	pixel_y = 12
+/obj/item/storage/box/lights/mixed{
+	pixel_x = -10;
+	pixel_y = 14
 	},
-/obj/item/storage/bag/trash{
-	pixel_x = 3;
+/obj/item/storage/box/mousetraps{
+	pixel_x = -7;
 	pixel_y = 5
 	},
-/obj/item/restraints/legcuffs/beartrap{
-	pixel_x = -6;
-	pixel_y = 13
+/obj/item/reagent_containers/spray/cleaner{
+	pixel_x = 8;
+	pixel_y = 17
 	},
-/obj/item/restraints/legcuffs/beartrap{
-	pixel_x = -4;
+/obj/item/grenade/chem_grenade/cleaner{
+	pixel_x = 8;
+	pixel_y = 11
+	},
+/obj/item/grenade/chem_grenade/cleaner{
+	pixel_x = 10;
 	pixel_y = 7
+	},
+/obj/item/grenade/chem_grenade/cleaner{
+	pixel_x = 7;
+	pixel_y = 3
 	},
 /turf/open/floor/iron,
 /area/space)
@@ -3030,13 +3023,8 @@
 /turf/open/floor/iron,
 /area/space)
 "Xt" = (
-/obj/structure/table,
-/obj/structure/mirror/directional/south,
-/obj/item/food/baguette{
-	pixel_x = 6;
-	pixel_y = 2
-	},
-/turf/open/floor/iron/cafeteria,
+/obj/machinery/vending/wardrobe/jani_wardrobe,
+/turf/open/floor/plating,
 /area/space)
 "Xu" = (
 /obj/machinery/duct,
@@ -30261,11 +30249,11 @@ Lq
 Lq
 Lq
 Lq
-zP
-zP
-zP
-zP
-zP
+Lq
+Lq
+Lq
+Lq
+Lq
 Lq
 Lq
 Lq
@@ -30518,7 +30506,7 @@ Lq
 Lq
 Lq
 Lq
-zP
+Lq
 Lq
 Lq
 Lq
@@ -30775,10 +30763,10 @@ Lq
 Lq
 Lq
 Lq
-zP
-zP
-zP
-zP
+Lq
+Lq
+Lq
+Lq
 Lq
 Lq
 Lq
@@ -31032,7 +31020,7 @@ Lq
 Lq
 Lq
 Lq
-zP
+Lq
 Lq
 Lq
 Lq
@@ -31283,17 +31271,17 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
 zP
 zP
 zP
 zP
 zP
+Lq
+Lq
+Lq
+Lq
+Lq
+Lq
 Lq
 Lq
 Lq
@@ -31540,7 +31528,7 @@ Lq
 Lq
 Lq
 Lq
-Lq
+zP
 Lq
 Lq
 Lq
@@ -31797,17 +31785,17 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
 zP
 zP
 zP
 zP
-zP
+Lq
+Lq
+Lq
+Lq
+Lq
+Lq
+Lq
 Lq
 Lq
 Lq
@@ -32054,17 +32042,17 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
 zP
 Lq
-zP
 Lq
-zP
+Lq
+Lq
+Lq
+Lq
+Lq
+Lq
+Lq
+Lq
 Lq
 Lq
 Lq
@@ -32311,17 +32299,17 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+zP
+zP
+zP
+zP
 zP
 Lq
 Lq
 Lq
-zP
+Lq
+Lq
+Lq
 Lq
 Lq
 Lq
@@ -32820,12 +32808,6 @@ Lq
 Lq
 Lq
 Lq
-TP
-TP
-TP
-TP
-Lq
-Lq
 Lq
 Lq
 Lq
@@ -32836,6 +32818,12 @@ zP
 zP
 zP
 zP
+Lq
+Lq
+Lq
+Lq
+Lq
+Lq
 Lq
 Lq
 Lq
@@ -33077,12 +33065,6 @@ Lq
 Lq
 Lq
 Lq
-TP
-uH
-FV
-TP
-TP
-Lq
 Lq
 Lq
 Lq
@@ -33090,9 +33072,15 @@ Lq
 Lq
 zP
 Lq
-Lq
+zP
 Lq
 zP
+Lq
+Lq
+Lq
+Lq
+Lq
+Lq
 Lq
 Lq
 Lq
@@ -33334,21 +33322,21 @@ Lq
 Lq
 Lq
 Lq
-TP
-lD
-hv
-xB
-TP
-Lq
-Lq
 Lq
 Lq
 Lq
 Lq
 Lq
 zP
+Lq
+Lq
+Lq
 zP
-zP
+Lq
+Lq
+Lq
+Lq
+Lq
 Lq
 Lq
 Lq
@@ -33543,12 +33531,12 @@ TP
 zP
 zP
 TP
-zP
-zP
-zP
-zP
-zP
-zP
+Lq
+Lq
+Lq
+Lq
+Lq
+Lq
 TP
 zP
 zP
@@ -33591,11 +33579,11 @@ Lq
 Lq
 Lq
 Lq
-TP
-lD
-uI
-qE
-TP
+Lq
+Lq
+Lq
+Lq
+Lq
 Lq
 Lq
 Lq
@@ -33800,12 +33788,12 @@ TP
 zP
 zP
 TP
-ao
-TP
-TP
-oN
-pv
-TP
+Lq
+Lq
+Lq
+Lq
+Lq
+Lq
 TP
 zP
 zP
@@ -33848,16 +33836,16 @@ Lq
 Lq
 Lq
 Lq
-TP
-lD
-ME
-Xt
-TP
 Lq
 Lq
 Lq
 Lq
 Lq
+zP
+zP
+zP
+zP
+zP
 Lq
 Lq
 Lq
@@ -34057,12 +34045,12 @@ TP
 zP
 zP
 TP
-zP
-LK
-ts
-uo
-dA
-gX
+Lq
+Lq
+Lq
+Lq
+Lq
+Lq
 TP
 zP
 zP
@@ -34098,16 +34086,8 @@ zP
 zP
 zP
 TP
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-vG
-ZA
-jE
+TP
+TP
 TP
 TP
 Lq
@@ -34115,6 +34095,14 @@ Lq
 Lq
 Lq
 Lq
+Lq
+Lq
+Lq
+zP
+Lq
+Lq
+Lq
+zP
 Lq
 Lq
 Lq
@@ -34314,12 +34302,12 @@ TP
 zP
 zP
 TP
-uo
-zP
-uo
-tO
-uo
-WN
+Lq
+Lq
+Lq
+Lq
+Lq
+Lq
 TP
 zP
 zP
@@ -34355,22 +34343,22 @@ zP
 zP
 zP
 TP
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+kp
+LK
+ME
 TP
 TP
-TP
-TP
+Lq
+Lq
+Lq
+Lq
+Lq
+Lq
+Lq
+Lq
 zP
-Lq
-Lq
-Lq
-Lq
+zP
+zP
 Lq
 Lq
 Lq
@@ -34571,12 +34559,12 @@ TP
 zP
 zP
 TP
-zP
-vi
-IC
-uo
-zP
-qy
+Lq
+Lq
+Lq
+Lq
+Lq
+Lq
 TP
 zP
 zP
@@ -34612,12 +34600,12 @@ zP
 zP
 zP
 TP
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+FC
+FC
+FC
+hv
+TP
+TP
 Lq
 Lq
 Lq
@@ -34828,12 +34816,12 @@ TP
 zP
 zP
 TP
-MV
-Eq
-zP
-zP
-er
-PJ
+Lq
+Lq
+Lq
+Lq
+Lq
+Lq
 TP
 zP
 zP
@@ -34869,13 +34857,13 @@ zP
 zP
 zP
 TP
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+jE
+ZS
+ZS
+ZS
+Ea
+TP
+TP
 Lq
 Lq
 Lq
@@ -35128,11 +35116,11 @@ zP
 TP
 TP
 TP
-Lq
-Lq
-Lq
-Lq
-Lq
+xB
+ZS
+lD
+oN
+TP
 Lq
 Lq
 Lq
@@ -35386,10 +35374,10 @@ zP
 zP
 TP
 TP
-Lq
-Lq
-Lq
-Lq
+ZS
+lD
+qy
+TP
 Lq
 Lq
 Lq
@@ -35642,11 +35630,11 @@ zP
 zP
 zP
 zP
+vG
+ZS
+lD
+Eq
 TP
-Lq
-Lq
-Lq
-Lq
 Lq
 Lq
 Lq
@@ -35900,11 +35888,11 @@ zP
 zP
 zP
 TP
-Lq
-Lq
-Lq
-Lq
-Lq
+ZS
+ZA
+TP
+TP
+uo
 Lq
 Lq
 Lq
@@ -36157,11 +36145,11 @@ zP
 zP
 zP
 TP
-Lq
-Lq
-Lq
-Lq
-Lq
+uH
+ZS
+kd
+uo
+uo
 Lq
 Lq
 Lq
@@ -37699,11 +37687,11 @@ zP
 zP
 zP
 TP
-Lq
-Lq
-Lq
-Lq
-Lq
+WN
+gX
+kd
+uo
+uo
 Lq
 Lq
 Lq
@@ -37956,11 +37944,11 @@ zP
 zP
 zP
 TP
-Lq
-Lq
-Lq
-Lq
-Lq
+dA
+uo
+TP
+TP
+uo
 Lq
 Lq
 Lq
@@ -38212,11 +38200,11 @@ zP
 zP
 zP
 zP
+ao
+zP
+zP
+FV
 TP
-Lq
-Lq
-Lq
-Lq
 Lq
 Lq
 Lq
@@ -38470,10 +38458,10 @@ zP
 zP
 TP
 TP
-Lq
-Lq
-Lq
-Lq
+oi
+uo
+PJ
+TP
 Lq
 Lq
 Lq
@@ -38726,11 +38714,11 @@ zP
 TP
 TP
 TP
-Lq
-Lq
-Lq
-Lq
-Lq
+Xt
+IC
+zP
+uI
+TP
 Lq
 Lq
 Lq
@@ -38981,13 +38969,13 @@ zP
 zP
 zP
 TP
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+MV
+er
+zP
+zP
+vi
+TP
+TP
 Lq
 Lq
 Lq
@@ -39237,13 +39225,13 @@ TP
 zP
 zP
 zP
+ts
+uo
+zP
+zP
+dN
 TP
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
 Lq
 Lq
 Lq
@@ -39494,12 +39482,12 @@ wj
 zP
 zP
 zP
+pv
+zP
+qE
+tO
 TP
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
 Lq
 Lq
 Lq
@@ -39752,10 +39740,10 @@ zP
 zP
 zP
 TP
-Lq
-Lq
-Lq
-Lq
+TP
+TP
+TP
+TP
 Lq
 Lq
 Lq
