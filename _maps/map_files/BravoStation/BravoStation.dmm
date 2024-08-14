@@ -214,6 +214,14 @@
 /obj/structure/chair/stool/bar/directional/north,
 /turf/open/floor/wood/tile,
 /area/space)
+"cl" = (
+/obj/structure/table,
+/obj/effect/spawner/random/entertainment/deck{
+	pixel_x = 5;
+	pixel_y = 9
+	},
+/turf/open/floor/iron,
+/area/space)
 "cp" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/public/glass{
@@ -803,6 +811,11 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"ks" = (
+/obj/structure/table,
+/obj/structure/bedsheetbin,
+/turf/open/floor/iron,
+/area/space)
 "kv" = (
 /obj/structure/railing/corner/end,
 /turf/open/floor/iron/dark,
@@ -841,6 +854,10 @@
 /area/space)
 "lb" = (
 /turf/open/floor/wood/parquet,
+/area/space)
+"lg" = (
+/obj/structure/chair/stool/bar/directional/east,
+/turf/open/floor/iron,
 /area/space)
 "ll" = (
 /obj/effect/turf_decal/siding/white/corner{
@@ -2006,6 +2023,22 @@
 /obj/structure/mirror/directional/south,
 /turf/open/floor/carpet/royalblue,
 /area/space)
+"zy" = (
+/obj/structure/table,
+/obj/item/trash/popcorn{
+	pixel_x = 8;
+	pixel_y = 11
+	},
+/obj/item/trash/raisins{
+	pixel_x = -4;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/cup/soda_cans/dr_gibb{
+	pixel_x = 7;
+	pixel_y = 3
+	},
+/turf/open/floor/iron,
+/area/space)
 "zz" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
@@ -2231,6 +2264,12 @@
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/mineral/wood/fifty,
 /turf/open/floor/wood,
+/area/space)
+"Ct" = (
+/obj/effect/spawner/random/entertainment/arcade{
+	dir = 8
+	},
+/turf/open/floor/iron,
 /area/space)
 "Cx" = (
 /obj/effect/turf_decal/tile/blue/opposingcorners{
@@ -2563,6 +2602,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/yellow/full,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/smooth_large,
 /area/space)
 "Gf" = (
@@ -2669,6 +2709,10 @@
 	},
 /obj/machinery/computer/cryopod/directional/south,
 /obj/structure/table,
+/obj/item/food/cookie/chocolate_chip_cookie{
+	pixel_x = 4;
+	pixel_y = 4
+	},
 /turf/open/floor/iron/dark,
 /area/space)
 "HG" = (
@@ -3413,6 +3457,18 @@
 	},
 /turf/open/floor/iron/dark,
 /area/space)
+"QL" = (
+/obj/structure/table,
+/obj/item/trash/candy{
+	pixel_x = 6;
+	pixel_y = 8
+	},
+/obj/item/trash/chips{
+	pixel_x = -4;
+	pixel_y = 6
+	},
+/turf/open/floor/iron,
+/area/space)
 "QW" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -4015,6 +4071,18 @@
 	},
 /obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/smooth_large,
+/area/space)
+"YQ" = (
+/obj/structure/table,
+/obj/effect/spawner/random/clothing/backpack{
+	pixel_x = 5;
+	pixel_y = 9
+	},
+/obj/effect/spawner/random/clothing/backpack{
+	pixel_x = -3;
+	pixel_y = 2
+	},
+/turf/open/floor/iron,
 /area/space)
 "YS" = (
 /obj/structure/rack,
@@ -22184,11 +22252,11 @@ Lq
 Lq
 Lq
 Lq
+zP
+zP
+zP
 Lq
-Lq
-Lq
-Lq
-Lq
+zP
 Lq
 Lq
 Lq
@@ -22441,11 +22509,11 @@ Lq
 Lq
 Lq
 Lq
+zP
 Lq
+zP
 Lq
-Lq
-Lq
-Lq
+zP
 Lq
 Lq
 Lq
@@ -22698,11 +22766,11 @@ Lq
 Lq
 Lq
 Lq
+zP
 Lq
-Lq
-Lq
-Lq
-Lq
+zP
+zP
+zP
 Lq
 Lq
 Lq
@@ -23212,11 +23280,11 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+zP
+zP
+zP
+zP
+zP
 Lq
 Lq
 Lq
@@ -23469,11 +23537,11 @@ Lq
 Lq
 Lq
 Lq
+zP
 Lq
+zP
 Lq
-Lq
-Lq
-Lq
+zP
 Lq
 Lq
 Lq
@@ -23726,11 +23794,11 @@ Lq
 Lq
 Lq
 Lq
+zP
 Lq
 Lq
 Lq
-Lq
-Lq
+zP
 Lq
 Lq
 Lq
@@ -24241,9 +24309,9 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
+zP
+zP
+zP
 Lq
 Lq
 Lq
@@ -24497,11 +24565,11 @@ Lq
 Lq
 Lq
 Lq
+zP
 Lq
 Lq
 Lq
-Lq
-Lq
+zP
 Lq
 Lq
 Lq
@@ -24754,11 +24822,11 @@ Lq
 Lq
 Lq
 Lq
+zP
 Lq
 Lq
 Lq
-Lq
-Lq
+zP
 Lq
 Lq
 Lq
@@ -25004,11 +25072,11 @@ Lq
 Lq
 Lq
 Lq
-zP
-zP
-zP
 Lq
-zP
+Lq
+Lq
+Lq
+Lq
 Lq
 Lq
 Lq
@@ -25261,11 +25329,11 @@ Lq
 Lq
 Lq
 Lq
-zP
 Lq
-zP
 Lq
-zP
+Lq
+Lq
+Lq
 Lq
 Lq
 Lq
@@ -25518,11 +25586,11 @@ Lq
 Lq
 Lq
 Lq
-zP
 Lq
-zP
-zP
-zP
+Lq
+Lq
+Lq
+Lq
 Lq
 Lq
 Lq
@@ -26032,11 +26100,11 @@ Lq
 Lq
 Lq
 Lq
-zP
-zP
-zP
-zP
-zP
+Lq
+Lq
+Lq
+Lq
+Lq
 Lq
 Lq
 Lq
@@ -26289,11 +26357,11 @@ Lq
 Lq
 Lq
 Lq
-zP
 Lq
-zP
 Lq
-zP
+Lq
+Lq
+Lq
 Lq
 Lq
 Lq
@@ -26546,11 +26614,11 @@ Lq
 Lq
 Lq
 Lq
-zP
 Lq
 Lq
 Lq
-zP
+Lq
+Lq
 Lq
 Lq
 Lq
@@ -27061,25 +27129,25 @@ Lq
 Lq
 Lq
 Lq
-zP
-zP
-zP
 Lq
 Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
+TP
 Lq
 Lq
 Lq
@@ -27317,13 +27385,13 @@ Lq
 Lq
 Lq
 Lq
-zP
-Lq
 Lq
 Lq
 zP
+zP
+zP
 Lq
-Lq
+TP
 uo
 uo
 uo
@@ -27333,13 +27401,13 @@ uo
 uo
 uo
 uo
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+uo
+uo
+uo
+TP
+TP
+zP
+zP
 Lq
 Lq
 Lq
@@ -27574,13 +27642,13 @@ Lq
 Lq
 Lq
 Lq
-zP
 Lq
 Lq
 Lq
 zP
-Lq
-Lq
+zP
+TP
+TP
 uo
 uo
 uo
@@ -27590,13 +27658,13 @@ uo
 uo
 uo
 uo
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
-Lq
+uo
+uo
+uo
+uo
+kd
+zP
+zP
 Lq
 TP
 TP
@@ -27834,8 +27902,8 @@ Lq
 Lq
 Lq
 TP
-TP
-TP
+zP
+zP
 TP
 uo
 uo
@@ -27852,8 +27920,8 @@ TP
 TP
 TP
 TP
-TP
-TP
+zP
+zP
 TP
 TP
 Mc
@@ -28615,7 +28683,7 @@ TP
 zP
 tR
 sb
-OJ
+cl
 jL
 zP
 TP
@@ -30673,9 +30741,9 @@ zP
 zP
 zP
 zP
-zP
-zP
-zP
+lg
+lg
+lg
 zP
 wj
 zP
@@ -30691,7 +30759,7 @@ pk
 zP
 Xv
 kd
-Lq
+uo
 Lq
 Lq
 Lq
@@ -30929,11 +30997,11 @@ zP
 zP
 zP
 zP
-zP
-zP
-zP
-zP
-zP
+QL
+Ct
+Ct
+Ct
+zy
 wj
 zP
 zP
@@ -30948,7 +31016,7 @@ TP
 Fd
 KL
 TP
-Lq
+uo
 Lq
 Lq
 Lq
@@ -31183,8 +31251,8 @@ zP
 zP
 zP
 zP
-zP
-zP
+ks
+YQ
 TP
 TP
 wj
@@ -31437,8 +31505,8 @@ zP
 zP
 wj
 zP
-zP
-zP
+nv
+OJ
 TP
 wj
 wj
