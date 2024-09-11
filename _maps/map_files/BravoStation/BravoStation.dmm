@@ -1071,6 +1071,26 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"ih" = (
+/obj/structure/table,
+/obj/item/cultivator{
+	pixel_x = 5;
+	pixel_y = 13
+	},
+/obj/item/shovel/spade{
+	pixel_x = 0;
+	pixel_y = 11
+	},
+/obj/item/plant_analyzer{
+	pixel_x = -7;
+	pixel_y = 8
+	},
+/obj/item/storage/bag/plants/portaseeder{
+	pixel_x = 7;
+	pixel_y = 3
+	},
+/turf/open/floor/iron,
+/area/space)
 "ii" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Security Post - Cargo"
@@ -2045,10 +2065,6 @@
 	},
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood,
-/area/space)
-"pn" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
 /area/space)
 "pq" = (
 /obj/machinery/door/airlock/mining/glass{
@@ -3415,6 +3431,10 @@
 /obj/structure/closet/emcloset,
 /turf/open/floor/iron,
 /area/space)
+"zV" = (
+/obj/machinery/seed_extractor,
+/turf/open/floor/iron,
+/area/space)
 "Aa" = (
 /obj/structure/chair/stool/directional/south,
 /turf/open/floor/catwalk_floor/iron_dark,
@@ -3642,10 +3662,6 @@
 "Bv" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle,
 /turf/open/floor/plating,
-/area/space)
-"By" = (
-/obj/machinery/seed_extractor,
-/turf/open/floor/iron,
 /area/space)
 "Bz" = (
 /obj/machinery/porta_turret/ai,
@@ -3888,24 +3904,8 @@
 /turf/open/floor/iron/dark,
 /area/space)
 "Dl" = (
-/obj/structure/table,
-/obj/item/cultivator{
-	pixel_x = 5;
-	pixel_y = 13
-	},
-/obj/item/shovel/spade{
-	pixel_x = 0;
-	pixel_y = 11
-	},
-/obj/item/plant_analyzer{
-	pixel_x = -7;
-	pixel_y = 8
-	},
-/obj/item/storage/bag/plants/portaseeder{
-	pixel_x = 7;
-	pixel_y = 3
-	},
-/turf/open/floor/iron,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
 /area/space)
 "Dq" = (
 /obj/machinery/computer/order_console/bitrunning,
@@ -4383,7 +4383,8 @@
 /turf/open/floor/iron/dark,
 /area/space)
 "GC" = (
-/obj/effect/mapping_helpers/broken_floor,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/crowbar,
 /turf/open/floor/iron,
 /area/space)
 "GE" = (
@@ -6910,8 +6911,7 @@
 /turf/open/floor/wood,
 /area/space)
 "YD" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/crowbar,
+/obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron,
 /area/space)
 "YH" = (
@@ -39564,15 +39564,15 @@ Rj
 Rj
 Rj
 TP
-zP
-zP
+hS
+iv
 zP
 zP
 TP
 Ka
 AQ
 VJ
-GC
+YD
 Yw
 Vi
 Yw
@@ -39821,18 +39821,18 @@ Rj
 Rj
 Rj
 TP
-zP
-zP
-zP
+yR
+Ce
+iv
 zP
 TP
 Jw
 ud
-pn
+Dl
 AQ
 eO
 Yw
-YD
+GC
 TP
 wj
 wj
@@ -40078,15 +40078,15 @@ Rj
 Rj
 Rj
 wj
-zP
-zP
-zP
+yR
+yR
+GF
 zP
 TP
 eo
 rb
-GC
-GC
+YD
+YD
 TP
 uw
 uw
@@ -40335,10 +40335,10 @@ PE
 Rj
 Rj
 wj
-zP
-zP
-zP
-zP
+yR
+yR
+Ce
+iv
 TP
 TP
 TP
@@ -40592,10 +40592,10 @@ eu
 Rj
 Rj
 wj
-zP
-zP
-zP
-zP
+yR
+yR
+yR
+GF
 zP
 zP
 zP
@@ -40849,10 +40849,10 @@ Um
 Rj
 Rj
 wj
-zP
-zP
-zP
-zP
+yR
+yR
+yR
+GF
 zP
 zP
 zP
@@ -41106,10 +41106,10 @@ PZ
 Rj
 Rj
 wj
-zP
-zP
-zP
-zP
+yR
+yR
+yR
+GF
 zP
 zP
 zP
@@ -41363,10 +41363,10 @@ PE
 Rj
 Rj
 wj
-zP
-zP
-zP
-zP
+yR
+yR
+JR
+oo
 TP
 wj
 wj
@@ -41620,13 +41620,13 @@ Rj
 Rj
 Rj
 wj
-zP
-zP
-zP
+yR
+yR
+GF
 zP
 TP
 kA
-Dl
+ih
 zP
 zP
 TP
@@ -41877,9 +41877,9 @@ Rj
 Rj
 Rj
 TP
-zP
-zP
-zP
+yR
+JR
+oo
 zP
 wj
 nm
@@ -42134,8 +42134,8 @@ Rj
 Rj
 Rj
 TP
-zP
-zP
+eM
+oo
 zP
 zP
 wj
@@ -42396,7 +42396,7 @@ zP
 zP
 zP
 wj
-By
+zV
 zP
 qM
 hS
